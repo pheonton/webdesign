@@ -8,3 +8,5 @@ Dateien der Aufgabe befinden.
 * HTML → .html
 * CSS → .css
 * PHP → .php
+4. Achten Sie auf einen ordentlich formatierten Code. [Block Elemente](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements)
+ beginnen mit einer neuen Zeile und werden, wenn sie sich innerhalb eines Elements befinden, eingerückt (mit dem Tabulator)
