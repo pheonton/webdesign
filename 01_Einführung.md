@@ -101,7 +101,7 @@ Verknüpfungen
 ```html
 <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
 ```
-Dateien im Arbeitsordner werden mit einer [relativen Pfadangeabe] (https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relative zur verknüpfenden Datei.
+Dateien im Arbeitsordner werden mit einer [relativen Pfadangeabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relative zur verknüpfenden Datei.
 Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine absolute Verknüpfung)
 
 
