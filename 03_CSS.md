@@ -16,6 +16,7 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
 Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverzeichnisses (relativer Pfad).
 In der CSS Datei werden so genannte Selektoren verwendet, um Tags anzusprechen. Selektoren bestehen im
 einfachsten Fall aus einem Tag.
+
 Beispiel | Allgemein | Erläuterung
 === | === | ===
 ```css
