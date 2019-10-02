@@ -24,19 +24,7 @@ Basis Aufbau eines HTML Dokumentes
 | ```<body></body>``` | Definiert den Inhaltsbereich des Dokumentes |
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
-Wichtige Tags zur Textstrukturierung
-
-| Element | Erläuterung |
-| --- | --- |
-| ```<h1></h1> bis <h6></h6>``` | Definiert HTML Überschriften |
-| ```<p></p>``` | Definiert Paragraphen |
-| ```<br />``` | Einfacher Zeilenumbruch |
-| ```<hr />``` | Definiert einen Thematischen Umbruch in Inhalt |
-| ```<em></em>``` | Definiert hervorgehobenen Text |
-| ```<del></del>``` | Definiert gelöschten Text |
-| ```<strong></strong>``` | Definiert wichtigen Text |
-
-
+Textstrukturierung im Body
 
 ```html
 <h1>Lorem ipsum</h1>
@@ -54,7 +42,18 @@ eget lectus quis blandit.</span>
   </p>
 ```
 
-Informatik KS1
+Wichtige Elemente/Tags zur Textstrukturierung (Nicht für die Formatierung verwenden! Die Formatierung diese wird später mit CSS durchgeführt)
+
+| Element | Erläuterung |
+| --- | --- |
+| ```<h1></h1> bis <h6></h6>``` | Definiert HTML Überschriften |
+| ```<p></p>``` | Definiert Paragraphen |
+| ```<br />``` | Einfacher Zeilenumbruch |
+| ```<hr />``` | Definiert einen Thematischen Umbruch in Inhalt |
+| ```<em></em>``` | Definiert hervorgehobenen Text |
+| ```<del></del>``` | Definiert gelöschten Text |
+| ```<strong></strong>``` | Definiert wichtigen Text |
+
 Tabellen
 
 | Element | Erläuterung |
@@ -62,7 +61,6 @@ Tabellen
 ```<table></table>``` | Definiert eine Tabelle
 ```<tr></tr>``` | Definiert eine Reihe
 ```<td></td>``` | Definiert eine Zelle
-
 
 ```html
 <table>
@@ -82,12 +80,12 @@ Listen
 
 | Element | Erläuterung |
 | --- | --- |
-```<ul></ul>```
-```<ol></ol>```
-```<li></li>```
-Definiert eine ungeordnete Liste
-Definiert eine geordnete Liste
-Definiert ein Listenelement
+```<ul></ul>``` | Definiert eine ungeordnete Liste
+```<ol></ol>``` | Definiert eine geordnete Liste
+```<li></li>``` | Definiert ein Listenelement
+
+
+
 ```html <ul>
 <li>Phasellus</li>
 <li>Aenean</li>
@@ -96,12 +94,14 @@ Definiert ein Listenelement
 ```
 Bilder
 ```html <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />```
+
 Verknüpfungen
 ```html <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>```
 
 Formatierung
 ```<div></div>```
 ```<span></span>```
+
 Ressourcen
 http://www.lipsum.com/
 http://lorempixel.com/
