@@ -1,6 +1,7 @@
 **Einführung HTML**
+===
 
-Basis Aufbau eines HTML Dokumentes
+**Basis Aufbau eines HTML Dokumentes**
 
 ```html
 <!DOCTYPE html>
@@ -24,7 +25,7 @@ Basis Aufbau eines HTML Dokumentes
 | ```<body></body>``` | Definiert den Inhaltsbereich des Dokumentes |
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
-Textstrukturierung im Body
+**Textstrukturierung im Body**
 
 ```html
 <h1>Lorem ipsum</h1>
@@ -42,7 +43,7 @@ eget lectus quis blandit.</span>
   </p>
 ```
 
-Wichtige Elemente/Tags zur Textstrukturierung (Nicht für die Formatierung verwenden! Die Formatierung diese wird später mit CSS durchgeführt)
+**Wichtige Elemente/Tags zur Textstrukturierung** (Nicht für die Formatierung verwenden! Die Formatierung diese wird später mit CSS durchgeführt)
 
 | Element | Erläuterung |
 | --- | --- |
@@ -54,7 +55,7 @@ Wichtige Elemente/Tags zur Textstrukturierung (Nicht für die Formatierung verwe
 | ```<del></del>``` | Definiert gelöschten Text |
 | ```<strong></strong>``` | Definiert wichtigen Text |
 
-Tabellen
+**Tabellen**
 
 | Element | Erläuterung |
 | --- | --- |
@@ -76,7 +77,7 @@ Tabellen
   </tr>
 </table>
 ```
-Listen
+**Listen**
 
 | Element | Erläuterung |
 | --- | --- |
@@ -93,19 +94,19 @@ Listen
   <li>Curabitur</li>
 </ul>
 ```
-Bilder verküpfen
+**Bilder**
 ```html
 <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
 ```
-Verknüpfungen
+**Verknüpfungen**
 ```html
 <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
 ```
-Dateien im Arbeitsordner werden mit einer [relativen Pfadangeabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relative zur verknüpfenden Datei.
+Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangeabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relative zur verknüpfenden Datei.
 Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine absolute Verknüpfung)
 
 
-Für die Formatierung mit CSS werden zwei Elemente benötigt
+**Für die Formatierung mit CSS werden zwei Elemente benötigt**
 
 | Element | Erläuterung |
 | --- | --- |
