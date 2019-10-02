@@ -86,22 +86,26 @@ Listen
 
 
 
-```html <ul>
+```html
+<ul>
 <li>Phasellus</li>
 <li>Aenean</li>
 <li>Curabitur</li>
 </ul>
 ```
 Bilder
-```html <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />```
+```html
+<img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
+```
 
 Verknüpfungen
-```html <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>```
+```html
+<a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
+```
 
-Formatierung
-```<div></div>```
-```<span></span>```
+Für die Formatierung mit CSS werden zwei Elemente benötigt
 
-Ressourcen
-http://www.lipsum.com/
-http://lorempixel.com/
+| Element | Erläuterung |
+| --- | --- |
+```<div></div>``` | Block Element für die Formatierung des Layouts
+```<span></span>``` | Inline Element zur Textformatierung
