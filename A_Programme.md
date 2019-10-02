@@ -1,8 +1,12 @@
+Programme verwenden
+===
+
+
 * Für die **Bearbeitung** der HTML-Dateien bietet sich [Visual Studio Code](https://code.visualstudio.com/) an.
 * Als Betrachter kann [Firefox](https://www.mozilla.org/) oder jeder andere Browser zum Einsatz kommen.
 
 ** Beispiel **
-===
+
 Lege einen Ordner für ein neues Projekt an.
 Öffne Visual Studio Code und Speichere die (noch leere) Datei mit dem Namen index.html im soeben erstellt Ordner ab.
 Im Menü unter: File -> Safe oder auf der Tastur mit der Tastenkombination STRG+S
