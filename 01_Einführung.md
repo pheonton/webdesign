@@ -25,33 +25,38 @@ Basis Aufbau eines HTML Dokumentes
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
 Wichtige Tags zur Textstrukturierung
-```<h1></h1> bis <h6></h6>```
-```<p></p>```
-```<br />```
-```<hr />```
-```<em></em>```
-```<del></del>```
-```<strong></strong>```
-Definiert HTML Überschriften
-Definiert Paragraphen
-Einfacher Zeilenumbruch
-Definiert einen Thematischen Umbruch in Inhalt
-Definiert hervorgehobenen Text
-Definiert gelöschten Text
-Definiert wichtigen Text
-<div>
+
+| Element | Erläuterung |
+| --- | --- |
+| ```<h1></h1> bis <h6></h6>``` | Definiert HTML Überschriften |
+| ```<p></p>``` | Definiert Paragraphen |
+| ```<br />``` | Einfacher Zeilenumbruch |
+| ```<hr />``` | Definiert einen Thematischen Umbruch in Inhalt |
+| ```<em></em>``` | Definiert hervorgehobenen Text |
+| ```<del></del>``` | Definiert gelöschten Text |
+| ```<strong></strong>``` | Definiert wichtigen Text |
+
+
+
+```html
 <h1>Lorem ipsum</h1>
-<p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em>
+  <p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em>
 adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent
 scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis
 molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras
-arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris. <br />Donec
-tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
+arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.
+  <br />Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
 magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh.
 Nulla nec consectetur leo.<hr> <span>Phasellus non leo semper, lobortis mi nec,
-gravida quam. Etiam feugiat eget lectus quis blandit.</span></p>
-</div>Informatik KS1
+gravida quam. Etiam feugiat eget lectus quis blandit.</span>
+  </p>
+```
+
+Informatik KS1
 Tabellen
+
+| Element | Erläuterung |
+| --- | --- |
 ```<table></table>```
 ```<tr></tr>```
 ```<td></td>```
@@ -71,6 +76,9 @@ Definiert eine Zelle
 </tr>
 </table>
 Listen
+
+| Element | Erläuterung |
+| --- | --- |
 ```<ul></ul>```
 ```<ol></ol>```
 ```<li></li>```
