@@ -13,5 +13,5 @@ Programme verwenden
 Den Code kannst du der Datei [Einführung HTML](https://github.com/pheonton/webdesign/blob/master/01_Einf%C3%BChrung.md) entnehmen.
 
 
-Links ist die Datei in Visual Studio Code zu sehen, rechts im Browser.
+Links ist die Datei index.html in Visual Studio Code zu sehen, rechts im Browser.
 ![Visual Studio Code und Firefox](https://raw.githubusercontent.com/pheonton/webdesign/master/images/screen_vsc_firefox_01.png)
