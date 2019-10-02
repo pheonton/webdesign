@@ -5,6 +5,6 @@
 2. Legen Sie für *jede* Aufgabe einen eigenen Arbeitsordner an, in dem sich alle
 Dateien der Aufgabe befinden.
 3. Achten Sie beim anlegen von Dateien auf die passende Endung.
-..*HTML → .html
-..*CSS → .css
-..*PHP → .php
+..- HTML → .html
+..- CSS → .css
+..- PHP → .php
