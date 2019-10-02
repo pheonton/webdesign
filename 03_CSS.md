@@ -1,4 +1,4 @@
-** Einführung CSS3 **
+Einführung CSS3
 ===
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
 zueinander wie in einer Familie bezeichnet wird. Parent und child bezeichnet dabei direkt über bzw.
@@ -6,21 +6,33 @@ untergeordnete Tags. Siblings sind Tags mit dem selben parent Tag und mit Ancest
 übergeordneten Tags bezeichnet.
 Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe CSS Datei wird im
 <head> Bereich eines HTML Dokumentes mit folgender Definition eingebunden:
+```html
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
 <!-- weitere Informationen -->
 </head>
-Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverzeichnisses.
-In der CSS Datei werden so genante Selektoren verwendet um Tags anzusprechen. Selektoren bestehen im
+```
+
+Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverzeichnisses (relativer Pfad).
+In der CSS Datei werden so genannte Selektoren verwendet, um Tags anzusprechen. Selektoren bestehen im
 einfachsten Fall aus einem Tag.
+Beispiel | Allgemein | Erläuterung
+=== | === | ===
+```css
 p {
-color: red;
+  color: red;
 }
+```
+|
+```css
 Selektor {
-Eigenschaft: Wert;
+  Eigenschaft: Wert;
 }
+```
+|
 Hier wird die Farbe aller Texte
-innerhalb von p-Tags auf rot gesetzt.
+innerhalb aller p-Tags auf rot gesetzt.
+
 Um einzelne Tags anzusprechen erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
 zum Einsatz:
 class
