@@ -5,7 +5,7 @@ Basis Aufbau eines HTML Dokumentes
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-<head>
+..<head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>Lorem ipsum</title>
 </head>
@@ -17,12 +17,12 @@ Basis Aufbau eines HTML Dokumentes
 
 | Element | Erläuterung |
 | --- | --- |
-| <!DOCTYPE html> | Definiert den Dokumententyp (nicht sichtbar) |
-| <html></html> | Definiert den HTML Bereich im Dokument |
-| <head><head> | Beinhaltet Informationen über das Dokument |
-| <title></title> | Definiert den Titel des Dokuments (wird im Browser angezeigt) |
-| <body></body> | Definiert den Inhaltsbereich des Dokumentes |
-| <!--  --> | Definiert ein Kommentar (nicht sichtbar) |
+| ```<!DOCTYPE html>``` | Definiert den Dokumententyp (nicht sichtbar) |
+| ```<html></html>``` | Definiert den HTML Bereich im Dokument |
+| ```<head><head>``` | Beinhaltet Informationen über das Dokument |
+| ```<title></title>``` | Definiert den Titel des Dokuments (wird im Browser angezeigt) |
+| ```<body></body>``` | Definiert den Inhaltsbereich des Dokumentes |
+| ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
 Wichtige Tags zur Textstrukturierung
 <h1></h1> bis <h6></h6>
