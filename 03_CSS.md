@@ -19,9 +19,7 @@ einfachsten Fall aus einem Tag.
 
 Beispiel | Allgemein | Erläuterung
 --- | --- | ---
-```css
-p {color: red;}
-``` | ```css Selektor {Eigenschaft: Wert;}``` | Hier wird die Farbe aller Texte innerhalb aller p-Tags auf rot gesetzt.
+```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Hier wird die Farbe aller Texte innerhalb aller p-Tags auf rot gesetzt.
 
 Um einzelne Tags anzusprechen erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
 zum Einsatz:
