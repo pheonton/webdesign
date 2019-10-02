@@ -44,11 +44,13 @@ Wichtige Tags zur Textstrukturierung
 adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent
 scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis
 molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras
-arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.
-  <br />Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
+arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.<br />
+  Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
 magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh.
-Nulla nec consectetur leo.<hr> <span>Phasellus non leo semper, lobortis mi nec,
-gravida quam. Etiam feugiat eget lectus quis blandit.</span>
+Nulla nec consectetur leo.
+  <hr>
+  <span>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
+eget lectus quis blandit.</span>
   </p>
 ```
 
@@ -57,24 +59,25 @@ Tabellen
 
 | Element | Erläuterung |
 | --- | --- |
-```<table></table>```
-```<tr></tr>```
-```<td></td>```
-Definiert eine Tabelle
-Definiert eine Reihe
-Definiert eine Zelle
+```<table></table>``` | Definiert eine Tabelle
+```<tr></tr>``` | Definiert eine Reihe
+```<td></td>``` | Definiert eine Zelle
+
+
+```html
 <table>
-<tr>
-<td>Aliquam</td>
-<td>Praesent</td>
-<td>Quisque</td>
-</tr>
-<tr>
-<td>eget ipsum</td>
-<td>elementum lectus</td>
-<td>non arcu pharetra</td>
-</tr>
+  <tr>
+    <td>Aliquam</td>
+    <td>Praesent</td>
+    <td>Quisque</td>
+  </tr>
+  <tr>
+    <td>eget ipsum</td>
+    <td>elementum lectus</td>
+    <td>non arcu pharetra</td>
+  </tr>
 </table>
+```
 Listen
 
 | Element | Erläuterung |
