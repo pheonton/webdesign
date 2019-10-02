@@ -1,5 +1,7 @@
-Einführung HTML
+**Einführung HTML**
+
 Basis Aufbau eines HTML Dokumentes
+
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
@@ -11,7 +13,8 @@ Basis Aufbau eines HTML Dokumentes
 <!-- Inhalt hier -->
 </body>
 </html>
-´´´
+```
+
 Element | Erläuterung
 <!DOCTYPE html> | Definiert den Dokumententyp (nicht sichtbar)
 <html></html> | Definiert den HTML Bereich im Dokument
