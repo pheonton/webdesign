@@ -5,13 +5,13 @@ Basis Aufbau eines HTML Dokumentes
 ```html
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
-..<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<title>Lorem ipsum</title>
-</head>
-<body>
-<!-- Inhalt hier -->
-</body>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Lorem ipsum</title>
+  </head>
+  <body>
+    <!-- Inhalt hier -->
+  </body>
 </html>
 ```
 
@@ -25,13 +25,13 @@ Basis Aufbau eines HTML Dokumentes
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
 Wichtige Tags zur Textstrukturierung
-<h1></h1> bis <h6></h6>
-<p></p>
-<br />
-<hr />
-<em></em>
-<del></del>
-<strong></strong>
+```<h1></h1> bis <h6></h6>```
+```<p></p>```
+```<br />```
+```<hr />```
+```<em></em>```
+```<del></del>```
+```<strong></strong>```
 Definiert HTML Überschriften
 Definiert Paragraphen
 Einfacher Zeilenumbruch
@@ -52,9 +52,9 @@ Nulla nec consectetur leo.<hr> <span>Phasellus non leo semper, lobortis mi nec,
 gravida quam. Etiam feugiat eget lectus quis blandit.</span></p>
 </div>Informatik KS1
 Tabellen
-<table></table>
-<tr></tr>
-<td></td>
+```<table></table>```
+```<tr></tr>```
+```<td></td>```
 Definiert eine Tabelle
 Definiert eine Reihe
 Definiert eine Zelle
@@ -71,21 +71,26 @@ Definiert eine Zelle
 </tr>
 </table>
 Listen
-<ul></ul>
-<ol></ol>
-<li></li>
+```<ul></ul>```
+```<ol></ol>```
+```<li></li>```
 Definiert eine ungeordnete Liste
 Definiert eine geordnete Liste
 Definiert ein Listenelement
-<ul>
+```html <ul>
 <li>Phasellus</li>
 <li>Aenean</li>
 <li>Curabitur</li>
 </ul>
+```
 Bilder
-<img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
+```html <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />```
 Verknüpfungen
-<a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
+```html <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>```
+
+Formatierung
+```<div></div>```
+```<span></span>```
 Ressourcen
 http://www.lipsum.com/
 http://lorempixel.com/
