@@ -15,13 +15,14 @@ Basis Aufbau eines HTML Dokumentes
 </html>
 ```
 
-Element | Erläuterung
-<!DOCTYPE html> | Definiert den Dokumententyp (nicht sichtbar)
-<html></html> | Definiert den HTML Bereich im Dokument
-<head><head> | Beinhaltet Informationen über das Dokument
-<title></title> | Definiert den Titel des Dokuments (wird im Browser angezeigt)
-<body></body> | Definiert den Inhaltsbereich des Dokumentes
-<!--  --> | Definiert ein Kommentar (nicht sichtbar)
+| Element | Erläuterung |
+| --- | --- |
+| <!DOCTYPE html> | Definiert den Dokumententyp (nicht sichtbar) |
+| <html></html> | Definiert den HTML Bereich im Dokument |
+| <head><head> | Beinhaltet Informationen über das Dokument |
+| <title></title> | Definiert den Titel des Dokuments (wird im Browser angezeigt) |
+| <body></body> | Definiert den Inhaltsbereich des Dokumentes |
+| <!--  --> | Definiert ein Kommentar (nicht sichtbar) |
 
 Wichtige Tags zur Textstrukturierung
 <h1></h1> bis <h6></h6>
