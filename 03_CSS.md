@@ -6,6 +6,7 @@ untergeordnete Tags. Siblings sind Tags mit dem selben parent Tag und mit Ancest
 übergeordneten Tags bezeichnet.
 Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe CSS Datei wird im
 <head> Bereich eines HTML Dokumentes mit folgender Definition eingebunden:
+
 ```html
 <head>
 <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -19,7 +20,7 @@ einfachsten Fall aus einem Tag.
 
 Beispiel | Allgemein | Erläuterung
 --- | --- | ---
-```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Hier wird die Farbe aller Texte innerhalb aller p-Tags auf rot gesetzt.
+```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Die Farbe von Text innerhalb aller p-Tags wird auf rot gesetzt.
 
 Um einzelne Tags anzusprechen erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
 zum Einsatz:
