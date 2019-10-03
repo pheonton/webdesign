@@ -91,9 +91,11 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 Noch mehr Selektoren:
 http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren
 
-Basis CSS Eigenschaften
+Formatieren mit CSS
+---
 
 Eigenschaft | mögliche Werte | Erläuterungen
+--- | --- | ---
 font-face | sans-serif|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
 font-weight | normal|bold | 
 font-size | 12px |
