@@ -81,7 +81,7 @@ p.content | Alle p-Tags mit der Klasse content
 p.second | Alle p-Tags mit der Klasse second
 .content.second | Alle Tags mit der Klasse content und second
 div .content | Alle Tags mit der Klasse content unterhalb eines div-Tags
-* | Alle Tags
+\* | Alle Tags
 #main-title | Alle Tags mit der id main-title
 p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
 div p | Alle p-Tags innerhalb von div-Tags
