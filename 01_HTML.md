@@ -27,6 +27,8 @@
 
 **Textstrukturierung im Body**
 
+> Merke: HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
+
 ```html
 <h1>Lorem ipsum</h1>
   <p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em>
