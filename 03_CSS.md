@@ -87,9 +87,9 @@ p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
 div p | Alle p-Tags innerhalb von div-Tags
 div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
+> Merke: Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. `a:hover`.
 
-Noch mehr Selektoren:
-http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren
+[Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
 Formatieren mit CSS
 ---
@@ -109,68 +109,39 @@ margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
 width | 300px|50%|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
 height | 300px|50%|auto
 
-# Farben
-https://wiki.selfhtml.org/wiki/Grafik/Farben
-
-Wichtige Pseudoelemente: :hover, :active, :visited.
- hover: Mit der Maus über dem Element.
- active: Angeklickte Verknüpfung.
- visited: Besuchte Verknüpfung.
-Beispiel für Eigenschaften und Werte von Selektoren:
-http://wiki.selfhtml.org/wiki/Referenz:CSS/Eigenschaften
-Wichtige Formatierungseigenschaften:
-font-family, font-size, font-weight, color, text-decoration, text-align, border und background.
-Wichtige Layouteigenschaften:
-padding, margin, width und height. (width und height nur bei block Elementen)
-Beispiel für den Inhalt einer CSS Datei:
+```
 body {
-font-family: sans-serif; /* Schrift ohne Serifen */
-font-size: 12px;
-font-weight: normal;
-color: black;
-text-align: left;
-background: white; /* Weiße Hintergrundfarbe */
+  font-family: sans-serif; /* Schrift ohne Serifen */
+  font-size: 12px;
+  font-weight: normal;
+  color: black;
+  text-align: left;
+  background: white; /* Weiße Hintergrundfarbe */
 }
 a {
-color: blue;
-text-decoration: none; /* Normalerweise sind Links unterstrichen */
+  color: blue;
+  text-decoration: none; /* Normalerweise sind Links unterstrichen */
 }
 a:hover { /* Links über denen sich der Mauszeiger befindet */
-text-decoration: underline;
-}Informatik KS1 © Anselm Shah
+  text-decoration: underline;
+}
 p {
-text-align: justify; /* Blocksatz */
+  text-align: justify; /* Blocksatz */
 }
 p.second { /* p-tags mit der Klasse „second“ */
-border: 1px solid silver;
+  border: 1px solid silver; /* Rahmen 1px breit durchgehend und silberfarben */
 }
 /* Mit einem Komma können mehrere Tags gleichzeitig ausgewählt werden */
 p, div { /* alle p- und div-tags */
-padding: 2px 2px 2px 2px;
-}Informatik KS1 © Anselm Shah
-Einführung CSS3 - Aufgaben
-Formatieren Sie Elemente Ihres HTML Dokuments mit folgenden Eigenschaften:
- 12px
-normal|bold
-farbe*
-none|underline
-left|right|center|justify
-1px solid|dashed farbe*
-farbe*
-1px 1px 1px 1px
-1px 1px 1px 1px
-300px|50%|auto
-300px|50%|auto
-oder Name, z.B. „Tahoma“ oder
-„Helvetica“, aber nicht sinnvoll da
-Systemabhängig.
-Für a-Tags sinnvoll
-breite art farbe*
-oben rechts unten links
-oben rechts unten links
-auto für automatische Anpassung
-EINER Eigenschaft an die andere.
-*Farbnamen: aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, orange, purple, red, silver,
-teal, white, and yellow.
-Alle CSS3 Farbnamen: http://www.crockford.com/wrrrld/color.html
-Hinweis: „|“ bedeutet „oder“, also nur einen Wert verwenden.
+  padding: 2px 2px 2px 2px;
+}
+```
+
+# Farben
+---
+https://wiki.selfhtml.org/wiki/Grafik/Farben
+
+Wichtige Pseudoelemente: :hover, :active, :visited.
+hover: Mit der Maus über dem Element.
+active: Angeklickte Verknüpfung.
+visited: Besuchte Verknüpfung.
