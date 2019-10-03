@@ -170,8 +170,7 @@ keine Transparenz) angegeben.
 Beispiel
 ```
 div {
-/* Farbe „cadetblue“ mit 80% Deckkraft */
-background-color: rgba(95,158,160,0.8);
+  background-color: rgba(95,158,160,0.8); /* Farbe „cadetblue“ mit 80% Deckkraft */
 }
 ```
 
