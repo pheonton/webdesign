@@ -97,7 +97,7 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
-font-face | sans-serif\|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
+font-face | sans-serif\|serif | [Es können auch spezielle Schriftarten verwendet werden](#schriftarten)
 font-weight | normal\|bold | 
 font-size | 12px |
 color | [Farben](#farben) |
@@ -177,3 +177,11 @@ div {
 ```
 
 [Noch mehr zu Farben](https://wiki.selfhtml.org/wiki/Grafik/Farben)
+
+# Schriftarten
+
+Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
+
+Für ausgesuchte Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie über `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');` in der CSS-Datei geladen werden und mit `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet werden. Die Google Fonts Webseite zeigt unten rechts den entsprechenden Code an, wenn eine (oder mehrere) Schriften ausgewählt wurden.
+
+[Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
