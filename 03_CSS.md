@@ -97,13 +97,13 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
-font-face | sans-serif|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
-font-weight | normal|bold | 
+font-face | sans-serif\|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
+font-weight | normal\|bold | 
 font-size | 12px |
 color | [Farben](#farben) |
-text-decoration | none|underline | für Links (a-Tag)
-text-align | left|right|center|justify | Text innerhal von Tags ausrichten
-border | 1px solid|dashed red | breite des Rahmens, Art und [Farbe](#farben)
+text-decoration | none\|underline | für Links (a-Tag)
+text-align | left\|right\|center\|justify | Text innerhal von Tags ausrichten
+border | 1px solid\|dashed red | breite des Rahmens, Art und [Farbe](#farben)
 background | [Farben](#farben) | Farbe des Hintergundes anpassen ([weitere Eigenschaften](https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/Hintergrundfarben_und_-bilder/background))
 padding (Innenabstand) | 1px 1px 1px 1px | oben rechts unten links
 margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
