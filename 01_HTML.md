@@ -25,27 +25,11 @@
 | ```<body></body>``` | Definiert den Inhaltsbereich des Dokumentes |
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
 
-**Textstrukturierung im Body**
+
 
 > Merke: HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
 
-```html
-<h1>Lorem ipsum</h1>
-  <p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em>
-adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent
-scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis
-molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras
-arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.<br />
-  Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
-magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh.
-Nulla nec consectetur leo.
-  <hr>
-  <span>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
-eget lectus quis blandit.</span>
-  </p>
-```
-
-**Wichtige Elemente/Tags zur Textstrukturierung** (Nicht für die Formatierung verwenden! Die Formatierung diese wird später mit CSS durchgeführt)
+**Textstrukturierung**
 
 | Element | Erläuterung |
 | --- | --- |
@@ -56,6 +40,15 @@ eget lectus quis blandit.</span>
 | ```<em></em>``` | Definiert hervorgehobenen Text |
 | ```<del></del>``` | Definiert gelöschten Text |
 | ```<strong></strong>``` | Definiert wichtigen Text |
+
+```html
+<h1>Lorem ipsum</h1>
+  <p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.<br />
+  Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
+  <hr>
+  <p>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
+eget lectus quis blandit.</p>
+```
 
 **Tabellen**
 
