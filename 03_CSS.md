@@ -88,7 +88,7 @@ p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
 div p | Alle p-Tags innerhalb von div-Tags
 div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
-> Merke: Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. `a:hover`.
+> Merke: Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. (Beispiel: `a:hover`). Besuchte Links sollten auch formatiert werden, mit `:visited`.
 
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
@@ -140,10 +140,39 @@ p, div { /* alle p- und div-tags */
 
 # Farben
 
+Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergben die gleiche Farbe (Dunkelrot).
 
-https://wiki.selfhtml.org/wiki/Grafik/Farben
+[Farbencodes generieren (mit Farbnamen)](https://www.quackit.com/css/css_color_codes.cfm)
 
-Wichtige Pseudoelemente: :hover, :active, :visited.
-hover: Mit der Maus über dem Element.
-active: Angeklickte Verknüpfung.
-visited: Besuchte Verknüpfung.
+**Rot/Grün/Blau-Mischung**
+
+In einer Vorangegangenen Einheit wurden die 256 CSS3 Farbnamen vorgestellt, eine
+weitere Möglichkeit, Farben zu definieren besteht in der Funktion `rgb(Rot, Grün, Blau)`. Rot,
+Grün und Blau stehen dabei für ganze Zahlen im Bereich 0-255 (theoretisch können auch
+Prozentwerte verwendet werden).
+Beispiel
+
+```
+.special {
+  color: rgb(0,128,0) ; /* Farbe „green“ */
+  background-color: rgb(255,127,80); /* Farbe „coral“ */
+}
+```
+
+**Rot/Grün/Blau-Mischung mit Transparenz**
+
+CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadurch
+lassen sich zum Beispiel teiltransparente Hintergrundfarben definieren.
+Die allgemeine Schreibweise hierfür lautet `rgba(Rot, Grün, Blau, Deckkraft)`. Es gelten die
+selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als
+Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft,
+keine Transparenz) angegeben.
+Beispiel
+```
+div {
+/* Farbe „cadetblue“ mit 80% Deckkraft */
+background-color: rgba(95,158,160,0.8);
+}
+```
+
+[Noch mehr zu Farben](https://wiki.selfhtml.org/wiki/Grafik/Farben)
