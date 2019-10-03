@@ -97,7 +97,7 @@ Eigenschaft | mögliche Werte | Erläuterungen
 font-face | sans-serif|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
 font-weight | normal|bold | 
 font-size | 12px |
-color | [Farben](#farben)
+color | [Farben](#farben) |
 text-decoration | none|underline | für Links (a-Tag)
 text-align | left|right|center|justify | Text innerhal von Tags ausrichten
 border | 1px solid|dashed red | breite des Rahmens, Art und [Farbe](#farben)
