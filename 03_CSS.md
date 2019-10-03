@@ -9,8 +9,8 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
 
 ```html
 <head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-<!-- weitere Informationen -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!-- weitere Informationen -->
 </head>
 ```
 
@@ -20,29 +20,37 @@ einfachsten Fall aus einem Tag.
 
 Beispiel | Allgemein | Erläuterung
 --- | --- | ---
-```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Die Farbe von Text innerhalb aller p-Tags wird auf rot gesetzt.
+```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Die Farbe von Text innerhalb *aller* p-Tags wird auf rot gesetzt.
 
-Um einzelne Tags anzusprechen erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
+Wird ein Tag als Selektor verwendet werden alle Tags dieser Sorte entsprechend formatiert. um einzelne oder eine Gruppe von Tags zu formatieren, erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
 zum Einsatz:
-class
-id
-Klasse. Wird im Allgemeinen verwendet.
-ID. Für Elemente die ein einziges Mal verwendet werden.
-HTML Code Beispiel
+
+Attribut | Erläuterung | Beispiel
+--- | --- | ---
+class | Klasse. Wird im Allgemeinen verwendet. | ```<div class="section">```
+id | ID. Für Elemente die ein einziges Mal verwendet werden. | ```<h1 id="main-title"```
+
+Beispeil im HTML
+
+```html
 <div class=“section“>
-<h1 id=“main-title“>Lorem ipsum</h1>
-<p class=“content“><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit.
+  <h1 id=“main-title“>Lorem ipsum</h1>
+  <p class=“content“><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit.
 Nulla vel metus porta, cursus libero in, varius metus. Praesent scelerisque iaculis lectus. Suspendisse nec
 maximus massa. Cras viverra leo quis molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet
 erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.</p>
-<p class=“content second“>Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
-magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur
-leo.<hr><span class=“important“>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
+  <p class=“content second“>Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
+magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
+  <hr>
+  <p><span class=“important“>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
 eget lectus quis blandit.</span></p>
-</div>Informatik KS1 © Anselm Shah
-Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um Ihre Eigenschaften mit
-CSS anzupassen. Dabei können Tags direkt, Klassen mit einem Punkt vor dem Namen und IDs mit einer
-Raute vor dem Namen selektiert werden. Selektoren können auch kombiniert und verschachtelt werden.
+</div>
+```
+
+Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um ihre Eigenschaften mit
+CSS anzupassen. 
+Tags werden direkt (z.B. ```p {color: red}```), Klassen mit einem Punkt vor dem Namen (```.content {color: red})```und IDs mit einer Raute vor dem Namen (```#main-title {color: red}```) selektiert.
+Selektoren können auch kombiniert und verschachtelt werden.
 Folgende Kombinationen sind möglich:
 Stehen Tags und/oder
 Alle Bedingungen müssen erfüllt sein.
