@@ -30,7 +30,7 @@ Attribut | Erläuterung | Beispiel
 class | Klasse. Wird im Allgemeinen verwendet. | ```<div class="section">```
 id | ID. Für Elemente die ein einziges Mal verwendet werden. | ```<h1 id="main-title"```
 
-Beispeil im HTML
+Beispeil in HTML
 
 ```html
 <div class=“section“>
@@ -42,56 +42,74 @@ erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.</p>
   <p class=“content second“>Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
 magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
   <hr>
-  <p><span class=“important“>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
+  <p class=“important“>Phasellus non leo semper, lobortis mi nec, gravida quam. <span class="small">Etiam feugiat
 eget lectus quis blandit.</span></p>
 </div>
 ```
+Beispiel für eine CSS-Datei
+
+```
+p {
+  color: blue;
+  font-size: 18px;
+}
+p.important {
+  text-decoration: undeline
+}
+```
+
+Der Text innerhalb aller p Tags wird blau und mit der Schriftgröße 18px dargestellt. text innerhalb von p Tags mit der Klasse ```.important``` wird zusätzlich unterstrichen.
+
 
 Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um ihre Eigenschaften mit
 CSS anzupassen. 
 Tags werden direkt (z.B. ```p {color: red}```), Klassen mit einem Punkt vor dem Namen (```.content {color: red})```und IDs mit einer Raute vor dem Namen (```#main-title {color: red}```) selektiert.
-Selektoren können auch kombiniert und verschachtelt werden.
-Folgende Kombinationen sind möglich:
-Stehen Tags und/oder
-Alle Bedingungen müssen erfüllt sein.
-div.content {
-Klassen/IDs direkt
-}
-hintereinander
-Stehen Tags und/oder
-Es handelt sich um eine hierarchische Auswahl. p span .small {
-Klassen/IDs durch ein
-Nachfolgende Elemente müssen sich innerhalb }
-Leerzeichen getrennt
-von vorangegangenen befinden.
-Stehen Tags und/oder
-Die Anweisung gilt für jeden Selektor einzeln. p, .content, div#main {
-Klassen/IDs durch ein Komma
-}
-getrennt
-Beispiele für Selektoren:
-p
-p.content
-p.second
-.content.second
-div .content
-*
-#main-title
-p.second, div
-div p
-div.#main img
-Alle p-Tags
-Alle p-Tags mit der Klasse content
-Alle p-Tags mit der Klasse second
-Alle Tags mit der Klasse content und second
-Alle Tags mit der Klasse content unterhalb eines div-Tags
-Alle Tags
-Alle Tags mit der id main-title
-Alle p-Tags mit der Klasse second und alle div-Tags
-Alle p-Tags innerhalb von div-Tags
-Alle img-Tags innerhalb von div-Tags mit der ID main
+Selektoren können auch kombiniert und verschachtelt werden. Folgende Kombinationen sind möglich:
+
+Selektor | Bedeutung | Beispiel
+--- | --- | ---
+Tags und/oder Klassen/IDs *direkt* hintereinander | Tags mit den entsprechenden Klassen/IDs werden ausgewählt | div.content {...}
+Tags und/oder Klassen/IDs durch ein Leerzeichen getrennt | Es handelt sich um eine hierarchische Auswahl. Nachfolgende Selektoren müssen sich innerhalb der vorangegangenen befinden | div p .small {...}
+Tags und/oder Klassen/IDs durch ein Komma getrennt | Anweisungen gilt für *jeden* Selektor. | p, .content, div#section {...}
+
+Beispiele für Selektoren
+
+Selektor | Bedeutung
+--- | ---
+p | Alle p-Tags
+p.content | Alle p-Tags mit der Klasse content
+p.second | Alle p-Tags mit der Klasse second
+.content.second | Alle Tags mit der Klasse content und second
+div .content | Alle Tags mit der Klasse content unterhalb eines div-Tags
+* | Alle Tags
+#main-title | Alle Tags mit der id main-title
+p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
+div p | Alle p-Tags innerhalb von div-Tags
+div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
+
+
 Noch mehr Selektoren:
 http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren
+
+Basis CSS Eigenschaften
+
+Eigenschaft | mögliche Werte | Erläuterungen
+font-face | sans-serif|serif | Schriften können auch durch ihren Namen gewählt werden z.B. "Arial"
+font-weight | normal|bold | 
+font-size | 12px |
+color | [Farben](#farben)
+text-decoration | none|underline | für Links (a-Tag)
+text-align | left|right|center|justify | Text innerhal von Tags ausrichten
+border | 1px solid|dashed red | breite des Rahmens, Art und [Farbe](#farben)
+background | [Farben](#farben) | Farbe des Hintergundes anpassen ([weitere Eigenschaften](https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/Hintergrundfarben_und_-bilder/background))
+padding (Innenabstand) | 1px 1px 1px 1px | oben rechts unten links
+margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
+width | 300px|50%|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
+height | 300px|50%|auto
+
+# Farben
+https://wiki.selfhtml.org/wiki/Grafik/Farben
+
 Wichtige Pseudoelemente: :hover, :active, :visited.
  hover: Mit der Maus über dem Element.
  active: Angeklickte Verknüpfung.
@@ -130,18 +148,7 @@ padding: 2px 2px 2px 2px;
 }Informatik KS1 © Anselm Shah
 Einführung CSS3 - Aufgaben
 Formatieren Sie Elemente Ihres HTML Dokuments mit folgenden Eigenschaften:
-font-face sans-serif|serif
-font-weight
-font-size
-color
-text-decoration
-text-align
-border
-background
-padding (Innenabstand)
-margin (Außenabstand)
-width
-height 12px
+ 12px
 normal|bold
 farbe*
 none|underline
