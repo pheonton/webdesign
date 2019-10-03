@@ -110,6 +110,8 @@ margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
 width | 300px|50%|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
 height | 300px|50%|auto
 
+>Merke: | steht für "Oder"
+
 ```
 body {
   font-family: sans-serif; /* Schrift ohne Serifen */
