@@ -154,7 +154,7 @@ Beispiel
 
 ```
 .special {
-  color: rgb(0,128,0) ; /* Farbe „green“ */
+  color: rgb(0,128,0); /* Farbe „green“ */
   background-color: rgb(255,127,80); /* Farbe „coral“ */
 }
 ```
