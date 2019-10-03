@@ -1,5 +1,6 @@
 Einführung CSS3
 ===
+
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
 zueinander wie in einer Familie bezeichnet wird. Parent und child bezeichnet dabei direkt über bzw.
 untergeordnete Tags. Siblings sind Tags mit dem selben parent Tag und mit Ancestors werden alle
@@ -91,8 +92,8 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
-Formatieren mit CSS
----
+# Formatieren mit CSS
+
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
@@ -138,7 +139,7 @@ p, div { /* alle p- und div-tags */
 ```
 
 # Farben
----
+
 
 https://wiki.selfhtml.org/wiki/Grafik/Farben
 
