@@ -68,12 +68,18 @@ div.footer {
   text-align: center;
 }
 ```
+## Probleme mit der Höhe 100% ##
+
 
 ## Hintergrund Bild ##
 
 Ein besonders auffällige Formatierung ist ein Bild, dass den ganzen Bildschirm ausfüllt. Dafür kann der folgende CSS-Code verwendet werden. Dabei sollte ein genügend hochauflösendes Bild verwendet werden, damit es nicht pixelig dargestellt wird, aber nicht zu groß, so dass es schnell geladen wird.
 
 ```
+html, body {
+  hight: 100%;
+}
+
 .background {
   background-image: url("images/img_background.jpg"); /* Der relative Link zur Datei */
 
