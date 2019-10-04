@@ -1,5 +1,5 @@
 # Layout mit CSS #
-===
+
 
 Ohne Formatierung sind alle HTML Elemente linksbündig angeordnet. Um Bereiche neu anzuordnen z.B. nebeneinander anzuzeigen, kommt im HTML Code der `div` Tag zum Einsatz. 
 
