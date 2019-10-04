@@ -56,11 +56,15 @@ div {
 }
 ```
 
-Ein Hintergrund Bild, das die ganze Seite ausfüllt mit 100px Abstand nach oben:
+Ein Element das *immer* am unteren Rand der Seite angezeigt wird.
 ```
-img {
+div.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  height: auto;
-  position: absolute;
-  top: 100px;
+  background-color: darkslategray ;
+  color: darksalmon;
+  text-align: center;
 }
+```
