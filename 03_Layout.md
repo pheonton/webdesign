@@ -68,19 +68,19 @@ div.footer {
   text-align: center;
 }
 ```
-## Probleme mit der Höhe 100% ##
-
 
 ## Hintergrund Bild ##
 
 Ein besonders auffällige Formatierung ist ein Bild, dass den ganzen Bildschirm ausfüllt. Dafür kann der folgende CSS-Code verwendet werden. Dabei sollte ein genügend hochauflösendes Bild verwendet werden, damit es nicht pixelig dargestellt wird, aber nicht zu groß, so dass es schnell geladen wird.
 
+> Merke: Wenn man versucht die Höhe eines div Elementes auf 100% der Fenstergrößezu setzten (`height: 100%`), funktioneirt das nicht ohne weiteres. Die Prozentangabe ist eine relative Angabe die von der Höhe des Parent-Elementes abhängt. Das Problem ist, dass jedes Element die Standarthöhenangabe `auto` hat, auch `<body>` und `<html>`, diese müssen also immer explizit auf 100% gesetzt werden.
+
 ```
 html, body {
-  hight: 100%;
+  hight: 100%; /* Siehe der obige Merksatz */
 }
 
-.background {
+div.background {
   background-image: url("images/img_background.jpg"); /* Der relative Link zur Datei */
 
   height: 100%;   /* Wichtig! */
