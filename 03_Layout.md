@@ -1,9 +1,9 @@
-Layout mit CSS
+# Layout mit CSS #
 ===
 
 Ohne Formatierung sind alle HTML Elemente linksbündig angeordnet. Um Bereiche neu anzuordnen z.B. nebeneinander anzuzeigen, kommt im HTML Code der `div` Tag zum Einsatz. 
 
-** display **
+### display ###
 
 * Block-Elemente (`<h1>`, `<p>` usw.) beginnen und enden mit einem Zeilenumbruch und haben Werte für Breite (standartmäßig 100%) und Höhe.
 * Inline-Elemente (`<strong>`, `<em>` usw.) werden in einer Reihe mit Text oder anderen Elementen dargestellt und haben keine Werte für Höhe und Breite.
@@ -11,11 +11,11 @@ Ohne Formatierung sind alle HTML Elemente linksbündig angeordnet. Um Bereiche n
 
 Die standart Eigenschaft eines Elementes läßt sich mit der CSS Funktion `display:` anpassen. Die möglichen Werte für die Eigenschaft `display:` sind `inline`, `inline-block` und `block`.
 
-** float **
+### float ###
 
 Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bild in einem Text oder um mehrere div-Blöcke nebeneinander anzuzeigen, ist die Eigenschaft `float` mit den Werten `left` und `right` (für die Position des Elements) geeignet. Die EIgenschaft muss im Parent-Element mit der Eigenschaft `clear: both` beendet werden, sonst verschieben sich alle nachfoglenden Elemente.
 
-** position **
+### position ###
 
 Noch radikaler kann die Position eines Elementes mit der EIgenschaft `postion` verändert werden. dabei werden zwei Werte unterschieden:
 * `relative` positioniert das Element relative zu seiner ursprünglichen Position, wo es ohne die Eigenschaft `psotion: relative` angezeigt worden wäre.
@@ -24,11 +24,11 @@ um ein positioniertes Elment zu verschieben, können die folgenden Eigenschaften
 
 Durch die Positionierung können Elemente auch übereinander gelegt werden. Um zu entscheiden, welches Element in welcher Ebene liegt wird die Eigenschaft `z-index` verwendet. Positive Zahlenwerte heben das Element an, negative senken es ab. Der standart Wert für alle Elemente ist 0.
 
-** weitere Eigenschaften **
+### weitere Eigenschaften ###
 
 Die Eigenschaften `padding` und `margin` und `width` und `height` für Block-Elemente können auch einegsetzt werden. Mit der Eigenschaft `overflow: hidden` können Inhalte die ihr Parent-Element überragen ausgeblendet werden.
 
-# Beispiele
+## Beispiele ##
 
 Ein Bild linksbündig im Text:
 ```
