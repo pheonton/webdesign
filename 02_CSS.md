@@ -1,5 +1,5 @@
-Einführung CSS3
-===
+# Einführung CSS3 #
+
 
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
 zueinander wie in einer Familie bezeichnet wird. Parent und child bezeichnet dabei direkt über bzw.
@@ -31,7 +31,7 @@ Attribut | Erläuterung | Beispiel
 class | Klasse. Wird im Allgemeinen verwendet. | ```<div class="section">```
 id | ID. Für Elemente die ein einziges Mal verwendet werden. | ```<h1 id="main-title"```
 
-Beispeil in HTML
+**Beispeil in HTML**
 
 ```html
 <div class=“section“>
@@ -47,7 +47,7 @@ magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. 
 eget lectus quis blandit.</span></p>
 </div>
 ```
-Beispiel für eine CSS-Datei
+**Beispiel für eine CSS-Datei**
 
 ```
 p {
@@ -73,7 +73,7 @@ Tags und/oder Klassen/IDs *direkt* hintereinander | Tags mit den entsprechenden 
 Tags und/oder Klassen/IDs durch ein Leerzeichen getrennt | Es handelt sich um eine hierarchische Auswahl. Nachfolgende Selektoren müssen sich innerhalb der vorangegangenen befinden | div p .small {...}
 Tags und/oder Klassen/IDs durch ein Komma getrennt | Anweisungen gilt für *jeden* Selektor. | p, .content, div#section {...}
 
-Beispiele für Selektoren
+**Beispiele für Selektoren**
 
 Selektor | Bedeutung
 --- | ---
@@ -92,8 +92,8 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
-# Formatieren mit CSS
 
+## Formatieren mit CSS ##
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
@@ -140,7 +140,7 @@ p, div { /* alle p- und div-tags */
 }
 ```
 
-# Farben
+## Farben ##
 
 Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergben die gleiche Farbe (Dunkelrot).
 
@@ -178,7 +178,7 @@ div {
 
 [Noch mehr zu Farben](https://wiki.selfhtml.org/wiki/Grafik/Farben)
 
-# Schriftarten
+## Schriftarten ##
 
 Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
 
