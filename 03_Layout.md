@@ -63,7 +63,7 @@ div.footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: darkslategray ;
+  background-color: darkslategray;
   color: darksalmon;
   text-align: center;
 }
