@@ -26,7 +26,7 @@ Durch die Positionierung können Elemente auch übereinander gelegt werden. Um z
 
 ### weitere Eigenschaften ###
 
-Die Eigenschaften `padding` und `margin` und `width` und `height` für Block-Elemente können auch einegsetzt werden. Mit der Eigenschaft `overflow: hidden` können Inhalte die ihr Parent-Element überragen ausgeblendet werden.
+Die Eigenschaften `padding` und `margin` und `width` und `height` für Block-Elemente können auch eingesetzt werden. Mit der Eigenschaft `overflow: hidden` können Inhalte die ihr Parent-Element überragen ausgeblendet werden.
 
 ## Beispiele ##
 
