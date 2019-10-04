@@ -17,7 +17,7 @@ Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bil
 
 ### position ###
 
-Noch radikaler kann die Position eines Elementes mit der EIgenschaft `postion` verändert werden. dabei werden zwei Werte unterschieden:
+Noch radikaler kann die Position eines Elementes mit der Eigenschaft `postion` verändert werden. dabei werden zwei Werte unterschieden:
 * `relative` positioniert das Element relative zu seiner ursprünglichen Position, wo es ohne die Eigenschaft `psotion: relative` angezeigt worden wäre.
 * `absolute` positioniert das Element relative zum ersten übergeorndeten relativ positionierten Element. Gibt es kein relativ positioniertes Ancestor-Element, dann absolut zum linken oberen Ecke der Seite.
 um ein positioniertes Elment zu verschieben, können die folgenden Eigenschaften gesetzt werden: `top`, `bottom`, `left`, `right` jeweils mit positiven oder negativen Prozent- oder Pixelangaben.
