@@ -75,9 +75,12 @@ Ein besonders auffällige Formatierung ist ein Bild, dass den ganzen Bildschirm 
 
 > Merke: Wenn man versucht die Höhe eines div Elementes auf 100% der Fenstergrößezu setzten (`height: 100%`), funktioneirt das nicht ohne weiteres. Die Prozentangabe ist eine relative Angabe die von der Höhe des Parent-Elementes abhängt. Das Problem ist, dass jedes Element die Standarthöhenangabe `auto` hat, auch `<body>` und `<html>`, diese müssen also immer explizit auf 100% gesetzt werden.
 
+> Merke: Die meisten Tags haben im Browser schon standard Formatierungen (z.B. Abstände bei Überschrift `<h1>` usw.). Diese können aber durch setzten der entsprechenden Eigenschaft im CSS Code überschrieben werden.
+
 ```
 html, body {
   hight: 100%; /* Siehe der obige Merksatz */
+  margin: 0; /* Den standard Abstand wird entfern */
 }
 
 div.background {
