@@ -1,6 +1,8 @@
 **Einführung HTML**
 ===
 
+> Merke: Der Code wird mit dem Editor geschrieben und im Browser betrachtet. Anleitung dazu befindet sich [hier](A_Programme.md).
+
 **Basis Aufbau eines HTML Dokumentes**
 
 ```html
