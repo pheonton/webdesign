@@ -13,7 +13,7 @@ Die standart Eigenschaft eines Elementes läßt sich mit der CSS Funktion `displ
 
 ### float ###
 
-Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bild in einem Text oder um mehrere div-Blöcke nebeneinander anzuzeigen, ist die Eigenschaft `float` mit den Werten `left` und `right` (für die Position des Elements) geeignet. Die EIgenschaft muss im Parent-Element mit der Eigenschaft `clear: both` beendet werden, sonst verschieben sich alle nachfoglenden Elemente.
+Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bild in einem Text oder um mehrere div-Blöcke nebeneinander anzuzeigen, ist die Eigenschaft `float` mit den Werten `left` und `right` (für die Position des Elements) geeignet. Die Eigenschaft muss im nachfolgenden Element mit der Eigenschaft `clear: both` beendet werden, sonst verschieben sich alle nachfoglenden Elemente.
 
 ### position ###
 
@@ -39,7 +39,7 @@ img {
   height: auto;
 }
 ```
-`clear: both`; muss ins Parent Element, um float zu beenden.
+`clear: both`; muss ins nachfolgende Element, um float zu beenden.
 
 Listenelemente in einer Reihe:
 ```
@@ -93,3 +93,6 @@ div.background {
   background-size: cover; /* Maximal vergrößertes Bild ohne das Seitenverhältnis zu verändern */
 }
 ```
+## Hilfe bei Problemen ##
+
+Layout mit CSS kann auserordentlich frustrierend sein. Ein essentielles Tool um sich schnellen Überblick zur Problemlösung zu verschaffen, ist die Möglichkeit von Firefox, sich mit einem Rechtsklick auf ein Element und der Funktion **Inspect Element** margins (lila) und paddings (gelb) anzeigen zulassen. Ausserdem werden die angewendeten CSS Eigenschaften, sowie viele andere nützliche (und weniger nützliche) Funktionen, angezeigt.
