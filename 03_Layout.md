@@ -15,6 +15,8 @@ Die standart Eigenschaft eines Elementes läßt sich mit der CSS Funktion `displ
 
 Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bild in einem Text oder um mehrere div-Blöcke nebeneinander anzuzeigen, ist die Eigenschaft `float` mit den Werten `left` und `right` (für die Position des Elements) geeignet. Die Eigenschaft muss im nachfolgenden Element mit der Eigenschaft `clear: both` beendet werden, sonst verschieben sich alle nachfoglenden Elemente.
 
+> Merke: Damit ein Parent-Element seinen floatenden Inhalt umschließt (nicht standardmäßig), ist es sinnvoll diesem die Eigenschaft `overflow: hidden` zu geben.
+
 ### position ###
 
 Noch radikaler kann die Position eines Elementes mit der Eigenschaft `postion` verändert werden. dabei werden zwei Werte unterschieden:
@@ -40,6 +42,7 @@ img {
 }
 ```
 `clear: both`; muss ins nachfolgende Element, um float zu beenden.
+`overflow: hidden`; muss ins Parent-Element, um den Inhalt zu umschließen.
 
 Listenelemente in einer Reihe:
 ```
