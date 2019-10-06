@@ -185,3 +185,26 @@ Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werd
 Für ausgesuchte Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie über `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');` in der CSS-Datei geladen werden und mit `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet werden. Die Google Fonts Webseite zeigt unten rechts den entsprechenden Code an, wenn eine (oder mehrere) Schriften ausgewählt wurden.
 
 [Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
+
+## Bilder ##
+
+Bilder können mit den Eigenschaften `width` und `height` angepasst werden. Eine der beiden Eigenschaften sollte den Wert `auto` bekommen, da sonst das Seitenverhältnis verändert wird.
+
+Sind die img Tags im HTML Code untereinander aufgelistet, so erscheint im Browser ein *kleiner Abstand* zwischen den Bilder, dieser kann mit der Eigenschaft `font-size: 0;` für das Parent-Element entfernt werden. (Werden die img Tags in einer Reiehe gelistet erscheint kein Abstand.)
+
+Beispiel
+```html
+<div>
+  <img src="img/img_01.jpg" alt="img 01">
+  <img src="img/img_02.jpg" alt="img 02">
+</div>
+```
+```
+div {
+  font-size: 0;
+}
+img {
+  width: 50%;
+  height: auto;
+}
+```
