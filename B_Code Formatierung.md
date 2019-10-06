@@ -6,9 +6,7 @@
 2. Achten Sie auf einen ordentlich *formatierten Code*. [Block Elemente](https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements#Elements)
  beginnen mit einer neuen Zeile und werden, wenn sie sich innerhalb eines Elements befinden, eingerückt (mit dem Tabulator)
 
-3. Legen Sie für jedes Projekt einen neuen Ordner an.
-
-Beispiel
+3. Legen Sie für jedes Projekt einen neuen Ordner an. Im Beispiel liegt die CSS-Datei und liegen die Bilder in Ordnern innerhalb des Projektornders.
 
 ```
 ./project:
