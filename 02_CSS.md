@@ -208,3 +208,14 @@ img {
   height: auto;
 }
 ```
+
+## Verknüpfungen ##
+
+Um auf Elemente innerhalb einer Datei zu verweisen, z.B. um von einem Menü auf eine Überschriften zu verlinken, muss die Überschrift eine ID bekommen, die mit der Verknüpfung referenziert wird.
+
+Beispiel
+```html
+<a href="#title">Title</a>
+
+<h2 id="title">Title</h2>
+```
