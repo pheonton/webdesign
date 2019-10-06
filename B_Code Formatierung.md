@@ -7,16 +7,24 @@
  beginnen mit einer neuen Zeile und werden, wenn sie sich innerhalb eines Elements befinden, eingerückt (mit dem Tabulator)
 
 3. Legen Sie für jedes Projekt einen neuen Ordner an.
+
 Beispiel
+
 ```
-[ordner] projekt
-  [datei] index.html
-  [datei] test.html
-  [ordner] css
-    [datei] style.css
-  [ornder] img
-    [datei] img_01.jpg
-    [datei] img_02.jpg
-    [datei] img_03.jpg
+./project:
+css
+img
+index.html
+index_text.html
+
+./project/css:
+style.css
+
+./project/img:
+background-main.jpg
+img_1.jpg
+img_2.jpg
+img_3.jpg
+img_4.jpg
 ```
   
