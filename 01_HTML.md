@@ -13,7 +13,8 @@
     <title>Lorem ipsum</title>
   </head>
   <body>
-    <!-- Inhalt hier -->
+    <!-- Diser Text wird nicht angezeigt weil er ein Kommentar ist -->
+    Diesen Text bitte ersetzten!
   </body>
 </html>
 ```
