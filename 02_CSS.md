@@ -144,7 +144,8 @@ p, div { /* alle p- und div-tags */
 
 Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergben die gleiche Farbe (Dunkelrot).
 
-[Farbencodes generieren (mit Farbnamen)](https://www.quackit.com/css/css_color_codes.cfm)
+Visual Studio Code hat einen eingebauten [Farbwähler](https://code.visualstudio.com/docs/languages/html#_color-picker) 
+[Farbcodes online generieren (mit Farbnamen)](https://www.quackit.com/css/css_color_codes.cfm)
 
 **Rot/Grün/Blau-Mischung**
 
