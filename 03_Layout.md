@@ -76,9 +76,9 @@ div.footer {
 
 Ein besonders auffällige Formatierung ist ein Bild, dass den ganzen Bildschirm ausfüllt. Dafür kann der folgende CSS-Code verwendet werden. Dabei sollte ein genügend hochauflösendes Bild verwendet werden, damit es nicht pixelig dargestellt wird, aber nicht zu groß, so dass es schnell geladen wird.
 
-> Merke: Wenn man versucht die Höhe eines div Elementes auf 100% der Fenstergrößezu setzten (`height: 100%`), funktioneirt das nicht ohne weiteres. Die Prozentangabe ist eine relative Angabe die von der Höhe des Parent-Elementes abhängt. Das Problem ist, dass jedes Element die Standarthöhenangabe `auto` hat, auch `<body>` und `<html>`, diese müssen also immer explizit auf 100% gesetzt werden.
+> **Merke:** Wenn man versucht die Höhe eines div Elementes auf 100% der Fenstergrößezu setzten (`height: 100%`), funktioneirt das nicht ohne weiteres. Die Prozentangabe ist eine relative Angabe die von der Höhe des Parent-Elementes abhängt. Das Problem ist, dass jedes Element die Standarthöhenangabe `auto` hat, auch `<body>` und `<html>`, diese müssen also immer explizit auf 100% gesetzt werden.
 
-> Merke: Die meisten Tags haben im Browser schon standard Formatierungen (z.B. Abstände bei Überschrift `<h1>` usw.). Diese können aber durch setzten der entsprechenden Eigenschaft im CSS Code überschrieben werden.
+> **Merke:** Die meisten Tags haben im Browser schon standard Formatierungen (z.B. Abstände bei Überschrift `<h1>` usw.). Diese können aber durch setzten der entsprechenden Eigenschaft im CSS Code überschrieben werden.
 
 ```
 html, body {
