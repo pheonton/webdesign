@@ -1,7 +1,7 @@
 **Einführung HTML**
 ===
 
-> Merke: Der Code wird mit dem Editor geschrieben und im Browser betrachtet. Anleitung dazu befindet sich [hier](A_Programme.md).
+> **Merke:** Der Code wird mit dem Editor geschrieben und im Browser betrachtet. Anleitung dazu befindet sich [hier](A_Programme.md).
 
 **Basis Aufbau eines HTML Dokumentes**
 
@@ -30,7 +30,7 @@
 
 
 
-> Merke: HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
+> **Merke:** HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
 
 **Textstrukturierung**
 
