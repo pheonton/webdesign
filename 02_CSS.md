@@ -88,7 +88,7 @@ p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
 div p | Alle p-Tags innerhalb von div-Tags
 div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
-> Merke: Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. (Beispiel: `a:hover`). Besuchte Links sollten auch formatiert werden, mit `:visited`.
+> **Merke:** Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. (Beispiel: `a:hover`). Besuchte Links sollten auch formatiert werden, mit `:visited`.
 
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
@@ -110,7 +110,7 @@ margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
 width | 300px|50%|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
 height | 300px|50%|auto
 
->Merke: | steht für "Oder"
+> **Merke:** | steht für "Oder"
 
 ```
 body {
