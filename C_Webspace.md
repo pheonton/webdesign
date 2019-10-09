@@ -1,18 +1,18 @@
-### Webspace Einrichten ###
+# Webspace Einrichten #
 
 Dein Webspace wird freundlicherweise kostenlos von [lima-city.de](https://lima-city.de) bereitgestellt.
 
-## Account bestätigen ##
+### Account bestätigen ###
 
 Du bekommst eine Email von lima-city.de mit einem Link, um ein Passwort für deinen Account anzulegen.
 
 Wenn du auf den Link klickst, öffnet sich eine Seite auf der du ein Passwort setzten und bestätigen kannst. Nach dem setzten des Passwortes erscheint ein link zm Kundenportal. Klicke auf den Link.
 
-## Einloggen ##
+### Einloggen ###
 
 Auf [lima-city.de](https://lima-city.de) findes du oben rechts den Link [Login](https://www.lima-city.de/login), klicke darauf um dich einzuloggen.
 
-## Dateienhochladen ##
+### Dateienhochladen ###
 
 Wenn du eingeloggt bist, kannst du im linken Menü unter *FTP-Zugang* Dateien hochladen.
 Klickt dazu auf [FTP-Zugang](https://www.lima-city.de/usercp/ftp-accounts) und scrolle in der sich öffnenden Seite nach Unten. am Ende findest du den Link
