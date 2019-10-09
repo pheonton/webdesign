@@ -1,16 +1,16 @@
 # Webspace Einrichten #
 
-Dein Webspace wird freundlicherweise kostenlos von [lima-city.de](https://lima-city.de) bereitgestellt.
+Dein Webspace wird freundlicherweise kostenlos von [lima-city.de](https://lima-city.de) bereitgestellt. Dein Mentor benötigt dafür von dir einen Benutzernamenvorschlag mit zwei Alternativen und deine Emailadresse.
 
 ### Account bestätigen ###
 
 Du bekommst eine Email von lima-city.de mit einem Link, um ein Passwort für deinen Account anzulegen.
 
-Wenn du auf den Link klickst, öffnet sich eine Seite auf der du ein Passwort setzten und bestätigen kannst. Nach dem setzten des Passwortes erscheint ein link zm Kundenportal. Klicke auf den Link.
+Wenn du auf den Link klickst, öffnet sich eine Seite auf der du ein Passwort setzen und bestätigen kannst. Nach dem setzen des Passwortes, erscheint ein link zm Kundenportal. Klicke auf den Link.
 
 ### Einloggen ###
 
-Auf [lima-city.de](https://lima-city.de) findes du oben rechts den Link [Login](https://www.lima-city.de/login), klicke darauf um dich einzuloggen.
+Auf [lima-city.de](https://lima-city.de) findes du oben rechts den Link [Login](https://www.lima-city.de/login), klicke darauf um dich einzuloggen. (Wenn du eingeloggt bist, steht dort Logout und links oben wird dein Benutzername angezeigt).
 
 ### Dateienhochladen ###
 
