@@ -2,7 +2,7 @@
 
 
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
-zueinander wie in einer Familie bezeichnet wird. Parent und child bezeichnet dabei direkt über bzw.
+zueinander wie in einer Familie bezeichnet wird. Parent und Child bezeichnet dabei direkt über bzw.
 untergeordnete Tags. Siblings sind Tags mit dem selben parent Tag und mit Ancestors werden alle
 übergeordneten Tags bezeichnet.
 Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe CSS Datei wird im
@@ -13,17 +13,21 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <!-- weitere Informationen -->
 </head>
+<bod>
+  <p>Hello World!</p>
+</body>
 ```
 
 Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverzeichnisses (relativer Pfad).
 In der CSS Datei werden so genannte Selektoren verwendet, um Tags anzusprechen. Selektoren bestehen im
 einfachsten Fall aus einem Tag.
 
+
 Beispiel | Allgemein | Erläuterung
 --- | --- | ---
 ```p {color: red;}``` | ```Selektor {Eigenschaft: Wert;}``` | Die Farbe von Text innerhalb *aller* p-Tags wird auf rot gesetzt.
 
-Wird ein Tag als Selektor verwendet werden alle Tags dieser Sorte entsprechend formatiert. um einzelne oder eine Gruppe von Tags zu formatieren, erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
+Wird ein Tag als Selektor verwendet, werden alle Tags dieser Sorte entsprechend formatiert. Um einzelne oder eine Gruppe von Tags zu formatieren, erhalten die Tags im HTML Code Attribute. Dabei kommen zwei Attribute
 zum Einsatz:
 
 Attribut | Erläuterung | Beispiel
@@ -50,20 +54,18 @@ eget lectus quis blandit.</span></p>
 **Beispiel für eine CSS-Datei**
 
 ```
-p {
-  color: blue;
-  font-size: 18px;
+p {                         /* Gilt für alle p-Tags */
+  color: blue;              /* Textfarbe ist blau */
+  font-size: 18px;          /* Schriftgröße ist 18px */
 }
-p.important {
-  text-decoration: undeline
+p.important {               /*  Gilt nur für p Tags mit der Klasse important */
+  text-decoration: undeline /* Text wird unterstrichen */
 }
 ```
+Der Text innerhalb aller p Tags wird blau und mit der Schriftgröße 18px dargestellt. Text innerhalb von p Tags mit der Klasse ```.important``` wird zusätzlich unterstrichen.
 
-Der Text innerhalb aller p Tags wird blau und mit der Schriftgröße 18px dargestellt. text innerhalb von p Tags mit der Klasse ```.important``` wird zusätzlich unterstrichen.
 
-
-Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um ihre Eigenschaften mit
-CSS anzupassen. 
+Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um ihre Eigenschaften mit CSS anzupassen. 
 Tags werden direkt (z.B. ```p {color: red}```), Klassen mit einem Punkt vor dem Namen (```.content {color: red})```und IDs mit einer Raute vor dem Namen (```#main-title {color: red}```) selektiert.
 Selektoren können auch kombiniert und verschachtelt werden. Folgende Kombinationen sind möglich:
 
@@ -88,7 +90,18 @@ p.second, div | Alle p-Tags mit der Klasse second und alle div-Tags
 div p | Alle p-Tags innerhalb von div-Tags
 div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 
-> **Merke:** Elemente die mit der Maus überfahren werden können mit `:hover` nach einem Selektor ausgewählt werden. Für dir Formatierung von Links besonders sinnvoll. (Beispiel: `a:hover`). Besuchte Links sollten auch formatiert werden, mit `:visited`.
+> **Merke:** Elemente, die mit der Maus überfahren werden, können mit `:hover` nach einem Selektor ausgewählt werden. (Für die Formatierung von Links besonders sinnvoll. Beispiel: `a:hover`. Besuchte Links sollten auch formatiert werden, mit `a:visited`.)
+
+> Beispiel
+```
+a, a:visited {                /* besuchte und nichtbesuchte Links erhalten die gleiche Formatierung */
+  text-decoration: none;      /* die Links werden nicht unterstrichen */
+  color: steelblue;           /* erhalten aber zum Erkennen eine andere Farbe */
+}
+a:hover {
+  text-decoration: underline;
+}
+```
 
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
@@ -210,7 +223,7 @@ img {
 }
 ```
 
-## Verknüpfungen ##
+## Interne Verknüpfungen ##
 
 Um auf Elemente innerhalb einer Datei zu verweisen, z.B. um von einem Menü auf eine Überschriften zu verlinken, muss die Überschrift eine ID bekommen, die mit der Verknüpfung referenziert wird.
 
