@@ -9,13 +9,16 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
 <head> Bereich eines HTML Dokumentes mit folgender Definition eingebunden:
 
 ```html
-<head>
-  <link rel="stylesheet" type="text/css" href="css/style.css">
-  <!-- weitere Informationen -->
-</head>
-<bod>
-  <p>Hello World!</p>
-</body>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+  <head>
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- weitere Informationen -->
+  </head>
+  <body>
+      <p>Hello World!</p>
+  </body>
+</html>
 ```
 
 Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverzeichnisses (relativer Pfad).
@@ -54,12 +57,12 @@ eget lectus quis blandit.</span></p>
 **Beispiel für eine CSS-Datei**
 
 ```
-p {                         /* Gilt für alle p-Tags */
-  color: blue;              /* Textfarbe ist blau */
-  font-size: 18px;          /* Schriftgröße ist 18px */
+p {                           /* Gilt für alle p-Tags */
+  color: blue;                /* Textfarbe ist blau */
+  font-size: 18px;            /* Schriftgröße ist 18px */
 }
-p.important {               /*  Gilt nur für p Tags mit der Klasse important */
-  text-decoration: undeline /* Text wird unterstrichen */
+p.important {                 /*  Gilt nur für p Tags mit der Klasse important */
+  text-decoration: underline; /* Text wird unterstrichen */
 }
 ```
 Der Text innerhalb aller p Tags wird blau und mit der Schriftgröße 18px dargestellt. Text innerhalb von p Tags mit der Klasse ```.important``` wird zusätzlich unterstrichen.
