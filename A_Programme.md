@@ -15,7 +15,7 @@ Den Code kannst du der Datei [Einführung HTML](https://github.com/pheonton/webd
 Für die Bearbeitung von CSS, brauchen wir eine zweite Datei.
 
 5. Lege in deinem Projektordner einen neuen Ordner mit dem Namen *css* an.
-6. Öffne Visual Studio Code. Wähle im Menü *File -> New File* und speichere die (noch leere) Datei mit dem Namen style.css im soeben erstellt Ordner *css* ab. Wie die CSS Datei verknüpft wird, so dass die Änderungen dargestellt werden steht im ersten Abschnitt der Datei [Einführung CSS](https://github.com/pheonton/webdesign/blob/master/02_CSS.md#einf%C3%BChrung-css3)
+6. Öffne Visual Studio Code. Wähle im Menü *File -> New File* und speichere die (noch leere) Datei mit dem Namen style.css im soeben erstellt Ordner *css* ab. Wie die CSS Datei verknüpft wird, so dass die Änderungen dargestellt werden, steht im ersten Abschnitt der Datei [Einführung CSS](https://github.com/pheonton/webdesign/blob/master/02_CSS.md#einf%C3%BChrung-css3)
 
 
 Links ist die Datei index.html in Visual Studio Code zu sehen, rechts im Browser.
