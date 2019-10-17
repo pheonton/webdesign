@@ -14,10 +14,12 @@ Auf [lima-city.de](https://lima-city.de) findes du oben rechts den Link [Login](
 
 ### Dateienhochladen ###
 
-Wenn du eingeloggt bist, kannst du im linken Menü unter *FTP-Zugang* Dateien hochladen.
-Klickt dazu auf [FTP-Zugang](https://www.lima-city.de/usercp/ftp-accounts) und scrolle in der sich öffnenden Seite nach Unten. am Ende findest du den Link
+Wenn du eingeloggt bist, kannst du im linken Menü unter *Webspace -> FTP-Zugang* Dateien hochladen.
+Klicke dazu auf [FTP-Zugang](https://www.lima-city.de/usercp/ftp-accounts) und scrolle in der sich öffnenden Seite nach Unten. am Ende findest du den Link
 [Mit diesem Account im Filemanager einloggen](https://filemanager.lima-city.de). Wenn du darauf klickst öffnet sich eine Weboberfläche mit der du deine Datein verwalten kannst.
 
 Deine Webseite muss in den Ordner *benutzername.lima-city.de*, um angezeigt zu werden.
 
-Du kannst auch [Filezilla](https://filezilla-project.org/) oder ein anderes Programm verwenden, die benötigten Informationen findest du auch auf der Seite *FTP-Zugang*.
+Um Dateien hochzuladen öffne den Ordner *benutzername.lima-city.de* (durch klicken). Dort liegt schon eine Datei *default_index.html*, diese Datei kannst du löschen (links die Checkbox anklicken und rechts oben *Löschen* auswählen). Mit dem Button *Hochladen* kannst du Dateien in deinen Webspace hochladen. Ordner müssen manuel über den Button *Neuer Ordner* anlegen werden.
+
+Du kannst auch [Filezilla](https://filezilla-project.org/) oder ein anderes Programm verwenden, die benötigten Informationen findest du auch auf der Seite [FTP-Zugang](https://www.lima-city.de/usercp/ftp-accounts) bei lima-city.
