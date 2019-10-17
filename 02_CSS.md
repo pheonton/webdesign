@@ -39,7 +39,7 @@ Attribut | Erläuterung | Beispiel
 class | Klasse. Wird im Allgemeinen verwendet. | ```<div class="section">```
 id | ID. Für Elemente die ein einziges Mal verwendet werden. | ```<h1 id="main-title"```
 
-**Beispeil in HTML**
+**Beispiel für HTML Code**
 
 ```html
 <div class=“section“>
@@ -55,7 +55,7 @@ magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. 
 eget lectus quis blandit.</span></p>
 </div>
 ```
-**Beispiel für eine CSS-Datei**
+**Beispiel für CSS Code**
 
 ```
 p {                           /* Gilt für alle p-Tags */
