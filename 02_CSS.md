@@ -62,7 +62,7 @@ p {                           /* Gilt für alle p-Tags */
   color: blue;                /* Textfarbe ist blau */
   font-size: 18px;            /* Schriftgröße ist 18px */
 }
-p.important {                 /*  Gilt nur für p Tags mit der Klasse important */
+p.important {                 /* Gilt nur für p Tags mit der Klasse important */
   text-decoration: underline; /* Text wird unterstrichen */
 }
 ```
@@ -159,17 +159,16 @@ p, div { /* alle p- und div-tags */
 
 ## Farben ##
 
-Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergben die gleiche Farbe (Dunkelrot).
+Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergeben die gleiche Farbe (Dunkelrot).
 
-Visual Studio Code hat einen eingebauten [Farbwähler](https://code.visualstudio.com/docs/languages/html#_color-picker) 
+Visual Studio Code hat einen eingebauten [Farbwähler](https://code.visualstudio.com/docs/languages/html#_color-picker).
+
 [Farbcodes online generieren (mit Farbnamen)](https://www.quackit.com/css/css_color_codes.cfm)
 
 **Rot/Grün/Blau-Mischung**
 
-In einer Vorangegangenen Einheit wurden die 256 CSS3 Farbnamen vorgestellt, eine
-weitere Möglichkeit, Farben zu definieren besteht in der Funktion `rgb(Rot, Grün, Blau)`. Rot,
-Grün und Blau stehen dabei für ganze Zahlen im Bereich 0-255 (theoretisch können auch
-Prozentwerte verwendet werden).
+Farben lassen sich mit ihren Rot-, Grün- und Blauanteilen angeben. Dazu wird die Funktion `rgb(Rot, Grün, Blau)` eingesetzt. Für Rot, Grün und Blau werden Zahlen im Bereich 0-255 verwendet. Die Zahl steht für den Helligkeitswert der entsprechenden Farbe.
+
 Beispiel
 
 ```
@@ -181,12 +180,9 @@ Beispiel
 
 **Rot/Grün/Blau-Mischung mit Transparenz**
 
-CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadurch
-lassen sich zum Beispiel teiltransparente Hintergrundfarben definieren.
-Die allgemeine Schreibweise hierfür lautet `rgba(Rot, Grün, Blau, Deckkraft)`. Es gelten die
-selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als
-Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft,
-keine Transparenz) angegeben.
+CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadurch lassen sich zum Beispiel teiltransparente Hintergrundfarben definieren. Die allgemeine Schreibweise hierfür lautet `rgba(Rot, Grün, Blau, Deckkraft)`. Es gelten die
+selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft, keine Transparenz) angegeben.
+
 Beispiel
 ```
 div {
