@@ -1,4 +1,4 @@
-# webdesign
+# Web design
 
 ## Grundlegende Anleitungen
 1. [Programme verwenden](A_Programme.md#programme-verwenden)
