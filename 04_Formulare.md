@@ -3,7 +3,7 @@
 Um Benutzereingaben auf Webseiten zu verarbeiten, werden Formulare mit HTML erstellt, die anschließend vom Server verarbeitet werden (z.B. mit PHP). In diesem Abschnitt wird eine Einführung für das Erstellen vpn Fomrularen mit HTML gegeben.
 
 Formulare sind eigene Elemente in HTML und werden dementsprechend durch Tags erzeugt und können wie andere Elemente mit CSS formatiert werden.
-Ein Formular wird durch das <form> tag eingeleitet und am Ende mit </form> geschlossen. Das <form> tag benötigt 2
+Ein Formular wird durch das ```<form>``` tag eingeleitet und am Ende mit </form> geschlossen. Das <form> tag benötigt 2
 Attribute, ohne die das Formular nicht funktioniert.
 *action: Mit action wird die Zieldatei angegeben, an die die Daten des Formulars gesendet werden.
 *method: Mit method wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es
@@ -33,21 +33,23 @@ Jedes Formular benötigt das <form>-tag, sowie ein Input-Element mit type=“sub
 Beispiel
 ```html
 <form action="ziel.php" method="post">
-<!-- Textfelder haben kein value Attribut, da der Inhalt des Feldes übergeben wird.-->
-<input type="text" name="text1" />
-<br />
-<!-- gleicher Name für eine Gruppe von Radiobuttons oder Checkboxes -->
-<input type="radio" name="radio-buttons" value="first" checked="checked">First
-<input type="radio" name="radio-buttons" value="second">Second
-<br />
-<input type="checkbox" name="alien" value="Alien" checked="checked">Alien
-<input type="checkbox" name="air" value="Luftpost" >Luftpost
-<br />
-<select name="liste">
-<option value="o1" selected="selected">Option 1</option>
-<option value="o2">Option 2</option>
-<option value="o3">Option 3</option>
-</select>
-<input type="submit" value="Abschicken!" />
+  <!-- Textfelder haben kein value Attribut, da der Inhalt des Feldes übergeben wird.-->
+  <input type="text" name="text1" />
+  <input type="text" name="text2" />
+  <br />
+  <!-- gleiches name Attribute für eine Gruppe von Radio-buttons -->
+  <input type="radio" name="radio-buttons" value="first" checked="checked">First
+  <input type="radio" name="radio-buttons" value="second">Second
+  <br />
+  <!-- Check-boxen benötigen hingegen unterschiedliche name Attribute -->
+  <input type="checkbox" name="alien" value="Alien" checked="checked">Alien
+  <input type="checkbox" name="air" value="Luftpost" >Luftpost
+  <br />
+  <select name="liste">
+    <option value="o1" selected="selected">Option 1</option>
+    <option value="o2">Option 2</option>
+    <option value="o3">Option 3</option>
+  </select>
+  <input type="submit" value="Abschicken!" />
 </form>
-´´´
+```
