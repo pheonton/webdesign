@@ -3,21 +3,15 @@
 Um Benutzereingaben auf Webseiten zu verarbeiten, werden Formulare mit HTML erstellt, die anschließend vom Server verarbeitet werden (z.B. mit PHP). In diesem Abschnitt wird eine Einführung für das Erstellen vpn Fomrularen mit HTML gegeben.
 
 Formulare sind eigene Elemente in HTML und werden dementsprechend durch Tags erzeugt und können wie andere Elemente mit CSS formatiert werden.
-Ein Formular wird durch das ```<form>``` tag eingeleitet und am Ende mit </form> geschlossen. Das <form> tag benötigt 2
-Attribute, ohne die das Formular nicht funktioniert.
-*action: Mit action wird die Zieldatei angegeben, an die die Daten des Formulars gesendet werden.
-*method: Mit method wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es
-die Werte „get“ und „post“.
-◦ Get: ist die Standardmethode für die Übergabe von Werten. Die eingegebenen Werte werden in der URL
-sichtbar (→ nicht empfehlenswert bei Passwörtetern, etc.). Allerdings ist „get“ nützlich, wenn die
-index.php selbst verändert werden soll. Beispiel: http://www.google.de/search?q=formulare nach dem ?
-Stehen die übergebenen Werte.
-◦ Post: Mit „post“ werden die Werte nicht in der URL angezeigt (→ besser geeignet bei Passwörtern, etc.),
-ungeeignet für Verknüpfungen.
-Innerhalb des Formulars werden Eingabefelder erzeugt, die der Benutzer verwenden kann, um das Formular mit Daten
-zu füllen.
-Dafür verwendet man den <input /> tag, der nicht wieder geschlossen wird. Der input tag ermöglicht eine Fülle an
-Attributen, wobei nur ein paar wenige davon wirklich notwendig sind:
+Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` geschlossen. Das `<form>` tag benötigt 2 Attribute, ohne die die Verarbeitung des Formulars nicht funktioniert.
+* #action# Mit `action` wird die Zieldatei angegeben, an die die Daten des Formulars gesendet und dort weiterverarbeitet werden.
+* #method# Mit `method` wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es die Werte `get` und `post`.
+* #GET# `get` ist die Standardmethode für die Übergabe von Werten. Die übergebenen Werte werden sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt. Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem ?
+Stehen die übergebenen Werte durch ein `&` getrennt.
+* #Post# mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte.
+
+Für Eingabe- und Auswahlfelder des Formulars wird das `<input>` Tag verwendet. Dieser ermöglicht eine Fülle an
+Attributen für die unterschiedlichsten Formularfelder, wobei nur die häufigsten hier aufgeführt werden:
  type: ist eines der wichtigsten Attribute. Hier wird festgelegt, um was für eine Art Input es sich handelt:
 ◦ text (Texteingabe, eine Zeile)
 ◦ submit (Abschick-Button)
