@@ -20,9 +20,10 @@ Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art 
 * `type="radio"` Nur ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
 * `type="checkbox"` Eine Box zum ankreuzen.
 
-Um das Feld später zu verarbeiten, bekommt es das Attribut `name` mit einem eindeutigen aber selbsgewähltem Wert.
+Um das Feld später zu verarbeiten, bekommt es das Attribut `name` mit einem eindeutigen, aber selbsgewähltem Wert.
+> Merke: Radiobuttons gehören zu einer Auswahlgruppe, wenn das `name` Attribut den gleichen Wert hat. Alle anderen Felder erhalten jeweils einen Wert der nur einmal vorkommen darf.
 Der Inhalt wird mit dem Attribut `value` übergeben. Dabei kann der Wert von `value` beliebig gewählt werden.
-> Merke: Textfelder haben keine `value` Attribut da hier die Benutzereingabe übergeben wird.
+> Merke: Textfelder haben keine `value` Attribut, da hier die Benutzereingabe übergeben wird.
 
   
 Beispiel
