@@ -20,7 +20,7 @@ Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art 
 * `type="radio"` Nur ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
 * `type="checkbox"` Eine Box zum ankreuzen.
 
-[https://wiki.selfhtml.org/wiki/HTML/Formulare/input](Mehr Felder)
+[https://wiki.selfhtml.org/wiki/HTML/Formulare/input](Mehr zu Felder)
 
 Um das Feld später zu verarbeiten, bekommt es das Attribut `name` mit einem eindeutigen, aber selbsgewähltem Wert.
 
