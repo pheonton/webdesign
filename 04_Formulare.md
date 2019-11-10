@@ -14,10 +14,10 @@ Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` g
   * **post** Mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte. Diese Methode sollte für Formulare beforzugt werden.
 
 Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art des Felder wird durch das Attribute `type` festgelegt. Es gibt viele Werte für `type`, hier werden nur die essentiellen aufgelistet.
-* `type="text"` Texteingabe, eine Zeile
 * `type="submit"` Abschick-Button (Ohne diesen Butten funktionert nichts)
-* `type="select"` Liste mit vordefinierten Werten, die Auswahl erfolgt über ein Dropdownmenü.)
-* `type="radio"` Nur ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
+* `type="text"` Texteingabe in einer Zeile
+* `type="select"` Liste mit vordefinierten Werten, die Auswahl erfolgt über ein Dropdownmenü.
+* `type="radio"` Ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
 * `type="checkbox"` Eine Box zum ankreuzen.
 
 [Mehr zu Formularfeldern @ selfhtml](https://wiki.selfhtml.org/wiki/HTML/Formulare/input)
