@@ -9,8 +9,9 @@ Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` g
 ```
 * **action** Mit `action` wird die Zieldatei angegeben, an die die Daten des Formulars gesendet und dort weiterverarbeitet werden.
 * **method** Mit `method` wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es die Werte `get` und `post`.
-  * **get** `get` ist die Standardmethode für die Übergabe von Werten. Die übergebenen Werte werden sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt. Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem `?` Stehen die übergebenen Werte durch ein `&` getrennt.
-  * **post** mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte.
+  * **get** Mit `get` werden die übergebenen Werte sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt.
+  Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem `?` Stehen die übergebenen Werte durch ein `&` getrennt.
+  * **post** Mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte. Diese Methode sollte für Formulare beforzugt werden.
 
 Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art des Felder wird durch das Attribute `type` festgelegt. Es gibt viele Werte für `type`, hier werden nur die essentiellen aufgelistet.
 * `type="text"` Texteingabe, eine Zeile
