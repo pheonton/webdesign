@@ -9,8 +9,7 @@ Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` g
 ```
 * **action** Mit `action` wird die Zieldatei angegeben, an die die Daten des Formulars gesendet und dort weiterverarbeitet werden.
 * **method** Mit `method` wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es die Werte `get` und `post`.
-  * **get** `get` ist die Standardmethode für die Übergabe von Werten. Die übergebenen Werte werden sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt. Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem ?
-Stehen die übergebenen Werte durch ein `&` getrennt.
+  * **get** `get` ist die Standardmethode für die Übergabe von Werten. Die übergebenen Werte werden sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt. Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem `?` Stehen die übergebenen Werte durch ein `&` getrennt.
   * **post** mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte.
 
 Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art des Felder wird durch das Attribute `type` festgelegt. Es gibt viele Werte für `type`, hier werden nur die essentiellen aufgelistet.
@@ -20,7 +19,7 @@ Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art 
 * `type="radio"` Nur ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
 * `type="checkbox"` Eine Box zum ankreuzen.
 
-[Mehr zu Formularfeldern](https://wiki.selfhtml.org/wiki/HTML/Formulare/input)
+[Mehr zu Formularfeldern @ selfhtml](https://wiki.selfhtml.org/wiki/HTML/Formulare/input)
 
 Um das Feld später zu verarbeiten, bekommt es das Attribut `name` mit einem eindeutigen, aber selbsgewähltem Wert.
 
@@ -30,7 +29,7 @@ Der Inhalt wird mit dem Attribut `value` übergeben. Dabei kann der Wert von `va
 
 > Merke: Textfelder haben keine `value` Attribut, da hier die Benutzereingabe übergeben wird.
 
-Inherhalb des `<form>` Tags können Texte un belibige andere HTML Tags verwendet werden.
+Inherhalb des `<form>` Tags können Texte und beliebige andere HTML Tags verwendet werden.
 
 Beispiel
 ```html
