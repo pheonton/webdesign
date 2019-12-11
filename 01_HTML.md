@@ -1,5 +1,3 @@
-[Übersicht](README.md#web-design)
-
 **Einführung HTML**
 ===
 
