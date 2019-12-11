@@ -92,17 +92,22 @@ eget lectus quis blandit.</p>
   <li>Curabitur</li>
 </ul>
 ```
-### Bilder
+### Bilder & Verknüpfungen
+
+**Bilder**
 
 ```html
 <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
 ```
-###Verknüpfungen
+
+**Verknüpfungen**
+
+(Link, Hyperlink)
 ```html
 <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
 ```
 Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangeabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relative zur verknüpfenden Datei.
-Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine absolute Verknüpfung)
+Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine apsolute Verknüpfung)
 
 
 ### Tags für die Formatierung mit CSS
