@@ -1,9 +1,9 @@
-**Einführung HTML**
-===
+#Einführung HTML#
+
 
 > **Merke:** Der Code wird mit dem Editor geschrieben und im Browser betrachtet. Anleitung dazu befindet sich [hier](A_Programme.md).
 
-**Basis Aufbau eines HTML Dokumentes**
+###Basis Aufbau eines HTML Dokumentes###
 
 ```html
 <!DOCTYPE html>
@@ -32,7 +32,7 @@
 
 > **Merke:** HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
 
-**Textstrukturierung**
+###Textstrukturierung
 
 | Element | Erläuterung |
 | --- | --- |
@@ -53,7 +53,7 @@
 eget lectus quis blandit.</p>
 ```
 
-**Tabellen**
+###Tabellen**
 
 | Element | Erläuterung |
 | --- | --- |
@@ -75,7 +75,7 @@ eget lectus quis blandit.</p>
   </tr>
 </table>
 ```
-**Listen**
+###Listen**
 
 | Element | Erläuterung |
 | --- | --- |
@@ -92,11 +92,11 @@ eget lectus quis blandit.</p>
   <li>Curabitur</li>
 </ul>
 ```
-**Bilder**
+###Bilder
 ```html
 <img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
 ```
-**Verknüpfungen**
+###Verknüpfungen
 ```html
 <a href="http://www.lmg-remseck.de/">Lise-Meitner-Gymnasium</a>
 ```
@@ -104,9 +104,11 @@ Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangeabe](
 Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine absolute Verknüpfung)
 
 
-**Für die Formatierung mit CSS werden zwei Elemente benötigt**
+###Tags für die Formatierung mit CSS
+
+Für die Formatierung werden zwei weitere Elemente benötigt, die nur in Zusammenhang mit CSS Bedeutung haben
 
 | Element | Erläuterung |
 | --- | --- |
-```<div></div>``` | Block Element für die Formatierung des Layouts
-```<span></span>``` | Inline Element zur Textformatierung
+```<div></div>``` | **Block Element** insbesondere für die Formatierung des **Layouts** verwendet
+```<span></span>``` | **Inline Element** insbesondere für die Fomratierung von **Text** verwendet
