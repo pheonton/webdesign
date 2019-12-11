@@ -2,6 +2,8 @@
 
 Um Benutzereingaben auf Webseiten zu verarbeiten, werden Formulare mit HTML erstellt, die anschließend vom Server verarbeitet werden (z.B. mit PHP). In diesem Abschnitt wird eine Einführung für das Erstellen vpn Fomrularen mit HTML gegeben.
 
+## Basisaufbau
+
 Formulare sind eigene Elemente in HTML und werden dementsprechend durch Tags erzeugt und können wie andere Elemente mit CSS formatiert werden.
 Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` geschlossen. Das `<form>` tag benötigt 2 Attribute, ohne die die Verarbeitung des Formulars nicht funktioniert.
 ```html
@@ -12,6 +14,8 @@ Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` g
   * **get** Mit `get` werden die übergebenen Werte sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt.
   Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem `?` Stehen die übergebenen Werte durch ein `&` getrennt.
   * **post** Mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte. Diese Methode sollte für Formulare beforzugt werden.
+
+## Eingabefelder
 
 Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art des Felder wird durch das Attribute `type` festgelegt. Es gibt viele Werte für `type`, hier werden nur die essentiellen aufgelistet.
 * `type="submit"` Abschick-Button (Ohne diesen Butten funktionert nichts)
@@ -32,7 +36,8 @@ Der Inhalt wird mit dem Attribut `value` übergeben. Dabei kann der Wert von `va
 
 Inherhalb des `<form>` Tags können Texte und beliebige andere HTML Tags verwendet werden.
 
-Beispiel
+## Beispiel
+
 ```html
 <form action="ziel.php" method="post">
   <!-- Textfelder haben kein value Attribut, da der Inhalt des Feldes übergeben wird.-->
