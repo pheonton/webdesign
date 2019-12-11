@@ -87,7 +87,7 @@ html, body {
 }
 
 div.background {
-  background-image: url("images/img_background.jpg"); /* Der relative Link zur Datei */
+  background-image: url("../img/img_background.jpg"); /* Der relative Link zur Datei */
 
   height: 100%;   /* Wichtig! */
   
@@ -96,6 +96,8 @@ div.background {
   background-size: cover; /* Maximal vergrößertes Bild ohne das Seitenverhältnis zu verändern */
 }
 ```
+> **Achtung:** `background-img` benötigt eine Pfadangabe zum Bild **relativ** zur CSS-Datei. D.h. wenn dei CSS-Datei im Ordner `css` liegt, kommt man mit `../` in den übergeordneten Ordner, um von da zur Bilddatei zu gelangen.
+
 ## Hilfe bei Problemen ##
 
 Layout mit CSS kann auserordentlich frustrierend sein. Ein essentielles Tool um sich schnellen Überblick zur Problemlösung zu verschaffen, ist die Möglichkeit von Firefox, sich mit einem Rechtsklick auf ein Element und der Funktion **Inspect Element** margins (lila) und paddings (gelb) anzeigen zulassen. Ausserdem werden die angewendeten CSS Eigenschaften, sowie viele andere nützliche (und weniger nützliche) Funktionen, angezeigt.
