@@ -1,4 +1,4 @@
-<a href="README.md#web-design">Übersicht</a>
+[Übersicht](README.md#web-design)
 
 **Einführung HTML**
 ===
