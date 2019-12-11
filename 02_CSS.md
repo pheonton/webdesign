@@ -1,12 +1,11 @@
 # Einführung CSS3 #
 
-
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
 zueinander wie in einer Familie bezeichnet wird. Parent und Child bezeichnet dabei direkt über bzw.
 untergeordnete Tags. Siblings sind Tags mit dem selben parent Tag und mit Ancestors werden alle
 übergeordneten Tags bezeichnet.
 Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe CSS Datei wird im
-<head> Bereich eines HTML Dokumentes mit folgender Definition eingebunden:
+`<head>` Bereich eines HTML Dokumentes mit folgender Definition eingebunden:
 
 ```html
 <!DOCTYPE html>
@@ -68,6 +67,7 @@ p.important {                 /* Gilt nur für p Tags mit der Klasse important *
 ```
 Der Text innerhalb aller p Tags wird blau und mit der Schriftgröße 18px dargestellt. Text innerhalb von p Tags mit der Klasse ```.important``` wird zusätzlich unterstrichen.
 
+## Selektoren
 
 Mit Selektoren können Elemente eines HTML-Dokumentes ausgewählt werden um ihre Eigenschaften mit CSS anzupassen. 
 Tags werden direkt (z.B. ```p {color: red}```), Klassen mit einem Punkt vor dem Namen (```.content {color: red})```und IDs mit einer Raute vor dem Namen (```#main-title {color: red}```) selektiert.
@@ -110,7 +110,7 @@ a:hover {
 [Noch mehr Selektoren](http://wiki.selfhtml.org/wiki/Referenz:CSS/Selektoren)
 
 
-## Formatieren mit CSS ##
+## Formatieren mit CSS
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
@@ -157,7 +157,7 @@ p, div { /* alle p- und div-tags */
 }
 ```
 
-## Farben ##
+## Farben
 
 Farben können mit Namen, Hexadezimalcode oder mit rgb-Werten angegeben werden. Die Angabe `darkred`, `#8B0000` und `rgb(139,0,0)` ergeben die gleiche Farbe (Dunkelrot).
 
@@ -192,7 +192,7 @@ div {
 
 [Noch mehr zu Farben](https://wiki.selfhtml.org/wiki/Grafik/Farben)
 
-## Schriftarten ##
+## Schriftarten
 
 Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
 
@@ -200,7 +200,7 @@ Für ausgesuchte Schriftarten bietet sich die Verwendung von [Google Fonts](http
 
 [Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
 
-## Bilder ##
+## Bilder
 
 Bilder können mit den Eigenschaften `width` und `height` angepasst werden. Eine der beiden Eigenschaften sollte den Wert `auto` bekommen, da sonst das Seitenverhältnis verändert wird.
 
@@ -223,7 +223,7 @@ img {
 }
 ```
 
-## Interne Verknüpfungen ##
+## Interne Verknüpfungen
 
 Um auf Elemente innerhalb einer Datei zu verweisen, z.B. um von einem Menü auf eine Überschriften zu verlinken, muss die Überschrift eine ID bekommen, die mit der Verknüpfung referenziert wird.
 
