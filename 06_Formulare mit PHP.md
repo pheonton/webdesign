@@ -2,8 +2,8 @@
 
 # HTML Formulare mit PHP verarbeiten
 
-Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Dafür wird eine PHP-Seite erstellt (,
-deren Name bereits mit dem Attribut action im HTML-form-Element angegeben wurde. Um den Inhalt in PHP besser
+Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Dafür wird eine PHP-Seite erstellt (ziel.php),
+deren Dateiname bereits mit dem Attribut `action="ziel.php"` im HTML-form-Element angegeben wurde. Um den Inhalt in PHP bessern
 nutzen zu können, sollte diese Eingabe am besten in einer eigenen Variable gespeichert werden. Dazu wird folgende
 notation verwendet:
 `$eingabe = $_POST['text1'];`
@@ -24,13 +24,13 @@ $check = $_POST['human'];
 var_dump($variable). z.B. var_dump($_POST) */
 var_dump($check);
 if ($eingabe != '') {
-print $eingabe;
+  print $eingabe;
 }
 else {
-print 'Es wurde kein Wert übergeben!';
+  print 'Es wurde kein Wert übergeben!';
 }
 if ($radios == 'first') {
-print 'First!';
+  print 'First!';
 }
 ?>
 ```
