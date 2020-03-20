@@ -7,7 +7,8 @@ deren Dateiname bereits mit dem Attribut `action="ziel.php"` im HTML-form-Elemen
 nutzen zu können, sollte die Werte am besten in einer eigenen Variable gespeichert werden. Dazu wird folgende
 notation verwendet:
 ```php
-$eingabe = $_POST['text1']; /*Die Variable $eingabe erhält hier den Wert des Formfeldes mit dem Namen text1*/
+/*Die Variable $eingabe erhält hier den Wert des Formfeldes mit dem Namen text1*/
+$eingabe = $_POST['text1'];
 ``` 
 In diesem Beispiel würde nun der Wert des Formfeldes aus dem vorherigen Beispiel ausgelesen und in `$eingabe`
 abgespeichert. Würde man statt `post`, `get` verwenden, schriebe man entsprechend: `$eingabe = $_GET['text1'];`.
