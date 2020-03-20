@@ -6,7 +6,9 @@ Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Da
 deren Dateiname bereits mit dem Attribut `action="ziel.php"` im HTML-form-Element angegeben wurde. Alle Forminhalte sind in dem Array (dazu später mehr) `$_POST` verfügbar. Die Werte `values` können mit dem Namensattribut `name`der Input Tags ausgelesen werden `php $_PHP['name'] = 'value';`. Um den Inhalt in PHP bessern
 nutzen zu können, sollte die Werte am besten in einer eigenen Variable gespeichert werden. Dazu wird folgende
 notation verwendet:
-```php $eingabe = $_POST['text1']; /*§eingabe erhält hier den Wert des Eingabe feldes mit dem Namen text1*/``` 
+```php
+$eingabe = $_POST['text1']; /*§eingabe erhält hier den Wert des Eingabe feldes mit dem Namen text1*/
+``` 
 In diesem Beispiel würde nun der Wert des Formfeldes aus dem vorherigen Beispiel ausgelesen und in `$eingabe`
 abgespeichert. Würde man statt `post`, `get` verwenden, schriebe man entsprechend: `$eingabe = $_GET['text1'];`.
 Nun ist der Inhalt des Formfeldes in der Variablen gespeichert und kann entsprechend weiter verarbeitet werden.
