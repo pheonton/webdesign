@@ -2,19 +2,15 @@
 
 # HTML Formulare mit PHP verarbeiten
 
-Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Dafür wird eine PHP-Seite erstellt (ziel.php),
-deren Dateiname bereits mit dem Attribut `action="ziel.php"` im HTML-form-Element angegeben wurde. Um den Inhalt in PHP bessern
-nutzen zu können, sollte diese Eingabe am besten in einer eigenen Variable gespeichert werden. Dazu wird folgende
+Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Das geschieht mit einer PHP-Seite (ziel.php),
+deren Dateiname bereits mit dem Attribut `action="ziel.php"` im HTML-form-Element angegeben wurde. Alle Forminhalte sind in dem Array (dazu später mehr) `$_POST` verfügbar. Die Werte `values` können mit dem Namensattribut `name`der Input Tags ausgelesen werden `php $_PHP['name'] = 'value';`. Um den Inhalt in PHP bessern
+nutzen zu können, sollte die Werte am besten in einer eigenen Variable gespeichert werden. Dazu wird folgende
 notation verwendet:
-`$eingabe = $_POST['text1'];`
-In diesem Beispiel würde nun das Input-Element aus dem vorherigen Beispiel ausgelesen und in $eingabe
-abgespeichert werden. Würde man statt post, get verwenden, schriebe man entsprechend:
-`$eingabe = $_GET['text1'];`
-Dieser Befehl setzt sich aus dem Variablennamen mit vorangestelltem $ Zeichen,
-$_, der Methode, einer eckigen Klammer, dem Name des Elements in '' sowie einer schließenden Klammer zusammen:
-`$variablenname = $_method['name'];`
-Nun ist der Inhalt in der Variablen gespeichert und kann entsprechend weiter verarbeitet werden.
-Beispiel ziel.php:
+```php $eingabe = $_POST['text1']; /*§eingabe erhält hier den Wert des Eingabe feldes mit dem Namen text1*/``` 
+In diesem Beispiel würde nun der Wert des Formfeldes aus dem vorherigen Beispiel ausgelesen und in `$eingabe`
+abgespeichert. Würde man statt `post`, `get` verwenden, schriebe man entsprechend: `$eingabe = $_GET['text1'];`.
+Nun ist der Inhalt des Formfeldes in der Variablen gespeichert und kann entsprechend weiter verarbeitet werden.
+Beispiel `ziel.php`:
 ```php
 <?php
 $eingabe = $_POST['text1'];
