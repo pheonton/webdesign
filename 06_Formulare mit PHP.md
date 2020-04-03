@@ -10,7 +10,7 @@ Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Da
 $eingabe = $_POST['text1'];
 ?>
 ``` 
-Die dazugehöreige Zeile in der HTMl-Datei
+Die dazugehöreige Zeile in der HTML-Datei
 ```html
 <input type="text" name="text1" />
 ```
@@ -36,3 +36,4 @@ if ($radios == 'first') {
 }
 ?>
 ```
+>Merke: Textfelder `type=text` haben kein `value` Attribut, hier wird der im Formular eingegebene Text in an das PHP Skript übergeben.
