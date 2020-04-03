@@ -13,7 +13,7 @@
 
 ## Web development
 5. [Einführung PHP](05_PHP.md)
-6. [Formulare mit PHP verarbeiten](06_Formulare%20mit%20PHP.md)
+6. [Formulare mit PHP verarbeiten](06_Formulare%20mit%20PHP.md#html-formulare-mit-php-verarbeiten)
 7. [Einführung Arrays](07_Arrays.md)
 8. [Einführung Funktionen](08_Funktionen.md)
 9. [Einführung simpleXML](09_simpleXML.md#einf%C3%BChrung-in-die-verarbeitung-von-xml-mit-php)
