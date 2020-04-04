@@ -16,8 +16,10 @@ body {
 .page-header div {
     max-width: 64rem;
     padding-left: 6rem;
+  margin: 0 auto;
 }
 .page-header a, .page-header a:visited{
+  
  color:#F9F2E7;
  text-decoration: none;
 }
@@ -27,6 +29,11 @@ body {
 .page-header h1 {
   margin: 0;
   display: inline;
+}
+.project-name {
+
+    font-size: 1.5rem;
+
 }
 .page-header .btn {
   dispaly: inline;
@@ -40,4 +47,5 @@ body {
 .main-content table th, .main-content table td {
     border: none;
     border-bottom: 1px solid #606c71;
+    text-align: left;
 }
