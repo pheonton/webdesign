@@ -3,16 +3,23 @@
 
 @import "{{ site.theme }}";
 body {
-  background: #E0E4CC;
+  background: #F9F2E7;
 }
-.wrapper {
-  width: 960px;
-  background: #E0E4CC;
-  box-shadow: none;
+.page-header {
+  background-color: #00A8C6;
+  padding: 0;
 }
-header {
-  background-color: #A7DBD8;
+.page-header h2 {
+  display: none;
 }
-header p {
-  width: 100%;
+.page-header h1 {
+  margin: 0;
+  display: inline;
 }
+.page-header .btn {
+  dispaly: inline;
+}
+.main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
+  color: #8FBE00;
+}
+  
