@@ -351,13 +351,14 @@ template {
 /* EDIT */
 /* https://www.colourlovers.com/palette/634148/Thumbelina */
 body {
-  background: #F4EBC3;
+  background: #fdf6e3;
+  color: #839496;
 }
 a, a:visited {
-  color: #AB526B;
+  color: #268bd2;
 }
 a:hover {
-  color: #BCA297;
+  color: #2aa198;
 }
 
 img {
@@ -392,3 +393,10 @@ nav {
   float: none;
   }
 }
+
+/* Code */
+code {
+  background-color: #002b36;
+}
+.nt {color: #268bd2;}
+  
