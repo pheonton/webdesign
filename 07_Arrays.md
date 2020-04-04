@@ -45,7 +45,7 @@ unset($field1['key1']);
 ```
 Hier wird der Wert mit dem Key `key1` und der Key selbst gelöscht, d.h. das Array hat nun einen Eintrag weniger.
 
-### for-Schleife für Arrays
+### foreach
 Um alle Werte in einem Array programmatisch zu verarbeiten, kann die Schleife `foreach` verwendet werden. Wie der Name vermuten lässt, werden dabei alle Einträge eines Arrays nacheinander abgearbeitet. (Bei einer `for`-Schleife müsste die Anzahl der Einträge bekannt sein.) [foreach](http://php.net/manual/de/control-structures.foreach.php)
 Die folgende Syntax gibt alle Werte aus dem Array `$field1` aus:
 ```php
