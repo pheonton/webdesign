@@ -5,10 +5,16 @@
 body {
   background: #F9F2E7;
 }
+.skip-top-content {
+  display:none;
+}
 .page-header {
   background-color: #00A8C6;
   background-image: none;
   padding: 0;
+}
+.page-header a, .page-header a:visited{
+ color:#F9F2E7;
 }
 .page-header h2 {
   display: none;
