@@ -352,15 +352,16 @@ template {
 /* https://www.colourlovers.com/palette/634148/Thumbelina */
 body {
   background: #fdf6e3;
-  color: #839496;
+  color: #657b83;
 }
 a, a:visited {
   color: #268bd2;
+  text-decoration: none;
 }
 a:hover {
   color: #2aa198;
+  text-decoration: underline;
 }
-
 img {
   max-width: 100%;
   height: auto;
@@ -399,6 +400,9 @@ nav {
   background-color: #002b36;
   border-radius: 2px;
   padding: 2px;
+  white-space: pre-wrap;
 }
-.nt {color: #2aa198;}
-  
+.nt {color: #dc322f;}
+.c {color: #586e75;}
+.na {color: #6c71c4;}
+.s {color: #cb4b16;}
