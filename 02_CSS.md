@@ -116,7 +116,7 @@ a:hover {
 
 Eigenschaft | mögliche Werte | Erläuterungen
 --- | --- | ---
-font-face | sans-serif\|serif | [Es können auch spezielle Schriftarten verwendet werden](#schriftarten)
+font-family | sans-serif\|serif | [Es können auch spezielle Schriftarten verwendet werden](#schriftarten)
 font-weight | normal\|bold | 
 font-size | 12px |
 color | [Farben](#farben) |
