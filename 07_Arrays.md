@@ -59,3 +59,21 @@ foreach ($feld1 as $key => $f) {
 	print $key . ', ' . $value . ',<br />';#Hier wurde der String etwas erweitert.
 }
 ```
+
+## Merhstufige Arrays
+Arrays können auch Arrays enthalten
+```php
+$feld1 = array(
+	'item1' => array(
+ 		'key1' => 'value1',
+ 		'key2' => 'value2',
+ 	),
+ 	'item2' => array(
+ 		'key1' => 'value3',
+ 		'key2' => 'value4',
+ 	),
+);
+print $feld['item1'][ 'key1']; #ergibt value1
+print $feld['item2'][ 'key2']; #ergibt value4
+```
+Beim ansprechen der Werte (ausgeben, einfügen und löschen), müssen alle Keys in absteigender Reihenfolge bis zum gewünschten Wert in eckigegen Klammern angegeben werden.
