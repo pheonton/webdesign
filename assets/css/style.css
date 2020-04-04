@@ -385,6 +385,13 @@ nav a {
   text-decoration: none;
   padding: 10px;
 }
+table {
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #657b83;
+}
 
 @media (max-width: 1024px) {
   div.wrapper {
@@ -400,9 +407,11 @@ nav {
   background-color: #002b36;
   border-radius: 2px;
   padding: 2px;
-  white-space: pre-wrap;
 }
-.nt {color: #dc322f;}
+code {
+    white-space: pre-wrap;
+}
+.nt {color: #268bd2;}
 .c {color: #586e75;}
 .na {color: #6c71c4;}
-.s {color: #cb4b16;}
+.s {color: #859900;}
