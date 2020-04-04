@@ -74,7 +74,7 @@ foreach ($feld1 as $key => $f) {
 }
 ```
 
-## Merhstufige Arrays
+## Mehrstufige Arrays
 Arrays können auch Arrays enthalten. Anstatt einem String oder einer Zahl kann ein Wert auch wieder ein Array sein.
 ```php
 $feld1 = array(
