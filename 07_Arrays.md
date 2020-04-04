@@ -8,6 +8,20 @@ Bis jetzt wurde in einer Variablen nur genau ein Wert gespeichert, z.B. ein Zahl
 ```php
 $feld1 = array ('key1' => 'value1', 'key2' => 'value2' );
 ```
+für eine bessere Übersicht wird auch folgende Syntax verwendet:
+```php
+$feld1 = array(
+	'key1' => 'value1',
+	'key2' => 'value2',
+);
+```
+Beispiel
+```php
+$buch = array(
+	'titel' = 'Don Quijote',
+	'autor' = 'Miguel de Cervantes'
+);
+```
 Werden die Keys nicht mit explizit angegeben, werden numerische Keys von 0 aufsteigend für jeden Wert erzeugt.
 ```php
 $feld2 = array ('value_a', 'value_b' );
@@ -61,7 +75,7 @@ foreach ($feld1 as $key => $f) {
 ```
 
 ## Merhstufige Arrays
-Arrays können auch Arrays enthalten
+Arrays können auch Arrays enthalten. Anstatt einem String oder einer Zahl kann ein Wert auch wieder ein Array sein.
 ```php
 $feld1 = array(
 	'item1' => array(
