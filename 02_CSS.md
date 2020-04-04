@@ -227,11 +227,12 @@ img {
 
 ## Interne Verknüpfungen
 
-Um auf Elemente innerhalb einer Datei zu verweisen, z.B. um von einem Menü auf eine Überschriften zu verlinken, muss die Überschrift eine ID bekommen, die mit der Verknüpfung referenziert wird.
+Um auf Elemente innerhalb einer Datei zu verweisen, z.B. um von einem Menü auf eine Überschriften zu verlinken, muss die Überschrift ein Attribut ID `id="link"` bekommen, die mit der Verknüpfung referenziert wird mit dem bekannten Attribut REF `ref="#link"` (Der Wert der ID mit einem vorangestellten #).
 
 Beispiel
 ```html
 <a href="#title">Title</a>
+
 
 <h2 id="title">Title</h2>
 ```
