@@ -62,3 +62,4 @@ Inherhalb des `<form>` Tags können Texte und beliebige andere HTML Tags verwend
   <input type="submit" value="Abschicken!" />
 </form>
 ```
+>Merke: Alle `name` Attribute müssen sich unterscheiden, nur Radio-Buttons die zu einer Gruppe gehören erhalten das gleiche `name`-Attribut.
