@@ -16,4 +16,3 @@
 6. [Formulare mit PHP verarbeiten](06_Formulare_PHP.md#html-formulare-mit-php-verarbeiten)
 7. [Einführung Arrays](07_Arrays.md)
 8. [Einführung simpleXML](08_simpleXML.md#einf%C3%BChrung-in-die-verarbeitung-von-xml-mit-php)
-9. [Einführung Funktionen](09_Funktionen.md)
