@@ -58,7 +58,7 @@ eget lectus quis blandit.</span></p>
 ```
 **Beispiel für CSS Code**
 
-```
+```css
 p {                           /* Gilt für alle p-Tags */
   color: blue;                /* Textfarbe ist blau */
   font-size: 18px;            /* Schriftgröße ist 18px */
@@ -126,8 +126,8 @@ border | 1px solid\|dashed red | breite des Rahmens, Art und [Farbe](#farben)
 background | [Farben](#farben) | Farbe des Hintergundes anpassen ([weitere Eigenschaften](https://wiki.selfhtml.org/wiki/CSS/Eigenschaften/Hintergrundfarben_und_-bilder/background))
 padding (Innenabstand) | 1px 1px 1px 1px | oben rechts unten links
 margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
-width | 300px|50%|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
-height | 300px|50%|auto
+width | 300px\|50%\|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
+height | 300px\|50%\|auto |
 
 > **Merke:** | steht für "Oder"
 
@@ -173,7 +173,7 @@ Farben lassen sich mit ihren Rot-, Grün- und Blauanteilen angeben. Dazu wird di
 
 Beispiel
 
-```
+```css
 .special {
   color: rgb(0,128,0); /* Farbe „green“ */
   background-color: rgb(255,127,80); /* Farbe „coral“ */
@@ -186,7 +186,7 @@ CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadur
 selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft, keine Transparenz) angegeben.
 
 Beispiel
-```
+```html
 div {
   background-color: rgba(95,158,160,0.8); /* Farbe „cadetblue“ mit 80% Deckkraft */
 }
@@ -215,7 +215,7 @@ Beispiel
   <img src="img/img_02.jpg" alt="img 02">
 </div>
 ```
-```
+```css
 div {
   font-size: 0;
 }
