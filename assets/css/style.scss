@@ -17,22 +17,25 @@ a#skip-top-content {
     max-width: 64rem;
     padding: 0 6rem;
   margin: 0 auto;
-}
-@media screen and (max-width: 42em) {
-.page-header div  {
-  padding:0 1rem;
- }
+  text-align: left;
 }
 @media screen and (max-width: 64em) {
 .page-header div  {
   padding:0 4rem;
  }
 }
+@media screen and (max-width: 42em) {
+.page-header div  {
+  padding:0 1rem;
+ }
+}
+
 .page-header a, .page-header a:visited{
   
  color:#F9F2E7;
  text-decoration: none;
 }
+
 .page-header h2 {
   display: none;
 }
@@ -52,10 +55,19 @@ a#skip-top-content {
   color: #8FBE00;
 }
 .main-content h1, .main-content h2 {
-  border-bottom: 1px solid #606c71;
+  border-bottom: 1px solid #C9CDD0;
 }
 .main-content table th, .main-content table td {
     border: none;
     border-bottom: 1px solid #606c71;
     text-align: left;
+}
+a, a:visited {
+  color: #00A8C6;
+}
+a:hover {
+  color: #40C0CB;
+}
+.main-content blockquote {
+    border-left: 0.3rem solid #8FBE00; //AEE239
 }
