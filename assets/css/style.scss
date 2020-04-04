@@ -6,12 +6,16 @@ body {
   background: #F9F2E7;
 }
 #skip-top-content {
-  display:none;
+  display: none;
 }
 .page-header {
   background-color: #00A8C6;
   background-image: none;
   padding: 0;
+}
+.page-header div {
+    max-width: 64rem;
+    padding-left: 6rem;
 }
 .page-header a, .page-header a:visited{
  color:#F9F2E7;
@@ -33,7 +37,7 @@ body {
 .main-content h1, .main-content h2 {
   border-bottom: 1px solid #606c71;
 }
-main-content table th, .main-content table td {
+.main-content table th, .main-content table td {
     border: none;
     border-bottom: 1px solid #606c71;
 }
