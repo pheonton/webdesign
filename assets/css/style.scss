@@ -7,9 +7,12 @@ body {
 }
 .wrapper {
   width: 960px;
+  background: #E0E4CC;
+  box-shadow: none;
 }
-header, section, footer {
-  float: none;
-  position: relative;
+header {
+  background-color: #A7DBD8;
+}
+header p {
   width: 100%;
 }
