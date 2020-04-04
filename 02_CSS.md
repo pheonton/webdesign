@@ -99,7 +99,7 @@ div.#main img | Alle img-Tags innerhalb von div-Tags mit der ID main
 > **Merke:** Elemente, die mit der Maus überfahren werden, können mit `:hover` nach einem Selektor ausgewählt werden. (Für die Formatierung von Links besonders sinnvoll. Beispiel: `a:hover`. Besuchte Links sollten auch formatiert werden, mit `a:visited`.)
 
 Beispiel
-```
+```css
 a, a:visited {                /* besuchte und nichtbesuchte Links erhalten die gleiche Formatierung */
   text-decoration: none;      /* die Links werden nicht unterstrichen */
   color: steelblue;           /* erhalten aber zum Erkennen eine andere Farbe */
@@ -131,7 +131,7 @@ height | 300px\|50%\|auto |
 
 > **Merke:** | steht für "Oder"
 
-```
+```css
 body {
   font-family: sans-serif; /* Schrift ohne Serifen */
   font-size: 12px;
@@ -186,7 +186,7 @@ CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadur
 selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft, keine Transparenz) angegeben.
 
 Beispiel
-```html
+```css
 div {
   background-color: rgba(95,158,160,0.8); /* Farbe „cadetblue“ mit 80% Deckkraft */
 }
