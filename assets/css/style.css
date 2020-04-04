@@ -356,5 +356,19 @@ img {
 }
 
 div.wrapper {
+  padding: 20px;
   width: 960px;
+  margin: auto;
+}
+nav {
+  float: right;
+}
+
+@media (max-width: 1024px) {
+  div.wrapper {
+    width: 100%;
+  }
+nav {
+  float: none;
+  }
 }
