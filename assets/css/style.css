@@ -353,6 +353,7 @@ template {
 img {
   max-width: 100%;
   height: auto;
+  margin: 20px 0;
 }
 
 div.wrapper {
@@ -362,6 +363,11 @@ div.wrapper {
 }
 nav {
   float: right;
+}
+nav ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 @media (max-width: 1024px) {
