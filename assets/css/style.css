@@ -347,3 +347,8 @@ template {
 [hidden] {
   display: none;
 }
+/* EDIT */
+img {
+  max-width: 100%;
+  height: auto;
+}
