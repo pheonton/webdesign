@@ -5,7 +5,7 @@
 body {
   background: #F9F2E7;
 }
-.skip-top-content {
+#skip-top-content {
   display:none;
 }
 .page-header {
@@ -15,6 +15,7 @@ body {
 }
 .page-header a, .page-header a:visited{
  color:#F9F2E7;
+ text-decoration: none;
 }
 .page-header h2 {
   display: none;
@@ -29,4 +30,10 @@ body {
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
 }
-  
+.main-content h1, .main-content h2 {
+  border-bottom: 1px solid #606c71;
+}
+main-content table th, .main-content table td {
+    border: none;
+    border-bottom: 1px solid #606c71;
+}
