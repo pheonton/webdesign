@@ -5,3 +5,10 @@
 body {
   background: #E0E4CC;
 }
+.wrapper {
+  width: 960px;
+}
+header, section, footer {
+  float: none;
+  position: relative;
+}
