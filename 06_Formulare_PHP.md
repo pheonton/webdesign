@@ -10,7 +10,7 @@ Nachdem das Formular erstellt wurde, müssen die Eingaben ausgewertet werden. Da
 $eingabe = $_POST['text1'];
 ?>
 ``` 
-Die dazugehöreige Zeile in der HTML-Datei
+Hier ist die dazugehöreige Zeile in der HTML-Datei:
 ```html
 <input type="text" name="text1" />
 ```
