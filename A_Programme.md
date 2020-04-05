@@ -1,5 +1,5 @@
 ---
-tags: study preperation
+tags: study, preperation
 ---
 
 # Programme verwenden
