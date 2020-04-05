@@ -36,8 +36,8 @@
           <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
         </ul>
         <ul>
-          {% for page in site.categories.study %}
-            {% if page.title %}
+          {% for page in site.pages %}
+            {% if pages.tags contains study %}
               <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
