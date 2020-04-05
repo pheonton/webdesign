@@ -1,5 +1,3 @@
-[Home](README.md)
-
 # Einführung Arrays
 
 ## Arrays erzeugen
@@ -32,10 +30,10 @@ Auch die Definition eines leeren Array ist möglich:
 ```php
 $feld3 = array();
 ```
->Merke ein bekanntes Array is `$_POST`, hier sind werden aller Formulardaten mit ihren `name` Attributen als Key gespeichert
+> **Merke:** ein bekanntes Array is `$_POST`, hier sind aller Formulardaten mit ihren `name` Attributen als Key gespeichert
 
 ### Auf Werte zugreifen
-Auf die Werte wird zugegriffen,  indem an das Array der Key in eckigen Klammern angefügt wird:
+Auf die Werte wird zugegriffen, indem an das Array der Key in eckigen Klammern angefügt wird:
 ```php
 print $feld1['key1']; #ergibt value1
 print $feld2[0]; #ergibt value_a
@@ -47,7 +45,9 @@ Auf ähnliche Weise können auch Werte in einem Array gesetzt werden:
 $feld1['key3'] = 'value3';
 ```
 Hier wird im array `feld1` ein Werte `value3` mit dem Key `key3` hinzugefügt.
-> Merke: ein ist im Array schon ein Wert mit dem Key `key3` vorhanden, wird er so überschrieben.
+
+> **Achtung:** ein ist im Array schon ein Wert mit dem Key `key3` vorhanden, wird er so überschrieben.
+
 Soll in einem Array mit nummerischen Keys ein Wert hinzugefügt werden, kann auf die Angabe eines Keys verzichtet werden, die eckigen Klammern bleiben dann leer, der Key wird automatisch gesetzt
 ```php
 $feld2[] = 'value3';
@@ -87,7 +87,13 @@ $feld1 = array(
  		'key2' => 'value4',
  	),
 );
+```
+
+Beim ansprechen der Werte (ausgeben, einfügen und löschen), müssen alle übergeordneten Keys in absteigender Reihenfolge bis zum gewünschten Wert in eckigegen Klammern angegeben werden.
+
+```php
 print $feld['item1'][ 'key1']; #ergibt value1
 print $feld['item2'][ 'key2']; #ergibt value4
+
+$feld['item2'][ 'key1'] = 'value5'; #überschreibt value3 mit value5
 ```
-Beim ansprechen der Werte (ausgeben, einfügen und löschen), müssen alle Keys in absteigender Reihenfolge bis zum gewünschten Wert in eckigegen Klammern angegeben werden.
