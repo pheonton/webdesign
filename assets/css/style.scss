@@ -19,7 +19,7 @@ a#skip-top-content {
 }
 .page-header nav {
   max-width: 64rem;
-  padding: 0 16rem;
+  padding: 0 14rem;
   margin: 0 auto;
   text-align: left;
 }
@@ -49,7 +49,7 @@ a#skip-top-content {
 }
 .main-content {
     max-width: 64rem;
-    padding: 2rem 16rem;
+    padding: 2rem 14rem;
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
@@ -69,15 +69,16 @@ a#skip-top-content {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
 .main-content ul#my_toc {
-  width: 16rem;
+  width: 13rem;
   margin-top: 6rem;
-  margin-left: -16rem;
+  margin-left: -14rem;
   float: left;
-  padding-right: 0 20px 0 0;
   font-size: 0.9rem;
   text-align: right;
+  padding: 0;
 }
 .main-content ul#my_toc li {
+  padding: 10px 0;
   list-style: none;
 }
 a, a:visited {
