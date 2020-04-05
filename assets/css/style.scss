@@ -64,6 +64,12 @@ a#skip-top-content {
 .main-content blockquote {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
+.main-content ul#my_toc {
+  padding: 0;
+}
+.main-content ul#my_toc li {
+  list-style: none;
+}
 a, a:visited {
   color: #00A8C6;
 }
