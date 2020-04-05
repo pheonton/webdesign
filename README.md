@@ -3,9 +3,9 @@
 Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 
 ## Grundlegende Anleitungen
-1. [Programme verwenden](A_Programme.md#programme-verwenden)
-2. [Arbeiten mit Quellcode](B_Formatierung.md#arbeiten-mit-quellcode)
-3. [Webseiten veröffentlichen](C_Webspace.md#webspace-einrichten)
+- [Programme verwenden](A_Programme.md#programme-verwenden)
+- [Arbeiten mit Quellcode](B_Formatierung.md#arbeiten-mit-quellcode)
+- [Webseiten veröffentlichen](C_Webspace.md#webspace-einrichten)
 
 ## Web design
 1. [Einführung HTML](01_HTML.md)
