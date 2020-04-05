@@ -18,8 +18,8 @@ a#skip-top-content {
   padding: 0;
 }
 .page-header nav {
-  max-width: 64rem;
-  padding: 0 6rem;
+  max-width: 60rem;
+  padding: 0 8rem;
   margin: 0 auto;
   text-align: left;
 }
@@ -47,6 +47,10 @@ a#skip-top-content {
   margin: 0;
   display: inline;
 }
+.main-content {
+    max-width: 60rem;
+    padding: 2rem 8rem;
+}
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
 }
@@ -66,15 +70,12 @@ a#skip-top-content {
 }
 .main-content ul#my_toc {
   width: 200px;
-  margin-top: 50px;
-  margin-left: -200px;
+  margin-top: 6rem;
+  margin-left: -8rem;
   float: left;
-  padding-right: 20px;
+  padding-right: 0 20px 0 0;
   font-size: 0.9rem;
   text-align: right;
-}
-.main-content ul#my_toc {
-  padding: 0;
 }
 .main-content ul#my_toc li {
   list-style: none;
@@ -85,10 +86,8 @@ a, a:visited {
 a:hover {
   color: #40C0CB;
 }
-.main-content pre {
+.main-content pre, .main-content code {
     background-color: #fffbf5;
-    border-bottom: solid 1px #dce6f0;
-    border-radius: 0;
 }
 .main-content pre code {
   white-space: pre-wrap;
