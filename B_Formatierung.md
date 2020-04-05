@@ -1,5 +1,7 @@
 ---
-tags: study preperation
+tags:
+ - study
+ - preperation
 ---
 # Arbeiten mit Quellcode
 
