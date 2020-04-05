@@ -28,7 +28,12 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+      <nav class="nav-secondary">
+      <ul>
+        <li><a href="/{{ site.github.repository_name }}">Home</a></li>
+      </ul>
       {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
+      </nav>
       {{ content }}
 
       <footer class="site-footer">
