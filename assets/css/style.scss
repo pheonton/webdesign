@@ -89,9 +89,15 @@ a#skip-to-content {
   font-size: 0.9rem;
   text-align: left;
 }
+.main-content nav.nav-site {
+  display: block;
+}
 @media screen and (max-width: 64em) {
   .main-content nav.nav-site {
     display: none;
+  }
+  footer nav.nav-site {
+    display: block;
   }
 }
 @media screen and (max-width: 42em) {
