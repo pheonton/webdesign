@@ -1,5 +1,3 @@
-[Home](README.md)
-
 # Einführung CSS3 #
 
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
@@ -129,7 +127,7 @@ margin (Außenabstand) | 1px 1px 1px 1px | oben rechts unten links
 width | 300px\|50%\|auto | auto kann verwendet werden um die Größe eines Elementes anzupassen, ohne das Seitenverhältnis zu ändern.
 height | 300px\|50%\|auto |
 
-> **Merke:** | steht für "Oder"
+> **Merke:** \| steht für "Oder"
 
 ```css
 body {
