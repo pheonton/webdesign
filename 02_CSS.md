@@ -1,4 +1,4 @@
-# Einführung CSS3 #
+# Einführung CSS3
 
 Die Struktur eines HTML Dokumentes besteht aus einer Vielzahl verschachtelter Tags deren Relation
 zueinander wie in einer Familie bezeichnet wird. Parent und Child bezeichnet dabei direkt über bzw.
