@@ -6,6 +6,7 @@ body {
   background: #F9F2E7;
 }
 a#skip-top-content {
+  background: black;
   display: none;
 }
 .page-header {
@@ -14,8 +15,8 @@ a#skip-top-content {
   padding: 0;
 }
 .page-header div {
-    max-width: 64rem;
-    padding: 0 6rem;
+  max-width: 64rem;
+  padding: 0 6rem;
   margin: 0 auto;
   text-align: left;
 }
@@ -29,13 +30,10 @@ a#skip-top-content {
   padding:0 1rem;
  }
 }
-
 .page-header a, .page-header a:visited{
-  
- color:#F9F2E7;
- text-decoration: none;
+  color:#F9F2E7;
+  text-decoration: none;
 }
-
 .page-header h2 {
   display: none;
 }
@@ -44,12 +42,7 @@ a#skip-top-content {
   display: inline;
 }
 .project-name {
-
-    font-size: 1.5rem;
-
-}
-.page-header .btn {
-  dispaly: inline;
+  font-size: 1.5rem;
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
@@ -62,12 +55,18 @@ a#skip-top-content {
     border-bottom: 1px solid #606c71;
     text-align: left;
 }
+.main-content table {
+    margin-bottom: 1em;
+}
+.main-content blockquote {
+    border-left: 0.3rem solid #8FBE00; //AEE239
+}
 a, a:visited {
   color: #00A8C6;
 }
 a:hover {
   color: #40C0CB;
 }
-.main-content blockquote {
-    border-left: 0.3rem solid #8FBE00; //AEE239
+code {
+  white-space: pre-wrap;
 }
