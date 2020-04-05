@@ -38,7 +38,7 @@
         <ul>
           {% for page in site.pages %}
             {% if page.title %}
-              <li><a href="{{ site.github.repository_url }}{{ page.url }}">{{ page.title }}</a></li>
+              <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
         </ul>
