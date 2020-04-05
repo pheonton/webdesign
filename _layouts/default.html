@@ -42,7 +42,7 @@
         <ul>
           {% for page in site.pages %}
             {% for tag in page.tags %}
-            {% if tag == study %}
+            {% if tag == 'study' %}
               <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
           {% endfor %}
