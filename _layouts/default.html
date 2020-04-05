@@ -43,7 +43,7 @@
           {% endfor %}
         </ul>
       </nav>
-
+      {{page.tags | capitalize | join: ', '}}
       {{ content }}
       
       <footer class="site-footer">
