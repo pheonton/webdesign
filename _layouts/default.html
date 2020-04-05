@@ -19,8 +19,6 @@
         {% endif %}
       </nav>
       
-{% include toc.html html=content %}
-      
       {% if site.show_downloads %}
       <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
@@ -30,6 +28,7 @@
     </header>
 
     <main id="content" class="main-content" role="main">
+      {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
       {{ content }}
 
       <footer class="site-footer">
