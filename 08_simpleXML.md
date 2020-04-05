@@ -39,7 +39,7 @@ XML-Dateien werden mit der Endung .xml gespeichert.
 Um eine XML-Daten einzulesen, muss die XML-Datei im PHP-Skript geladen werden:
 ```php
 <?php
-$variable = simplexml_load_file('IhreDaten.xml');
+  $variable = simplexml_load_file('IhreDaten.xml');
 ?>
 ```
 http://php.net/manual/de/function.simplexml-load-file.php
@@ -49,7 +49,7 @@ Hierfür sprechen Sie die einzelnen Elemente an, indem Sie, ähnlich wie bei meh
 Arrays, von dem übergeordneten Element zum untergeordneten Element gehen:
 ```php
 <?php
-$title = $variable->lektuere[0]->titel;
+  $title = $variable->lektuere[0]->titel;
 ?>
 ```
 In der Variablen $title ist nun im Beispiel „Agnes“ eingespeichert.
@@ -59,24 +59,25 @@ Um alle Lektürentitel auszugeben wird die bekannte Funktion foreach verwendet
 
 ```php
 <?php
-foreach ($variable as $buch) {
-print '<h2>' . $buch->titel . '</h2>';
-}
+  foreach ($variable as $buch) {
+    print '<h2>' . $buch->titel . '</h2>';
+  }
 ?>
 ```
 
-Um sich die Struktur Ihrer eingelesenen XML Datei anzuschauen, verwenden Sie die
-Funktion print_r() oder var_dump().
+Um sich die Struktur Ihrer eingelesenen XML Datei anzuschauen, verwenden Sie die Funktion `print_r()` oder `var_dump()`.
+```php
 <?php
 $variable = simplexml_load_file('IhreDaten.xml');
 print_r($variable);
 ?>
+```
 bzw.
 ```php
 <?php
-foreach ($variable as $buch) {
-var_dump($buch);
-}
+  foreach ($variable as $buch) {
+    var_dump($buch);
+  }
 ?>
 ```
 
@@ -84,34 +85,40 @@ var_dump($buch);
 
 Um eine neue XML Datei mit PHP anzulegen definieren sie einen String der einer XML Datei
 entspricht:
+```php
 <?php
-// zwischen <<<XMl und XML; befindet sich der Inhalt
-$xmlstring = <<<XML
-<?xml version='1.0' standalone='yes'?>
-<root>
-</root>
-XML;
-// Um auf SimpleXML Funktionen zu zugreifen, muss der XMLstring in ein SimpleXMLelement
-umgewandelt werden.
-$xml = new SimpleXMLElement($xmlstring);
+  // zwischen <<<XMl und XML; befindet sich der Inhalt
+  $xmlstring = <<<XML
+                <?xml version='1.0' standalone='yes'?>
+                <root>
+                </root>
+               XML;
+  // Um auf SimpleXML Funktionen zu zugreifen, muss der XMLstring in ein SimpleXMLelement umgewandelt werden.
+  $xml = new SimpleXMLElement($xmlstring);
 ?>
-Natürlich können schon mehr Elemente in der Datei stehen, oder sie werden nachher
-programmatisch hinzugefügt mit der SimpleXMLfunktion adChild.
+```
+Natürlich können schon mehr Elemente in der Datei stehen, oder sie werden nachher programmatisch hinzugefügt mit der SimpleXMLfunktion adChild.
+```php
 <?php
-$xml->addChild('user');
-$xml->user->addChild('name', 'email');
+  $xml->addChild('user');
+  $xml->user->addChild('name', 'email');
 ?>
+```
 Die XML sieht dann so aus:
+```xml
 <?xml version='1.0' standalone='yes'?>
 <root>
-<user>
-<name></name>
-<email></email>
-</user>
+  <user>
+    <name></name>
+    <email></email>
+  </user>
 </root>
+```
+```php
 <?php
-// user[0] wählt das erste user Element und setzt den Wert auf „peter“
-$xml->user[0]->name = 'peter';
-// mit ->asXML(daten.xml) warden die daten unter dem Namen daten.xml gespeichert.
-$xml->asXML('daten.xml');
+  // user[0] wählt das erste user Element und setzt den Wert auf „peter“
+  $xml->user[0]->name = 'peter';
+  // mit ->asXML(daten.xml) warden die daten unter dem Namen daten.xml gespeichert.
+  $xml->asXML('daten.xml');
 ?>
+```
