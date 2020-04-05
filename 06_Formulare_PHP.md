@@ -34,4 +34,4 @@ if ($radios == 'first') {
 }
 ?>
 ```
->Merke: Textfelder `type=text` haben kein `value` Attribut, hier wird der im Formular eingegebene Text in an das PHP Skript übergeben. Alle anderen Felder übergeben den Wert des `value` Attributes.
+>**Merke:** Textfelder `type=text` haben kein `value` Attribut, hier wird der im Formular eingegebene Text an das PHP Skript übergeben. Alle anderen Felder übergeben den Wert des `value` Attributes.
