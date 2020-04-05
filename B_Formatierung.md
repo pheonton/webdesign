@@ -1,4 +1,4 @@
-# Arbeiten mit Quellcode #
+# Arbeiten mit Quellcode
 
 ### Bezeichungen
 Verwende für alle *Namen* von Ordnern und Dateien nur Kleinbuchstaben ([a-z]) und keine Umlaute oder Sonderzeichen (ä,ü...). Gleiches gilt für frei wählbahre Bezeichnungen im Code (Insbesondere für Klassen und ID's in CSS). (Der Inhalt ist von dieser Regel selbstvertändlich nicht betroffen.)
