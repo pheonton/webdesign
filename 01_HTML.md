@@ -5,11 +5,11 @@
 
 > **Merke:** Der Code wird mit dem Editor geschrieben und im Browser betrachtet. Anleitung dazu befindet sich [hier](A_Programme.md).
 
-### Basisaufbau eines HTML Dokumentes
+## Basisaufbau eines HTML Dokumentes
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<html lang="de">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Lorem ipsum</title>
@@ -34,14 +34,14 @@
 
 > **Merke:** HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
 
-### Textstrukturierung
+## Textstrukturierung
 
 | Element | Erläuterung |
 | --- | --- |
 | ```<h1></h1> bis <h6></h6>``` | Definiert HTML Überschriften |
-| ```<p></p>``` | Definiert Paragraphen |
+| ```<p></p>``` | Definiert einen Paragraph |
 | ```<br />``` | Einfacher Zeilenumbruch |
-| ```<hr />``` | Definiert einen Thematischen Umbruch in Inhalt |
+| ```<hr />``` | theamtischer Umbruch (horizontale Linie) |
 | ```<em></em>``` | Definiert hervorgehobenen Text |
 | ```<del></del>``` | Definiert gelöschten Text |
 | ```<strong></strong>``` | Definiert wichtigen Text |
@@ -55,7 +55,7 @@
 eget lectus quis blandit.</p>
 ```
 
-### Tabellen
+## Tabellen
 
 | Element | Erläuterung |
 | --- | --- |
