@@ -79,7 +79,7 @@ a#skip-to-content {
 .main-content blockquote {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
-.main-content nav.nav-secondary {
+.main-content nav {
   width: 13rem;
   margin-top: 6rem;
   margin-left: -14rem;
@@ -88,13 +88,24 @@ a#skip-to-content {
   text-align: right;
 }
 @media screen and (max-width: 42em) {
-  .main-content nav.nav-secondary {
+  .main-content nav {
     width: 100%;
     margin-top: 0;
     margin-left: 0;
     float: none;
     font-size: 0.8rem;
     text-align: left;
+  }
+}
+footer nav.nav-site {
+  display: none;
+}
+@media screen and (max-width: 42em) {
+  footer nav.nav-site {
+    display: block;
+  }
+  .main-content nav.nav-site {
+    display: none;
   }
 }
 .main-content nav ul{
