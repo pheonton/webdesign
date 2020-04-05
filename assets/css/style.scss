@@ -86,7 +86,6 @@ a#skip-top-content {
   float: left;
   font-size: 0.9rem;
   text-align: right;
-  padding: 0;
 }
 @media screen and (max-width: 42em) {
   .main-content nav.nav-secondary {
@@ -96,8 +95,11 @@ a#skip-top-content {
     float: none;
     font-size: 0.8rem;
     text-align: left;
-    padding: 0;
   }
+}
+.main-content nav ul{
+  padding: 0;
+  margin: 0;
 }
 .main-content nav ul li {
   list-style: none;
