@@ -28,16 +28,13 @@
 
     <main id="content" class="main-content" role="main">
       <nav class="nav-secondary">
+
+        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
+      </nav>
+      <nav class="nav-site">
         <ul>
           <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
         </ul>
-        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
-      </nav>
-
-
-      {{ content }}
-      
-      <nav class="nav-site">
         <ul>
           {% for page in site.pages %}
             {% if page.title %}
@@ -46,6 +43,10 @@
           {% endfor %}
         </ul>
       </nav>
+
+      {{ content }}
+      
+
       
       <footer class="site-footer">
         {% if site.github.is_project_page %}
