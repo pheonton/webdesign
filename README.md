@@ -5,7 +5,7 @@
 <li><a href="/pheonton/webdesign/blob/master/B_Formatierung.md#arbeiten-mit-quellcode">Arbeiten mit Quellcode</a></li>
 <li><a href="/pheonton/webdesign/blob/master/C_Webspace.md#webspace-einrichten">Webseiten veröffentlichen</a></li>
 </ol>
-<h2><Web design</h2>
+<h2>Web design</h2>
 <ol>
 <li><a href="/pheonton/webdesign/blob/master/01_HTML.md#einf%C3%BChrung-html">Einführung HTML</a></li>
 <li><a href="/pheonton/webdesign/blob/master/02_CSS.md#einf%C3%BChrung-css3">Einführung CSS</a></li>
