@@ -24,15 +24,10 @@ a#skip-to-content {
   padding: 0;
 }
 .page-header nav {
-  max-width: 64rem;
+  max-width: 78rem;
   padding: 0 14rem;
   margin: 0 auto;
   text-align: left;
-}
-@media screen and (max-width: 64em) {
-.page-header nav  {
-  padding:0 14rem;
- }
 }
 @media screen and (max-width: 42em) {
 .page-header nav  {
@@ -89,7 +84,6 @@ a#skip-to-content {
   text-align: right;
 }
 .main-content nav.nav-site {
-  position: fixed;
   width: 13rem;
   margin-top: 6rem;
   margin-right: -14rem;
@@ -121,7 +115,7 @@ a#skip-to-content {
   width: 100%;
   border-bottom: 1px solid #C9CDD0;
 }
-.main-content nav.nav-secondary ul#my_toc:first-child > li{
+.main-content nav.nav-secondary ul#my_toc:first-child > li:first-child a{
   background-color: #AEE239;
 }
 .main-content nav ul li a:hover {
