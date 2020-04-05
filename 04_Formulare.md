@@ -1,5 +1,7 @@
 ---
-tags: study html
+tags:
+ - study
+ - html
 ---
 # Einführung Formulare mit HTML
 
