@@ -47,11 +47,10 @@
 
 ```html
 <h1>Lorem ipsum</h1>
-  <p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.<br />
-  Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
-  <hr>
-  <p>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat
-eget lectus quis blandit.</p>
+<p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit. Nulla vel metus porta, cursus libero in, varius metus. Praesent scelerisque iaculis lectus. Suspendisse nec maximus massa. Cras viverra leo quis molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.<br />
+Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
+<hr>
+<p>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat eget lectus quis blandit.</p>
 ```
 
 ## Tabellen
