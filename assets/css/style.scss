@@ -79,7 +79,7 @@ a#skip-to-content {
 .main-content blockquote {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
-.main-content nav {
+.main-content nav.nav-secondary {
   position: fixed;
   width: 13rem;
   margin-top: 6rem;
@@ -98,7 +98,7 @@ a#skip-to-content {
   text-align: left;
 }
 @media screen and (max-width: 42em) {
-  .main-content nav, main-content nav.nav-site {
+  .main-content nav.nav-secondary, main-content nav.nav-site {
     position: relative;
     width: 100%;
     margin-top: 0;
