@@ -1,4 +1,6 @@
 ---
-tags: study php
+tags:
+ - study
+ - php
 ---
 # Einführung Funktionen
