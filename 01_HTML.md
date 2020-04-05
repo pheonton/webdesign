@@ -9,7 +9,7 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset=UTF-8" />
     <title>Lorem ipsum</title>
   </head>
   <body>
@@ -24,6 +24,7 @@
 | ```<!DOCTYPE html>``` | Definiert den Dokumententyp (nicht sichtbar) |
 | ```<html></html>``` | Definiert den HTML Bereich im Dokument |
 | ```<head><head>``` | Beinhaltet Informationen über das Dokument |
+| ```<meta charset=UTF-8" />``` | Wird für die Darstellungen von Umlauten benötigt |
 | ```<title></title>``` | Definiert den Titel des Dokuments (wird im Browser angezeigt) |
 | ```<body></body>``` | Definiert den Inhaltsbereich des Dokumentes |
 | ```<!--  -->``` | Definiert ein Kommentar (nicht sichtbar) |
@@ -75,7 +76,7 @@ eget lectus quis blandit.</p>
   </tr>
 </table>
 ```
-### Listen
+## Listen
 
 | Element | Erläuterung |
 | --- | --- |
@@ -92,7 +93,7 @@ eget lectus quis blandit.</p>
   <li>Curabitur</li>
 </ul>
 ```
-### Bilder & Verknüpfungen
+## Bilder & Verknüpfungen
 
 **Bilder**
 
@@ -110,7 +111,7 @@ Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangeabe](
 Für online Dateien, Bilder oder Webseiten, wird die Webadresse (URL) verwendet. (Es handelt sich dann um eine apsolute Verknüpfung)
 
 
-### Tags für die Formatierung mit CSS
+## Tags für die Formatierung mit CSS
 
 Für die Formatierung werden zwei weitere Elemente benötigt, die nur in Zusammenhang mit CSS Bedeutung haben
 
