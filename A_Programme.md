@@ -11,7 +11,7 @@
 4. In Visual Stuio Code kannst du HTML Code in die Datei einfügen. Danach die Datei speicheren (STRG + S) und die Ansicht im Bowser aktuallisieren (F5). Die jeweiligen Änderungen sollten so sichtbar sein.
 Den Code kannst du der Datei [Einführung HTML](https://github.com/pheonton/webdesign/blob/master/01_HTML.md#einf%C3%BChrung-html) entnehmen.
 
-### Basis HTML mit CSS
+## Basis HTML mit CSS
 
 Für die Bearbeitung von CSS brauchen wir eine zweite Datei.
 
