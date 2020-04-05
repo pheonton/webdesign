@@ -1,3 +1,7 @@
+---
+tags: study preperation
+---
+
 # Programme verwenden
 
 * Für die **Bearbeitung** der HTML-Dateien bietet sich [Visual Studio Code](https://code.visualstudio.com/) an.
