@@ -12,7 +12,7 @@
 <li><a href="/pheonton/webdesign/blob/master/03_Layout.md#layout-mit-css">Layout mit CSS</a></li>
 <li><a href="/pheonton/webdesign/blob/master/04_Formulare.md#einf%C3%BChrung-formulare-mit-html">Einführung Formulare</a></li>
 </ol>
-<h2></a>Web development</h2>
+<h2>Web development</h2>
 <ol start="5">
 <li><a href="/pheonton/webdesign/blob/master/05_PHP.md">Einführung PHP</a></li>
 <li><a href="/pheonton/webdesign/blob/master/06_Formulare_PHP.md#html-formulare-mit-php-verarbeiten">Formulare mit PHP verarbeiten</a></li>
