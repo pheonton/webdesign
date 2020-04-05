@@ -1,5 +1,7 @@
 # Web design
 
+Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
+
 ## Grundlegende Anleitungen
 1. [Programme verwenden](A_Programme.md#programme-verwenden)
 2. [Arbeiten mit Quellcode](B_Formatierung.md#arbeiten-mit-quellcode)
