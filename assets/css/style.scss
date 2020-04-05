@@ -52,6 +52,11 @@ a#skip-to-content {
     max-width: 78rem;
     padding: 2rem 14rem 2rem 14rem;
 }
+@media screen and (max-width: 64em) {
+.main-content  {
+    padding: 2rem 1rem 2rem 14rem;
+ }
+}
 @media screen and (max-width: 42em) {
 .main-content  {
     padding: 2rem 1rem 2rem 1rem;
@@ -123,7 +128,7 @@ a#skip-to-content {
   width: 100%;
   border-bottom: 1px solid #C9CDD0;
 }
-.main-content nav.nav-secondary ul#my_toc > li:first-child a:first-child {
+.main-content nav.nav-secondary ul#my_toc:first-child li:first-child a:first-child {
   background-color: #AEE239;
 }
 .main-content nav ul li a:hover {
