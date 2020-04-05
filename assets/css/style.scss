@@ -80,12 +80,22 @@ a#skip-to-content {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
 .main-content nav {
+  position: fixed;
   width: 13rem;
   margin-top: 6rem;
   margin-left: -14rem;
   float: left;
   font-size: 0.9rem;
   text-align: right;
+}
+.main-content nav.nav-site {
+  position: fixed;
+  width: 13rem;
+  margin-top: 6rem;
+  margin-right: -14rem;
+  float: right;
+  font-size: 0.9rem;
+  text-align: left;
 }
 @media screen and (max-width: 42em) {
   .main-content nav {
