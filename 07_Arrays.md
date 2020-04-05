@@ -1,3 +1,6 @@
+---
+tags: study php
+---
 # Einführung Arrays
 
 ## Arrays erzeugen
