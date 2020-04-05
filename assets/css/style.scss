@@ -58,7 +58,7 @@ a#skip-top-content {
     padding: 2rem 1rem 2rem 14rem;
 }
 @media screen and (max-width: 42em) {
-.page-header nav  {
+.main-content  {
     padding: 2rem 1rem 2rem 1rem;
  }
 }
@@ -79,7 +79,7 @@ a#skip-top-content {
 .main-content blockquote {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
-.main-content ul#my_toc {
+.main-content nav.nav-secondary {
   width: 13rem;
   margin-top: 6rem;
   margin-left: -14rem;
@@ -89,7 +89,7 @@ a#skip-top-content {
   padding: 0;
 }
 @media screen and (max-width: 42em) {
-  .main-content ul#my_toc {
+  .main-content nav.nav-secondary {
     width: 100%;
     margin-top: 0;
     margin-left: 0;
@@ -115,6 +115,7 @@ a#skip-top-content {
   width: 100%;
   border-bottom: 1px solid #C9CDD0;
   background-color: #00A8C6;
+  text-decoration: none;
 }
 .main-content pre, .main-content code {
     background-color: #fffbf5;
