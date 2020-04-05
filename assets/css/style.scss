@@ -99,6 +99,7 @@ a#skip-to-content {
 }
 @media screen and (max-width: 42em) {
   .main-content nav {
+    position: relative;
     width: 100%;
     margin-top: 0;
     margin-left: 0;
