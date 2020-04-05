@@ -56,6 +56,7 @@ In der Variablen $title ist nun im Beispiel „Agnes“ eingespeichert.
 Mit dieser „Pfeil-Notation“ kann man, ausgehen von dem XML-Objekt, auf die einzelnen Elemente
 zugreifen.
 Um alle Lektürentitel auszugeben wird die bekannte Funktion foreach verwendet
+
 ```php
 <?php
 foreach ($variable as $buch) {
@@ -71,11 +72,13 @@ $variable = simplexml_load_file('IhreDaten.xml');
 print_r($variable);
 ?>
 bzw.
+```php
 <?php
 foreach ($variable as $buch) {
 var_dump($buch);
 }
 ?>
+```
 
 ## XML-Daten mit PHP erzeugen
 
