@@ -8,13 +8,13 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 3. [Webseiten veröffentlichen](C_Webspace.md#webspace-einrichten)
 
 ## Web design
-1. [Einführung HTML](01_HTML.md#einf%C3%BChrung-html)
-2. [Einführung CSS](02_CSS.md#einf%C3%BChrung-css3)
-3. [Layout mit CSS](03_Layout.md#layout-mit-css)
-4. [Einführung Formulare](04_Formulare.md#einf%C3%BChrung-formulare-mit-html)
+1. [Einführung HTML](01_HTML.md)
+2. [Einführung CSS](02_CSS.md)
+3. [Layout mit CSS](03_Layout.md)
+4. [Einführung Formulare](04_Formulare.md)
 
 ## Web development
 5. [Einführung PHP](05_PHP.md)
-6. [Formulare mit PHP verarbeiten](06_Formulare_PHP.md#html-formulare-mit-php-verarbeiten)
+6. [Formulare mit PHP verarbeiten](06_Formulare_PHP.md)
 7. [Einführung Arrays](07_Arrays.md)
-8. [Einführung simpleXML](08_simpleXML.md#einf%C3%BChrung-in-die-verarbeitung-von-xml-mit-php)
+8. [Einführung simpleXML](08_simpleXML.md)
