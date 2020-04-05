@@ -1,6 +1,4 @@
 ---
-category:
- - study
 tags:
  - study
  - php
