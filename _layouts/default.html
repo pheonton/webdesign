@@ -31,7 +31,6 @@
         <ul>
           <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
         </ul>
-        <strong>Diese Seite</strong>
         {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
       </nav>
 
@@ -39,7 +38,6 @@
       {{ content }}
       
       <nav class="nav-site">
-        <strong>Alle Seiten</strong>
         <ul>
           {% for page in site.pages %}
             {% if page.title %}
