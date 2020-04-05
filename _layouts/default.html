@@ -43,7 +43,11 @@
           {% endfor %}
         </ul>
       </nav>
-      {{page.tags | capitalize | join: ', '}}
+      <div class="tags">
+        {% for tag in page.tags %}
+          <span class="tag">{{ page.title }}</span>
+        {% endfor %}
+      </div>
       {{ content }}
       
       <footer class="site-footer">
