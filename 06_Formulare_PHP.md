@@ -1,5 +1,8 @@
 ---
-tags: study html php
+tags:
+ - study
+ - html
+ - php
 ---
 # HTML Formulare mit PHP verarbeiten
 
