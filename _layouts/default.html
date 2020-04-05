@@ -32,9 +32,17 @@
         <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
       </ul>
       {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
-      {% include_relative README.md %}
+ {% for page in site.pages %}
+    {% if page.resource == true %}
+      {% for pc in page.categories %}
+        {% if pc == cat %}
+          <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+        {% endif %}   <!-- cat-match-p -->
+      {% endfor %}  <!-- page-category -->
+    {% endif %}   <!-- resource-p -->
+  {% endfor %}  <!-- page -->
       </nav>
-      
+
       {{ content }}
 
       <footer class="site-footer">
