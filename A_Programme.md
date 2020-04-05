@@ -3,7 +3,7 @@
 * Für die **Bearbeitung** der HTML-Dateien bietet sich [Visual Studio Code](https://code.visualstudio.com/) an.
 * Als Betrachter kann [Firefox](https://www.mozilla.org/) oder jeder andere Browser zum Einsatz kommen.
 
-### Basis HTML
+## Basis HTML
 
 1. Lege einen Ordner für ein neues Projekt an.
 2. Öffne Visual Studio Code. Wähle im Menü *File -> New File* und speichere die (noch leere) Datei mit dem Namen index.html im soeben erstellt Ordner ab. Speichern im Menü unter: *File -> Safe* oder mit der Tastenkombination STRG + S
