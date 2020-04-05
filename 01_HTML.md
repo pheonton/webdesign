@@ -10,7 +10,7 @@
 <html lang="de">
   <head>
     <meta charset=UTF-8" />
-    <title>Lorem ipsum</title>
+    <title>Hello World</title>
   </head>
   <body>
     Dieser Text wird angezeigt!
