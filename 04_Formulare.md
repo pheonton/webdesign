@@ -1,3 +1,6 @@
+---
+tags: study html
+---
 # Einführung Formulare mit HTML
 
 Um Benutzereingaben auf Webseiten zu verarbeiten, werden Formulare mit HTML erstellt, die anschließend vom Server verarbeitet werden (z.B. mit PHP). In diesem Abschnitt wird eine Einführung für das Erstellen vpn Fomrularen mit HTML gegeben.
