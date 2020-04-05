@@ -9,10 +9,10 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
 
 ```html
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="de" lang="de">
+<html lang="de">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <meta charset=UTF-8" />
     <title>Hello World | Website</title>
   </head>
   <body>
@@ -196,7 +196,7 @@ div {
 
 Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
 
-Für ausgesuchte Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie über `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');` in der CSS-Datei geladen werden und mit `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet werden. Die Google Fonts Webseite zeigt unten rechts den entsprechenden Code an, wenn eine (oder mehrere) Schriften ausgewählt wurden.
+Für Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie über `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');` in der CSS-Datei geladen werden und mit `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet werden. Die Google Fonts Webseite zeigt unten rechts den entsprechenden Code an, wenn eine (oder mehrere) Schriften ausgewählt wurden.
 
 [Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
 
@@ -204,7 +204,7 @@ Für ausgesuchte Schriftarten bietet sich die Verwendung von [Google Fonts](http
 
 Bilder können mit den Eigenschaften `width` und `height` angepasst werden. Eine der beiden Eigenschaften sollte den Wert `auto` bekommen, da sonst das Seitenverhältnis verändert wird.
 
-Sind die img Tags im HTML Code untereinander aufgelistet, so erscheint im Browser ein *kleiner Abstand* zwischen den Bilder, dieser kann mit der Eigenschaft `font-size: 0;` für das Parent-Element entfernt werden. (Werden die img Tags in einer Reiehe gelistet erscheint kein Abstand.)
+Sind die img Tags im HTML Code untereinander aufgelistet, so erscheint im Browser ein *kleiner Abstand* zwischen den Bilder, dieser kann mit der Eigenschaft `font-size: 0;` für das Parent-Element entfernt werden. (Werden die img Tags in einer Reihe, gelistet erscheint kein Abstand.)
 
 Beispiel
 ```html
