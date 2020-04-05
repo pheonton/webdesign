@@ -34,6 +34,10 @@
         <strong>Diese Seite</strong>
         {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=2 h_max=3 %}
       </nav>
+
+
+      {{ content }}
+      
       <nav class="nav-site">
         <strong>Alle Seiten</strong>
         <ul>
@@ -44,20 +48,8 @@
           {% endfor %}
         </ul>
       </nav>
-
-      {{ content }}
-
+      
       <footer class="site-footer">
-        <nav class="nav-site">
-          <strong>Alle Seiten</strong>
-          <ul>
-            {% for page in site.pages %}
-              {% if page.title %}
-                <li><a href="{{ site.github.repository_url }}/blob/master{{ page.url }}">{{ page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        </nav>
         {% if site.github.is_project_page %}
           <span class="site-footer-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
         {% endif %}
