@@ -36,7 +36,7 @@
           <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
         </ul>
         <ul>
-          {% for page in site.pages %}
+          {% for page in site.categories.study %}
             {% if page.title %}
               <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
             {% endif %}
