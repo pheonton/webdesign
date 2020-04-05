@@ -99,16 +99,16 @@ a#skip-top-content {
     padding: 0;
   }
 }
-.main-content ul#my_toc li {
+.main-content nav ul li {
   list-style: none;
 }
-.main-content ul#my_toc li a {
+.main-content nav ul li a {
   display: inline-block;
   padding: 5px 0;
   width: 100%;
   border-bottom: 1px solid #C9CDD0;
 }
-.main-content ul#my_toc li a:hover {
+.main-content nav ul li a:hover {
   color: #F9F2E7;
   display: inline-block;
   padding: 5px 0;
