@@ -35,7 +35,9 @@
         <h2>Übersicht</h2>
         <ul id="nav-site">
           {% for page in site.pages %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% if page.title %}
+              <li><a href="{{ site.github.repository_url }}/blob/master/{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </nav>
