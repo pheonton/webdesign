@@ -97,17 +97,6 @@ a#skip-to-content {
     text-align: left;
   }
 }
-footer nav.nav-site {
-  display: none;
-}
-@media screen and (max-width: 42em) {
-  footer nav.nav-site {
-    display: block;
-  }
-  .main-content nav.nav-site {
-    display: none;
-  }
-}
 .main-content nav ul{
   padding: 0;
   margin: 0;
