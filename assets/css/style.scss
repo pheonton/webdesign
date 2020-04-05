@@ -115,7 +115,7 @@ a#skip-to-content {
   width: 100%;
   border-bottom: 1px solid #C9CDD0;
 }
-.main-content nav.nav-secondary ul#my_toc:first-child > li:first-child a{
+.main-content nav.nav-secondary ul#my_toc > li:first-child a:first-child {
   background-color: #AEE239;
 }
 .main-content nav ul li a:hover {
