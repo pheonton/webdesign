@@ -18,8 +18,8 @@ a#skip-top-content {
   padding: 0;
 }
 .page-header nav {
-  max-width: 60rem;
-  padding: 0 8rem;
+  max-width: 64rem;
+  padding: 0 16rem;
   margin: 0 auto;
   text-align: left;
 }
@@ -48,8 +48,8 @@ a#skip-top-content {
   display: inline;
 }
 .main-content {
-    max-width: 60rem;
-    padding: 2rem 8rem;
+    max-width: 64rem;
+    padding: 2rem 16rem;
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
@@ -69,9 +69,9 @@ a#skip-top-content {
     border-left: 0.3rem solid #8FBE00; //AEE239
 }
 .main-content ul#my_toc {
-  width: 200px;
+  width: 16rem;
   margin-top: 6rem;
-  margin-left: -8rem;
+  margin-left: -16rem;
   float: left;
   padding-right: 0 20px 0 0;
   font-size: 0.9rem;
