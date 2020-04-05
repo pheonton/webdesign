@@ -122,4 +122,4 @@ Für die Formatierung werden zwei weitere Elemente benötigt, die nur in Zusamme
 | Element | Erläuterung |
 | --- | --- |
 ```<div></div>``` | **Block Element** insbesondere für die Formatierung des **Layouts** verwendet
-```<span></span>``` | **Inline Element** insbesondere für die Fomratierung von **Text** verwendet
+```<span></span>``` | **Inline Element** insbesondere für die Formatierung von **Text** verwendet
