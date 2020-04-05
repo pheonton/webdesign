@@ -5,6 +5,12 @@
 body {
   background: #F9F2E7;
 }
+a, a:visited {
+  color: #00A8C6; //#40C0CB
+}
+a:hover {
+  color: #00A8C6;
+}
 a#skip-top-content {
   height: 1px;
   width: 1px;
@@ -25,7 +31,7 @@ a#skip-top-content {
 }
 @media screen and (max-width: 64em) {
 .page-header nav  {
-  padding:0 4rem;
+  padding:0 14rem;
  }
 }
 @media screen and (max-width: 42em) {
@@ -50,6 +56,11 @@ a#skip-top-content {
 .main-content {
     max-width: 64rem;
     padding: 2rem 1rem 2rem 14rem;
+}
+@media screen and (max-width: 42em) {
+.page-header nav  {
+    padding: 2rem 1rem 2rem 1rem;
+ }
 }
 .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 {
   color: #8FBE00;
@@ -89,14 +100,21 @@ a#skip-top-content {
   }
 }
 .main-content ul#my_toc li {
-  padding: 10px 0;
   list-style: none;
 }
-a, a:visited {
-  color: #00A8C6;
+.main-content ul#my_toc li a {
+  display: inline-block;
+  padding: 5px 0;
+  width: 100%;
+  border-bottom: 1px solid #C9CDD0;
 }
-a:hover {
-  color: #40C0CB;
+.main-content ul#my_toc li a:hover {
+  color: #F9F2E7;
+  display: inline-block;
+  padding: 5px 0;
+  width: 100%;
+  border-bottom: 1px solid #C9CDD0;
+  background-color: #00A8C6;
 }
 .main-content pre, .main-content code {
     background-color: #fffbf5;
