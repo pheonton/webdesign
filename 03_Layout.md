@@ -1,5 +1,3 @@
-[Home](README.md)
-
 # Layout mit CSS #
 
 
