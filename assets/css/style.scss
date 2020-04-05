@@ -88,15 +88,20 @@ a#skip-to-content {
   text-align: right;
 }
 .main-content nav.nav-site {
-  width: 13rem;
-  margin: 6rem -14rem 0 0;
+  width: 13em;
+  margin: 6em -14em 0 0;
   float: right;
-  font-size: 0.9rem;
+  font-size: 0.9em;
   text-align: left;
 }
-.main-content nav.nav-site {
-  display: block;
-}
+.main-content footer nav.nav-site {
+    display: hidden;
+    width: 100%;
+    margin: 0 0 0 0;
+    float: none;
+    font-size: 0.8rem;
+    text-align: left;
+  }
 @media screen and (max-width: 64em) {
   .main-content nav.nav-site {
     display: none;
@@ -106,7 +111,7 @@ a#skip-to-content {
   }
 }
 @media screen and (max-width: 42em) {
-  .main-content nav.nav-secondary {
+  .main-content nav.nav-secondary, {
     position: relative;
     width: 100%;
     margin: 0 0 0 0;
