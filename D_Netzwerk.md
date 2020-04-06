@@ -3,7 +3,7 @@ tags:
   - study
   - preperation
 ---
-# Netzwerk Basics
+# Einführung Netzwerk
 
 Das World Wide Web (WWW) ist eine Sammlung von in HTML geschriebenen Dokumenten die über das Internet mit einem Browser abgerufen werden können, die Dokumente werden von Webservern bereitgestellt und sind über ihre Webadressen ereichbar. Webadressen bestehen aus der Adresse des Rechners auf dem der Webserver läuft und dem Pfad zur entsprechenden Datei.
 ```
