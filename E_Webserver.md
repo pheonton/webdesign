@@ -12,6 +12,7 @@ Nach dem Herunterladen muss der Server noch entpackt werden und kann dann direkt
 ## Einstellungen
 
 Option | Einstellung | Ändern | Beschreibung
+--- | --- | --- | ---
 Binding Address | 0.0.0.0 | nein |
 Port | 5723 | nein | Diese Nummer muß an die Adresse angeängt werden http://127.0.0.1:5723
 Allow Directory Listing | ausgewählt | ja | So werden alle Dateien und Ordner im Root-Verzeichnis angezeigt.
