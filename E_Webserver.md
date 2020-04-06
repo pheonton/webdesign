@@ -5,7 +5,7 @@ tags:
 ---
 # Webserver einrichten
 
-Für die Verarbeitung von PHP Dateien bietet sich der sehr kleine Webserver QuickPHP von Zach Saw.
+Für die Verarbeitung von PHP Dateien bietet sich der sehr kleine und einfache Webserver QuickPHP von Zach Saw an.
 
 Nach dem Herunterladen muss der Server noch entpackt werden und kann dann direkt aus seinem Verzeichnis quickphp_webserver mit einem Klick auf QuickPHP.exe aufgerufen werden.
 
