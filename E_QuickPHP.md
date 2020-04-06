@@ -3,7 +3,7 @@ tags:
   - study
   - preparation
 ---
-# Webserver einrichten
+# QuickPHP einrichten
 
 Für die Verarbeitung von PHP Dateien bietet sich der sehr kleine und einfache Webserver QuickPHP von Zach Saw an.
 
