@@ -15,11 +15,11 @@ Jedes Gerät in einem Netzwerk benötigt eine IP Adresse damit der Netzwerkverke
 ```
 127.0.0.1:4877
 ```
-> **Merke:** der Port für einen Webserver ist 80 und für eine SSL (verschlüsselte) Verbidung zum Server 443. FTP Dienst haben normalerweise den Port 21.
+Der Port für einen Webserver ist 80 und für eine SSL (verschlüsselte) Verbidung zum Server 443. FTP Dienst haben normalerweise den Port 21.
 
-IP-Adressen (Version 4, IPv4) mit der bestehen aus vier Zahlen, die jeweils Werte von 0 bis 255 annehmen können und mit einem Punkt getrennt werden, beispielsweise 192.0.2.42.
+IP-Adressen (Version 4, IPv4) mit der bestehen aus vier Zahlen, die jeweils Werte von 0 bis 255 annehmen können und mit einem Punkt getrennt werden, beispielsweise 192.0.2.42.[1]
 
-> **Merke:** IPv4 Adressen haben eine maximale Anzahl von 32Bit (2^32), um die Anzahl der möglichen IP Adressen zu erhöhen werden zusätzlich IPv6 Adressen mit 128Bit (2^128) Möglichkeiten verwendet.
+[1]: IPv4 Adressen haben eine maximale Anzahl von 32Bit (2^32), um die Anzahl der möglichen IP Adressen zu erhöhen werden zusätzlich IPv6 Adressen mit 128Bit (2^128) Möglichkeiten verwendet.
 
 ### Domainnamen
 Ein Domainname (z.B. www.example.com) besteht aus einer *top-level domain* (TLD) (`com`) einer Domain (`example`) und einer Subdomain (oder mehreren) (`www`). Die TLD wird von privaten oder stattlichen Organisationen verwaltet, bei denen die eigene Domain registriert wird (über eine Zwischenhändler *domain name registrar*). Domain und TLD ergeben zusammen den *Hostname*, die eindeutige bezeichnung eines Rechners in einem Netztwerk. Subdomains könen vom Besitzer der Domain beliebig gewählt werden.
