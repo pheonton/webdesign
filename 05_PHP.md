@@ -5,29 +5,62 @@ tags:
 ---
 # Einführung PHP
 
-PHP ist eine Skriptsprache. Ein PHP Interpreter (Übersetzer) verarbeitet PHP Code zu HTML welches im Browser dargestellt wird. Hierdurch kann eine dynamische Seite erstellt werden deren HTML Code programmatisch oder durch Benutzereingaben angepasstwerden kann. Im Gegensatz zu reinem HTML Code wird ein PHP Interpreter Dienst benötigt um der HTML Code zu generieren. HTML Dateien können direkt mit dem Browser geöffnet werden, PHP Dateien werden von einem Server bereit gestellt.
+PHP ist eine Skriptsprache. Ein PHP Interpreter (Übersetzer) verarbeitet PHP Code zu HTML welches im Browser dargestellt wird. Hierdurch kann eine dynamische Seite erstellt werden deren HTML Code programmatisch oder durch Benutzereingaben angepasst werden kann. Im Gegensatz zu reinem HTML Code wird ein PHP Interpreter Dienst benötigt um der HTML Code zu generieren. HTML Dateien können direkt mit dem Browser geöffnet werden, PHP Dateien werden von einem Server bereit gestellt. PHP Dateien haben die Endung php z.B. `index.php`.
 
-## Network basics
-Das World Wide Web (WWW) ist eine Sammlung von in HTML geschriebenen Dokumenten die über das Internet mit einem Browser abgerufen werden können, die Dokumente werden von Webservern bereitgestellt und sind über ihre Webadressen ereichbar. Webadressen bestehen aus der Adresse des Rechners auf dem der Webserver läuft und dem Pfad zur entsprechenden Datei.
+## PHP Code
+PHP Code steht innerhalb `<?php` und `?>` außerhalb des PHP Codes kann HTMl Code stehen. Um die Ausgabe von PHP anzuzeigen wird die Funktion `print` verwendet, Text (*String*) steht in Anführungszeichen und jede Anweisung muß mit einem Semikolon `;` abgeschlossen werden. Kommentare stehen hinter `#` oder zwischen `/*` und `*/`.
+
+```php
+<?php
+  print "Hello Wordl!"; # Gibt 'Hello World!' aus.
+?>
 ```
-http://www.example.com/pfad/zur/datei
+PHP kann HTMl Code direkt mit ausgeben:
+```php
+<?php
+  print "<h2>Hello Wordl!</h2>"; # Gibt '<h2>Hello World!</h2>' aus.
+?>
+```
+oder der HTML Code steht außerhalb des PHP Codes.
+```php
+<h2>
+<?php
+  print "Hello Wordl!";
+?>
+</h2>
 ```
 
-### IP Adresse und Portnummer
-Jedes Gerät in einem Netzwerk benötigt eine IP Adresse, damit der Netzwerkverkehr vom und zum Gerät gesendet werden kann. Die IP Adressse des Rechner auf dem man sich gerade befindet, ist 127.0.0.1. Jeder Dienst (z.B. Web- oder Mailserver) der auf dem Rechner läuft erhät eine Portnummer unter der er zu erreichen ist die an die IP Adresse nach einem Dppelpunkt angehängt wird
+### Variablen
+
+Variablen beginnen mit einem `$` und ihnen wird mit einem Gleichheitszeichen ein Wert zugewiesen.
+```php
+<?php
+  $text = "Hello World!";
+  print $text; # Gibt 'Hello World!' aus.
+?>
 ```
-127.0.0.1:4877
+String Varibalen können mit anderen Strings (oder Variablen) über einen Punkt zu einem String verbunden werden.
+```php
+<?php
+  $text = "Hello World!";
+  print "<h2>" . $text . "</h2>"; # Gibt '<h2>Hello World!</h2>' aus.
+?>
 ```
-Der Port für einen Webserver (HTTP) ist 80 und für eine SSL (verschlüsselte) Verbidung (HTTPS) zum Webserver 443. FTP Dienste haben normalerweise den Port 21.
+### Arten von Typen
 
-IP-Adressen (Version 4, IPv4) bestehen aus vier Zahlen, die jeweils Werte von 0 bis 255 annehmen können und mit einem Punkt getrennt werden, beispielsweise 192.0.2.42.. IPv4 Adressen haben eine maximale Anzahl von 32Bit (2^32), um die Anzahl der möglichen IP Adressen zu erhöhen werden zusätzlich IPv6 Adressen mit 128Bit (2^128) Möglichkeiten verwendet.
 
-### Domainnamen
-Im Internet werden Domainnamen zur Identifizierung von Rechnern verwendet. Ein Domainname (z.B. www.example.com) besteht aus einer *top-level domain* (TLD) (`com`) einer Domain (`example`) und einer Subdomain (oder mehreren) (`www`). Die TLD wird von privaten oder stattlichen Organisationen verwaltet, bei denen die eigene Domain registriert wird (über einen Zwischenhändler *domain name registrar*). Domain und TLD ergeben zusammen den *Hostname*, die eindeutige bezeichnung eines Rechners in einem Netztwerk. Subdomains könen vom Besitzer der Domain beliebig gewählt werden.
-Die IP Adresse eines Servers ist unabhängig vom Domainnamen (www.example.com). Ein DNS (Domain Name System) Server leitet den Aufruf eines Domainnamens auf eine IP Adresse um.
-Der eigene Rechner mit der IP Adresse 127.0.0.1 kann über den Hostname `localhost` aufgerufen werden.
+Umwandlung in einen anderen Typ. (Typecasting)
+Beispiel: Umwandeln von string zu integer: $int = (string) '1'.
 
->**Merke:** Wird eine Domain (oder IP Adresse) ohne ein Port aufgerufen, wird standardmäßig der Port 80 (443 bei https) verwendet.
+### Operatoren
+- Arithmetische Operatoren: Plus „+“, Minus „-“, Mal „*“, Geteilt „/“
+- Zuweisungsoperatoren: Zuweisung „=“, Der Wert rechts vom Gleichheitszeichen wird der Variablen links zugewiesen. Im Gegensatz zum Gleicheitszeichen der Mathematik, das in beide Richtungen wirkt (transitiv)
+- Vergleichsoperatoren: Einfacher Vergleich „==“, Vergleich auch des Typs „===“, Größer „>“, Größer-Gleich „>=“, Ungleich „!=“
+- Logische Operatoren: Und „&&“, Oder „||“, Nicht „!“
 
-##
 
+
+## if - Überprüfung
+
+
+## for - Schleife
