@@ -48,6 +48,16 @@ String Varibalen können mit anderen Strings (oder Variablen) über einen Punkt 
 ```
 ### Arten von Typen
 
+Skalare Typen:
+- Boolean (bool): true, false
+- Integer (int): 1, -2, 1000, 213422
+- Fließkomma-Zahl (float): 2.2345, -4.23
+- String / Zeichenkette (string): ‘Hello World‘
+Zusammengesetzte Typen:
+- Array (array)
+- Objekt (object)
+Spezielle Typen:
+- NULL
 
 Umwandlung in einen anderen Typ. (Typecasting)
 Beispiel: Umwandeln von string zu integer: $int = (string) '1'.
@@ -62,5 +72,21 @@ Beispiel: Umwandeln von string zu integer: $int = (string) '1'.
 
 ## if - Überprüfung
 
-
+Bedingte Anweisungen werden mit dem Schlüsselwort if eingeleitet. Der darauf folgende
+Ausdruck in runden Klammern, die Bedingung, wird logisch ausgewertet. Ist der Ausdruck
+wahr (true), erfolgt die Ausführung der unmittelbar auf if folgenden Programmanweisung
+oder des Anweisungsblocks. Ergibt die Auswertung des Ausdrucks den Wert falsch (false),
+wird die unmittelbar folgende Anweisung bzw. Anweisungsblock nicht ausgeführt. Das
+Programm überspringt eine Anweisung bzw. einen Anweisungsblock.
+$a = 5;
+$b = 7;
+if ($a > $b) {
+print ‘a ist größer als b‘;
+}
+elseif ($a <= $b + 1) {
+print ‘a ist kleiner/gleich b + 1‘;
+}
+else {
+print ‘a ist nicht größer als b und nicht kleiner/gleich b + 1‘;
+}
 ## for - Schleife
