@@ -92,7 +92,7 @@ Bedingte Anweisungen werden mit dem Schlüsselwort `if` eingeleitet. Der darauf 
   - Das Programm überprüft die Bedingungen nachfolgender `ifelse` Anweisungen und führt deren Anweisung gegebenenfallsaus.
   - Ist kein Bedingung von `if` oder `ifelse` wahr, wird die Anweisung von `else` ausgeführt.
   
->**Merke:** `ifelse` und `else` sind nicht notwendig.
+>**Hinweis:** `ifelse` und `else` sind nicht notwendig.
 
 Beispiel
 ```php
