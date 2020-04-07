@@ -71,7 +71,9 @@ $int = (int) $string; # Hier wird die String "3445" in eine Zahl umgewandelt
 $ergebnis = $int + 400;
 ```
 
-NULL sollte nicht getypcasted werden um den Wert einer Variable zu entfernen wird `unset($variable)` verwendet.
+NULL sollte nicht getypcasted werden, um eine Variable zu löschen wird `unset($variable)` verwendet.
+
+>**Merke:** Der String `""` ist nicht `NULL` sondern leer `empty`. `0` oder `false` gelten in diesem Zusammenhang auch als leer.
 
 ### Operatoren
 
@@ -81,24 +83,48 @@ NULL sollte nicht getypcasted werden um den Wert einer Variable zu entfernen wir
 - Logische Operatoren: Und `&&`, Oder `||`, Nicht `!`, Nicht Und `!&`
 
 
-
 ## if - Überprüfung
 
-Bedingte Anweisungen werden mit dem Schlüsselwort if eingeleitet. Der darauf folgende
-Ausdruck in runden Klammern, die Bedingung, wird logisch ausgewertet. Ist der Ausdruck
-wahr (true), erfolgt die Ausführung der unmittelbar auf if folgenden Programmanweisung
-oder des Anweisungsblocks. Ergibt die Auswertung des Ausdrucks den Wert falsch (false),
-wird die unmittelbar folgende Anweisung bzw. Anweisungsblock nicht ausgeführt. Das
-Programm überspringt eine Anweisung bzw. einen Anweisungsblock.
-$a = 5;
-$b = 7;
-if ($a > $b) {
-print ‘a ist größer als b‘;
-}
-elseif ($a <= $b + 1) {
-print ‘a ist kleiner/gleich b + 1‘;
-}
-else {
-print ‘a ist nicht größer als b und nicht kleiner/gleich b + 1‘;
-}
+Bedingte Anweisungen werden mit dem Schlüsselwort `if` eingeleitet. Der darauf folgende Ausdruck in runden Klammern, die Bedingung, wird logisch überprüft.
+- Ist der Ausdruck wahr (`true`), erfolgt die Ausführung der unmittelbar auf `if` folgenden Programmanweisung innerhalb von geschweiften Klammern.
+- Ist der Ausdruck falsch (`false`), wird die unmittelbar folgende Anweisung nicht ausgeführt.
+  - Das Programm überprüft die Bedingungen nachfolgender `ifelse` Anweisungen und führt deren Anweisung gegebenenfallsaus.
+  - Ist kein Bedingung von `if` oder `ifelse` wahr, wird die Anweisung von `else` ausgeführt.
+  
+>**Merke:** `ifelse` und `else` sind nicht notwendig.
+
+Beispiel
+```php
+<?php
+  $a = 5;
+  $b = 7;
+  if ($a > $b) {
+    print $a . 'ist größer als' . $b;
+  }
+  elseif ($a == $b) {
+    print $a . 'und' . $b . 'sind gleich';
+  }
+  else {
+    print $a . 'ist kleiner als ' . $b;
+  }
+?>
+```
+if - Bedingungen können auch verschachtelt werden, soll der obere Code nur ausgeführt werden wenn a und b Zahlen sind `is_numeric()`, würde dies so aussehen:
+```php
+<?php
+  $a = 5;
+  $b = 7;
+  if (is_numeric($a) && is_numeric($b)) {
+    if ($a > $b) {
+      ...
+    }
+   }
+?>
+```
+Ob eine Varable existiert (nicht `NULL` ist), kann mit `isset()` überprüft werden, ob sie leer (`""`, `0`, `false`) ist mit `empty()`. Ein vorangestelltes ! negiert die Aussage:
+- `isset($variable)` liefert `true` wenn die Variable eine Wert hat, sie kann auch leer sein.
+- `empty($variable)` liefert `true` wenn die Variable leer ist.
+- `!isset($variable)` liefert `true` wenn die Variable nicht deklariert wurde oder mit `unset($variable)` gelöscht wurde.
+- `!empty($variable)` liefert `true` wenn die Variable nicht leer ist.
+
 ## for - Schleife
