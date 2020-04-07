@@ -1,6 +1,5 @@
 ---
 tags:
- - study
  - php
  - xml
 ---
@@ -10,8 +9,7 @@ Bisher war es nur möglich, die Daten aus einem Array auszulesen. Dies hat aller
 
 ## Daten im XML-Format speichern
 
-Zuerst müssen die Daten in einem entsprechenden Format abgespeichert werden. Hierfür
-verwenden Sie XML. Dies bietet die Möglichkeit, die Daten ähnlich wie in HTML zu gliedern, und ist
+Zuerst müssen die Daten in einem entsprechenden Format abgespeichert werden. Hierfür wird XML verwendet. Dies bietet die Möglichkeit, die Daten ähnlich wie in HTML zu gliedern, und ist
 deutlich übersichtlicher als mehrdimensionale Arrays. Im Gegensatz zu HTML können die Tags in XML frei gewählen werden. Allerdings gelten dieselben Regeln wie in HTML auch: Tags müssen geöffnet und geschlossen werden; Tags dürfen ineinander
 verschachtelt werden, aber befor ein Tag geschlopssen wird, müssen alle Tags innerhlab auch geschlossen werden.
 
