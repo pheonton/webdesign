@@ -17,4 +17,3 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 5. [Einführung PHP](05_PHP.md)
 6. [Formulare mit PHP verarbeiten](06_Formulare_PHP.md)
 7. [Einführung Arrays](07_Arrays.md)
-8. [Einführung simpleXML](08_simpleXML.md)
