@@ -46,23 +46,23 @@ String Varibalen können mit anderen Strings (oder Variablen) über einen Punkt 
   print "<h2>" . $text . "</h2>"; # Gibt '<h2>Hello World!</h2>' aus.
 ?>
 ```
-### Arten von Typen
+### Typen von Variablen
 
 Variablen können von unterschiedlichem Typ sein.
 
-Skalare Typen, bestehen aus einem Wert:
-- Wahrheitswert bzw. Boolesch (bool): true, false
-- Ganze Zahl bzw. Integer (int): 1, -2, 1000, 213422
-- Dezimalzahl bzw. Fließkommazahl (float): 2.2345, -4.23
-- Text bzw. Zeichenkette (string): "Hello World"
+- Skalare Typen, bestehen aus einem Wert:
+  - Wahrheitswert bzw. Boolesch (bool): true, false
+  - Ganze Zahl bzw. Integer (int): 1, -2, 1000, 213422
+  - Dezimalzahl bzw. Fließkommazahl (float), mit punkt statt Komma: 2.2345, -4.23
+  - Text bzw. Zeichenkette (string), wird durch Anführungszeichen begrenzt: "Hello World" 
 
-Zusammengesetzte Typen, bestehen aus mehreren Werten mit unterschiedlichen Typen:
-- Array (array)
-- Objekt (object)
+- Zusammengesetzte Typen, bestehen aus mehreren Werten mit unterschiedlichen Typen:
+  - Array (array)
+  - Objekt (object)
 
-Eine Variable ohne Wert hat den Typ NULL.
+- Eine Variable ohne Wert hat den Typ NULL.
 
-Typen können ineinander umgewandelt werden, mit **Typecasting**. Das ist z.B. sinnvoll um einen String "3445" in eine Zahl 3445 umzuwandeln, mit dem String "3445" kann nicht gerechnet werde, mit der Zahl 3445 schon. In den meisten Fällen erledigt PHP dies allerdings automatisch. Beim typcasten wird dem Wert der neue Typ in Klammern vorangestellt.
+Typen können ineinander umgewandelt werden, mit **Typecasting**. Das ist z.B. sinnvoll um einen String "3445" in eine Zahl 3445 umzuwandeln, mit dem String "3445" kann nicht gerechnet werde, mit der Zahl 3445 schon. In den meisten Fällen erledigt PHP dies allerdings automatisch. Beim Typcasten wird der Variablen der neue Typ in Klammern vorangestellt.
 Beispiel
 
 ```php
@@ -70,13 +70,15 @@ $string = "3445";
 $int = (int) $string; # Hier wird die String "3445" in eine Zahl umgewandelt
 $ergebnis = $int + 400;
 ```
-NULL sollte nciht getypcasted werden um den Wert einer Variable zu entfernen
+
+NULL sollte nicht getypcasted werden um den Wert einer Variable zu entfernen wird `unset($variable)` verwendet.
 
 ### Operatoren
-- Arithmetische Operatoren: Plus „+“, Minus „-“, Mal „*“, Geteilt „/“
-- Zuweisungsoperatoren: Zuweisung „=“, Der Wert rechts vom Gleichheitszeichen wird der Variablen links zugewiesen. Im Gegensatz zum Gleicheitszeichen der Mathematik, das in beide Richtungen wirkt (transitiv)
-- Vergleichsoperatoren: Einfacher Vergleich „==“, Vergleich auch des Typs „===“, Größer „>“, Größer-Gleich „>=“, Ungleich „!=“
-- Logische Operatoren: Und „&&“, Oder „||“, Nicht „!“
+
+- Arithmetische Operatoren: Plus `+`, Minus `-`, Mal `*`, Geteilt `/`
+- Zuweisungsoperatoren: Zuweisung `=`, Der Wert rechts vom Gleichheitszeichen wird der Variablen links zugewiesen. Im Gegensatz zum Gleicheitszeichen der Mathematik, das in beide Richtungen wirkt (transitiv)
+- Vergleichsoperatoren: Einfacher Vergleich `==`, Vergleich auch des Typs `===`, Größer `>`, Größer-Gleich `>=`, Ungleich `!=`
+- Logische Operatoren: Und `&&`, Oder `||`, Nicht `!`, Nicht Und `!&`
 
 
 
