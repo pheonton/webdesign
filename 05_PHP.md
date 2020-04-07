@@ -132,7 +132,7 @@ Ob eine Varable existiert (nicht `NULL` ist), kann mit `isset()` überprüft wer
 Mit for-Schleifen wird ein Ausdruck bis zu einem Abbruchkriterium wiederholt.
 Die Anweisungen für die for-Schleife bestehen aus drei Ausdrücken
 - einem für den Start,
-- einem der bei jeder Dürchführung überprüft wird (Abbruchkriterium) und
+- einem der bei jeder Durchführung überprüft wird (Abbruchkriterium) und
 - einem der bei jeder Durchführung durchgeführt wird.
 
 ```php
