@@ -51,16 +51,16 @@ String Varibalen können mit anderen Strings (oder Variablen) über einen Punkt 
 Variablen können von unterschiedlichem Typ sein.
 
 - Skalare Typen, bestehen aus einem Wert:
-  - Wahrheitswert bzw. Boolesch (bool): true, false
-  - Ganze Zahl bzw. Integer (int): 1, -2, 1000, 213422
-  - Dezimalzahl bzw. Fließkommazahl (float), mit punkt statt Komma: 2.2345, -4.23
-  - Text bzw. Zeichenkette (string), wird durch Anführungszeichen begrenzt: "Hello World" 
+  - Wahrheitswert bzw. Boolesch (bool): `true`, `false`
+  - Ganze Zahl bzw. Integer (int): `1`, `-2`, `1000`, `213422`
+  - Dezimalzahl bzw. Fließkommazahl (float), mit Punkt statt Komma: `2.2345`, `-4.23`
+  - Text bzw. Zeichenkette (string), wird durch Anführungszeichen begrenzt: `"Hello World"` 
 
 - Zusammengesetzte Typen, bestehen aus mehreren Werten mit unterschiedlichen Typen:
   - Array (array)
   - Objekt (object)
 
-- Eine Variable ohne Wert hat den Typ NULL.
+- Eine Variable ohne Wert hat den Typ *null* und den Wert `NULL`.
 
 Typen können ineinander umgewandelt werden, mit **Typecasting**. Das ist z.B. sinnvoll um einen String "3445" in eine Zahl 3445 umzuwandeln, mit dem String "3445" kann nicht gerechnet werde, mit der Zahl 3445 schon. In den meisten Fällen erledigt PHP dies allerdings automatisch. Beim Typcasten wird der Variablen der neue Typ in Klammern vorangestellt.
 Beispiel
