@@ -3,8 +3,13 @@ tags :
   - study
   - php
 ---
-# URl Parameter
-URL Parameter werden nach einem Fragezeichen `?` an die URL angehängt. Es sind Key und Werte Paare, die durch ein Gleichheitszeichen verbunden sind und durch ein Kaufmannsund `&` von anderen Paaren getrennt werden.
+# Übergabe von Variablen
+
+## $_GET - Variablen in der URL
+
+Mit URL Parametern können Variablen auch ohne ein Formular an eine PHP Seite übergeben werden. URL Parameter werden nach einem Fragezeichen `?` an die URL angehängt. Es sind Key und Werte Paare, die durch ein Gleichheitszeichen verbunden sind und durch ein Kaufmannsund `&` von anderen Paaren getrennt werden.
+
+Beispiel for die [Parameter von Duckduckgo](https://duckduckgo.com/params) 
 
 https://duckduckgo.com/?q=url+parameter&kt=s&kx=o
 
@@ -21,3 +26,14 @@ $pagenumber = $_GET['page'];
 print $pagenumber; # gibt 5 aus
 ```
 
+## $_SESSION - Variablen wärend einer Sitzung
+
+Variablen können auch wärend einer Sitzung (geöffnetes Browserfenster) im Array `$_SESSION` gespeichert werden. Um auf das Array zuzugreifen, muß in der PHP Datei an erster Stelle im Code die Sitzung mit `session_start()` gestartet werden.
+```php
+<?php
+  session_start();
+  #nachfolgend wird ein Eintrag mit dem Key something und dem Wert "some things are wonderful" erzeugt.
+  $_SESSION['something'] = "some things are wonderful"; 
+  print $_SESSION['something']; #Gibt "somethigns are wonderful aus"
+?>
+```
