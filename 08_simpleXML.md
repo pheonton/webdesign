@@ -99,7 +99,7 @@ Mit `->asXML(daten.xml)` wird das xml Objekt in eine XML Datei mit Namen `daten.
   $xml->asXML('daten.xml');
 ?>
 ```
-Die XML sieht dann so aus:
+Die XML Datei sieht dann so aus:
 ```xml
 <?xml version='1.0' standalone='yes'?>
 <root>
