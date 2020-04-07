@@ -12,20 +12,20 @@ PHP Code steht innerhalb `<?php` und `?>` außerhalb des PHP Codes kann HTMl Cod
 
 ```php
 <?php
-  print "Hello Wordl!"; # Gibt 'Hello World!' aus.
+  print "Hello World!"; # Gibt 'Hello World!' aus.
 ?>
 ```
 PHP kann HTMl Code direkt mit ausgeben:
 ```php
 <?php
-  print "<h2>Hello Wordl!</h2>"; # Gibt '<h2>Hello World!</h2>' aus.
+  print "<h2>Hello World!</h2>"; # Gibt '<h2>Hello World!</h2>' aus.
 ?>
 ```
 oder der HTML Code steht außerhalb des PHP Codes.
 ```php
 <h2>
 <?php
-  print "Hello Wordl!";
+  print "Hello World!";
 ?>
 </h2>
 ```
@@ -54,7 +54,7 @@ Variablen können von unterschiedlichem Typ sein.
   - Wahrheitswert bzw. Boolesch (bool): `true`, `false`
   - Ganze Zahl bzw. Integer (int): `1`, `-2`, `1000`, `213422`
   - Dezimalzahl bzw. Fließkommazahl (float), mit Punkt statt Komma: `2.2345`, `-4.23`
-  - Text bzw. Zeichenkette (string), wird durch Anführungszeichen begrenzt: `"Hello World"` 
+  - Text bzw. Zeichenkette (string), wird durch Anführungszeichen begrenzt: `"Hello World!"` 
 
 - Zusammengesetzte Typen, bestehen aus mehreren Werten mit unterschiedlichen Typen:
   - Array (array)
