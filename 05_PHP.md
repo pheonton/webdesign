@@ -82,6 +82,7 @@ NULL sollte nicht getypcasted werden, um eine Variable zu löschen wird `unset($
 - Vergleichsoperatoren: Einfacher Vergleich `==`, Vergleich auch des Typs `===`, Größer `>`, Größer-Gleich `>=`, Ungleich `!=`
 - Logische Operatoren: Und `&&`, Oder `||`, Nicht `!`, Nicht Und `!&`
 
+>**Merke:** Um zu einer Zahl `$zahl` einen Wert hinzuzuaddieren wird aufgrund der besonderen Eigenschaft des Gleichheitszeichens folgende Syntax verwendet `$zahl = $zahl + 5`. Wird eine Zahl um `1` erhöt, kann die Kurzform `$zahl++` verwendet werden.
 
 ## if - Überprüfung
 
@@ -128,3 +129,37 @@ Ob eine Varable existiert (nicht `NULL` ist), kann mit `isset()` überprüft wer
 - `!empty($variable)` liefert `true` wenn die Variable nicht leer ist.
 
 ## for - Schleife
+Mit for-Schleifen wird ein Ausdruck bis zu einem Abbruchkriterium wiederholt.
+Die Anweisungen für die for-Schleife bestehen aus drei Ausdrücken
+- einem für den Start,
+- einem der bei jeder Dürchführung überprüft wird (Abbruchkriterium) und
+- einem der bei jeder Durchführung durchgeführt wird.
+
+```php
+for (Start; Überprüfung; Durchführung) {
+    ...
+}
+```
+Beispiel für die Ausgabe der Zahlen 1 bis 10
+```php
+<?php
+ for ($i = 1; $i <= 10; $i++) {
+     print $i;
+ }
+?>
+```
+Für zusätzliche Abbruchkriterien kann die Anweisung `break` innerhalb einer for-Schleife verwendet werden.
+Die Schleift läst sich dann ganz ohne die drei Ausdrücke schreiben:
+```php
+<?php
+  $i = 1;
+  for (;;) {
+    if ($i <= 10 ) {
+      break;
+    }
+    print $i;
+    $i++;
+ }
+?>
+```
+>**Merke:** Eine for-Schleife muss **immer** ein Abbruchkriterium haben, ansonsten läuft die Schleife so lange bis die Ressourcen des Rechners erschöpft sind.
