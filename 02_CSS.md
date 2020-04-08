@@ -1,5 +1,8 @@
 ---
-tags: study html css
+tags:
+  - study
+  - html
+  - css
 ---
 # Einführung CSS
 
