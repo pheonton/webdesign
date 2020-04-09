@@ -82,7 +82,7 @@ foreach ($feld1 as $key => $f) {
 ## Mehrstufige Arrays
 Arrays können auch Arrays enthalten. Anstatt einem String oder einer Zahl kann ein Wert auch wieder ein Array sein.
 ```php
-$feld1 = array(
+$feld = array(
 	'item1' => array(
  		'key1' => 'value1',
  		'key2' => 'value2',
@@ -102,3 +102,22 @@ print $feld['item2'][ 'key2']; #ergibt value4
 
 $feld['item2'][ 'key1'] = 'value5'; #überschreibt value3 mit value5
 ```
+
+Um alle Werte des merhstufigen Arrays auszugeben wird die foreach - Schleife verwendet:
+```php
+foreach ($feld as $element) { # In $element ist jeweils das untergeornete Array gespeichert
+	print $element['key1'] . <br />;
+	print $element['key2'] . <br />;
+}
+```
+
+fearch kann auch zweimal verwendet werden, die Keys werden dann nciht benötigt:
+```php
+foreach ($feld as $element) { # itteriert durch das erste Array der obersten Ebene
+	foreach ($element as $value) { # Iterriert durch die Arrays der nächsten Ebene
+		print $value;
+	}
+}
+```
+
+
