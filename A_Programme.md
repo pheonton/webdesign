@@ -17,7 +17,7 @@ tags:
 4. In Visual Stuio Code kannst du HTML Code in die Datei einfügen. Danach die Datei speicheren (STRG + S) und die Ansicht im Bowser aktuallisieren (F5). Die jeweiligen Änderungen sollten so sichtbar sein.
 Den Code kannst du der Datei [Einführung HTML](https://github.com/pheonton/webdesign/blob/master/01_HTML.md#einf%C3%BChrung-html) entnehmen.
 
-<iframe width="100%" src="https://www.youtube.com/embed/BZNGaMyQDks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="100%" height="auto" src="https://www.youtube.com/embed/BZNGaMyQDks" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 ## Basis HTML mit CSS
