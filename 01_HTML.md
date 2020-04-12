@@ -15,11 +15,11 @@ tags:
 <html lang="de">
   <head>
     <meta charset=UTF-8" />
-    <title>Hello World</title>
+    <title>Hello World!</title>
   </head>
   <body>
     Dieser Text wird angezeigt!
-    <!-- Diser Text wird nicht angezeigt weil er ein Kommentar ist -->
+    <!-- Diser Text wird nicht angezeigt, weil er ein Kommentar ist -->
   </body>
 </html>
 ```
