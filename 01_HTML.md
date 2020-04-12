@@ -14,7 +14,7 @@ tags:
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset=UTF-8" />
+    <meta charset="UTF-8" />
     <title>Hello World!</title>
   </head>
   <body>
