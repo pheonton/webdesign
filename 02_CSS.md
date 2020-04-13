@@ -17,8 +17,8 @@ Mit Cascading Style Sheets (CSS) lassen sich HTML Tags formatieren. Eine externe
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-    <meta charset=UTF-8" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset=UTF-8">
     <title>Hello World | Website</title>
   </head>
   <body>
