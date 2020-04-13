@@ -31,6 +31,7 @@ Die Datei style.css liegt in diesem Beispiel im Unterordner css des Arbeitsverze
 In der CSS Datei werden so genannte Selektoren verwendet, um Tags anzusprechen. Selektoren bestehen im
 einfachsten Fall aus einem Tag.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Hf7hLQb1f3Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Beispiel | Allgemein | Erläuterung
 --- | --- | ---
