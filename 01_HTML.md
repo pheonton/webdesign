@@ -35,8 +35,6 @@ tags:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWTfRehELFA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-> **Merke:** HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
-
 ## Textstrukturierung
 
 | Element | Erläuterung |
@@ -56,6 +54,7 @@ Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus m
 <hr>
 <p>Phasellus non leo semper, lobortis mi nec, gravida quam. Etiam feugiat eget lectus quis blandit.</p>
 ```
+> **Merke:** HTML Code wird verwendet um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eigesetzt.
 
 ## Tabellen
 
