@@ -14,7 +14,7 @@ tags:
 <!DOCTYPE html>
 <html lang="de">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8">
     <title>Hello World!</title>
   </head>
   <body>
@@ -102,7 +102,7 @@ Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus m
 **Bilder**
 
 ```html
-<img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur" />
+<img src="images/animals-q-c-640-480-3.jpg" alt="Aliquam efficitur">
 ```
 
 **Verknüpfungen**
