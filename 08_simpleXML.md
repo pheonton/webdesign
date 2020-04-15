@@ -26,7 +26,7 @@ Beispiel
   </lektuere>
 </lektueren>
 ```
->**Hinweis:** Das erste Element (hier <lektueren>) ist das root Element es umschließt alle anderen Elemente und muss immer vorhanden sein, wird aber bei der Weiterverarbeitung nicht angesprochen.
+>**Hinweis:** Das erste Element (hier `<lektueren>`) ist das root Element es umschließt alle anderen Elemente und muss immer vorhanden sein, wird aber bei der Weiterverarbeitung nicht angesprochen.
 
 XML-Dateien werden mit der Endung .xml gespeichert.
 
