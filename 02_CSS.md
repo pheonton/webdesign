@@ -203,8 +203,11 @@ div {
 
 Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
 
-Für Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie mit dem Link "+ Select this Style" neben einem Stil zu den "Selected Families" hinzugefügt werden. Alle Schriftarten-Stile können anschließend mit einem CSS Eintrag zur Webseite hinzugefügt werden. Der passende Befehl lautet `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');`, dieser kann bei Google Fonts mit einem Klick auf "View your selected Families" angezeigt werden.
-In der CSS-Datei wird `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet um die Schrift zu verwenden.
+Für Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie mit dem Link "+ Select this Style" neben einem Stil zu den "Selected Families" hinzugefügt werden.
+Alle Schriftarten-Stile können anschließend mit einem CSS Eintrag zur Webseite hinzugefügt werden. Die Anweisung lautet `@import url('https://fonts.googleapis.com/css2?family=Schrift+Name&display=swap');` und muss am Anfang der CSS Datei stehen, der passende Code kann bei Google Fonts mit einem Klick auf "View your selected Families" (oben rechts) angezeigt werden.
+In der CSS-Datei wird `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet, um die Schrift zu verwenden.
+
+>Merke: Es werden zwei Einträge benötigt: `@import...` um die Schrift zu laden und `font-family:...` um die Schrifart auf ein Element anzuwenden.
 
 [Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
 
