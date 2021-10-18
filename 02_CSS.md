@@ -48,16 +48,16 @@ id | ID. Für Elemente die ein einziges Mal verwendet werden. | ```<h1 id="main-
 **Beispiel für HTML Code**
 
 ```html
-<div class=“section“>
-  <h1 id=“main-title“>Lorem ipsum</h1>
-  <p class=“content“><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit.
+<div class="section">
+  <h1 id="main-title">Lorem ipsum</h1>
+  <p class="content"><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit.
 Nulla vel metus porta, cursus libero in, varius metus. Praesent scelerisque iaculis lectus. Suspendisse nec
 maximus massa. Cras viverra leo quis molestie tincidunt. In dignissim congue dapibus. Duis at imperdiet
 erat. Cras arcu nibh, eleifend volutpat sagittis eu, venenatis vitae mauris.</p>
-  <p class=“content second“>Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
+  <p class="content second">Donec tincidunt cursus ipsum, ut convallis lorem dictum et. <del>Cras id risus
 magna.</del> Praesent dui libero, hendrerit a consectetur id, vehicula ut nibh. Nulla nec consectetur leo.</p>
   <hr>
-  <p class=“important“>Phasellus non leo semper, lobortis mi nec, gravida quam. <span class="small">Etiam feugiat
+  <p class="important">Phasellus non leo semper, lobortis mi nec, gravida quam. <span class="small">Etiam feugiat
 eget lectus quis blandit.</span></p>
 </div>
 ```
@@ -187,7 +187,7 @@ Beispiel
 
 **Rot/Grün/Blau-Mischung mit Transparenz**
 
-CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert hinzuzufügen. Dadurch lassen sich zum Beispiel teiltransparente Hintergrundfarben definieren. Die allgemeine Schreibweise hierfür lautet `rgba(Rot, Grün, Blau, Deckkraft)`. Es gelten die
+CSS erlaubt es, zur RGB-Mischung noch einen Transparenzwert (Alphawert) hinzuzufügen. Dadurch lassen sich zum Beispiel teiltransparente Hintergrundfarben definieren. Die allgemeine Schreibweise hierfür lautet `rgba(Rot, Grün, Blau, Deckkraft)`. Es gelten die
 selben Regeln wie für die einfache RGB-Mischung. Der Wert Deckkraft wird jedoch als Dezimalzahl im Bereich 0 (keine Deckkraft, vollkommen transparent) bis 1 (volle Deckkraft, keine Transparenz) angegeben.
 
 Beispiel
@@ -203,7 +203,8 @@ div {
 
 Für die Angabe von Schriftarten dürfen keine Systemschriftarten verwendet werden, diese sind nicht auf allen Endgeräten mit denen die Website betrachtet wird verfügbar.
 
-Für Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie über `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');` in der CSS-Datei geladen werden und mit `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet werden. Die Google Fonts Webseite zeigt unten rechts den entsprechenden Code an, wenn eine (oder mehrere) Schriften ausgewählt wurden.
+Für Schriftarten bietet sich die Verwendung von [Google Fonts](https://fonts.google.com/) an. Wenn eine Schriftart ausgewählt wurde, kann sie mit dem Link "+ Select this Style" neben einem Stil zu den "Selected Families" hinzugefügt werden. Alle Schriftarten-Stile können anschließend mit einem CSS Eintrag zur Webseite hinzugefügt werden. Der passende Befehl lautet `@import url('https://fonts.googleapis.com/css?family=Schrift+Name&display=swap');`, dieser kann bei Google Fonts mit einem Klick auf "View your selected Families" angezeigt werden.
+In der CSS-Datei wird `font-family: 'Schrift Name', sans-serif;` (sans-serif als Fallback) verwendet um die Schrift zu verwenden.
 
 [Ausführliche Anleitung](https://developers.google.com/fonts/docs/getting_started)
 
