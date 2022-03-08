@@ -20,9 +20,9 @@ $feld1 = array(
 ```
 Beispiel
 ```php
-$buch = array(
-	'titel' = 'Don Quijote',
-	'autor' = 'Miguel de Cervantes'
+$person = array(
+	'augenfarbe' => 'braun',
+	'haarfarbe' => 'grün'
 );
 ```
 Werden die Keys nicht mit explizit angegeben, werden numerische Keys von 0 aufsteigend für jeden Wert erzeugt.
@@ -30,6 +30,11 @@ Werden die Keys nicht mit explizit angegeben, werden numerische Keys von 0 aufst
 $feld2 = array ('value_a', 'value_b' );
 ```
 Hier hat `value1` hat den Key `0` und `value2` den Key `1`.
+
+Beispiel
+```php
+$donut = array('schokostreusel', 'zuckerguss pink', 'zuckerguss weiß', 'sprinkles bunt');
+```
 
 Auch die Definition eines leeren Array ist möglich:
 ```php
@@ -60,7 +65,7 @@ $feld2[] = 'value3';
 ### Wert (und Key) löschen
 Ein Element in einem Array wird folgendermaßen gelöscht:
 ```php
-unset($field1['key1']);
+unset($feld1['key1']);
 ```
 Hier wird der Wert mit dem Key `key1` und der Key selbst gelöscht, d.h. das Array hat nun einen Eintrag weniger.
 
@@ -91,6 +96,14 @@ $feld = array(
  		'key1' => 'value3',
  		'key2' => 'value4',
  	),
+);
+```
+Beispiel
+```php
+$donut = array(
+	0 		=> 'schokostreusel',
+	'sprinkles' 	=> array('bunt', 'blau'),
+	'zuckerguss' 	=> array('weiß', 'blau', 'pink'),
 );
 ```
 
