@@ -115,12 +115,17 @@ print $feld['item2'][ 'key2']; #ergibt value4
 
 $feld['item2'][ 'key1'] = 'value5'; #überschreibt value3 mit value5
 ```
+Beispiel
+```php
+print $feld[0] 			#ergibt schokostreusel
+print $feld['sprinkles'][1] 	#ergibt blau
+```
 
 Um alle Werte des merhstufigen Arrays auszugeben wird die foreach - Schleife verwendet:
 ```php
 foreach ($feld as $element) { # In $element ist jeweils das untergeornete Array gespeichert
-	print $element['key1'] . <br />;
-	print $element['key2'] . <br />;
+	print $element['key1'] . "<br />";
+	print $element['key2'] . "<br />";
 }
 ```
 
