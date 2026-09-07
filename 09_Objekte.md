@@ -97,6 +97,6 @@ console.log(w2.seiten);        // 20
 1. Erstelle ein Objekt `buch` mit den Eigenschaften `titel`, `autor` und `seiten`. Gib den Titel in der Konsole aus und ändere danach die Seitenzahl.
 2. Ergänze `buch` um eine Methode `beschreibung()`, die mit `this` aus den Eigenschaften einen Satz zusammensetzt und zurückgibt, z.B. „‚Der Hobbit' von Tolkien, 310 Seiten."
 3. Schreibe eine Klasse `Schueler` mit `constructor(name, klasse)`. Erzeuge drei Objekte mit `new` und gib ihre Namen aus.
-4. Gib der Klasse `Schueler` eine Methode `steckbrief()`, die Name und Klasse als Satz zurückgibt.
+4. Gib der Klasse `Schueler` eine Methode `steckbrief()`, die Name und Klasse als Satz zurückgibt – ähnlich wie die `beschreibung()`-Methode in Aufgabe 2, nur eben in einer Klasse statt in einem einzelnen Objekt.
 5. Baue die Klasse `Wuerfel` aus dem Kapitel nach. Würfle in einer Schleife 10-mal und speichere die Ergebnisse in einem Array (siehe [Einführung Arrays](07_Arrays.md)).
 6. **Frei:** Überlege dir ein „Ding" aus deinem Projekt-Thema, das man als Klasse beschreiben könnte (ein Auto, ein Rezept, ein Song, ein Spielcharakter …). Welche Eigenschaften hat es, welche Methode wäre sinnvoll? Schreibe die Klasse und erzeuge zwei Objekte daraus.
