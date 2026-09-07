@@ -7,7 +7,7 @@ tags:
 # Layout mit CSS
 
 
-Ohne Formatierung sind alle HTML Elemente linksbündig angeordnet. Um Bereiche neu anzuordnen z.B. nebeneinander anzuzeigen, kommt im HTML Code der `div` Tag zum Einsatz. 
+Ohne Formatierung sind alle HTML Elemente linksbündig untereinander angeordnet. Um Bereiche neu anzuordnen, z.B. nebeneinander anzuzeigen, werden im HTML Code die semantischen Struktur-Elemente (`<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>` …) bzw. `<div>` als allgemeiner Container verwendet (siehe [Seitenstruktur](01_HTML.md#seitenstruktur-semantische-elemente)).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/h8AUf0lE91M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -69,7 +69,7 @@ div {
 
 Ein Element das *immer* am unteren Rand der Seite angezeigt wird.
 ```
-div.footer {
+footer {
   position: fixed;
   left: 0;
   bottom: 0;
