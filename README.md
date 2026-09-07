@@ -4,9 +4,6 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 
 ## Grundlegende Anleitungen
 - [Programme, Dateien und Code](A_Programme.md)
-- [Webseiten veröffentlichen](C_Webspace.md#webspace-einrichten)
-- [Einführung Netzwerk](D_Netzwerk.md)
-- [QuickPHP einrichten](E_QuickPHP.md)
 
 ## Web design
 1. [Einführung HTML](01_HTML.md)
