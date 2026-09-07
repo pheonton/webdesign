@@ -71,7 +71,7 @@ let name = "Anna";
 let gruss = "Hallo, " + name + "!";   // "Hallo, Anna!"
 ```
 
-Übersichtlicher geht das mit **Backticks** `` ` `` und `${...}`:
+Übersichtlicher geht das mit **Backticks** `` ` `` und `${...}` – ein solcher String heißt *Template Literal*:
 
 ```js
 let gruss = `Hallo, ${name}!`;        // "Hallo, Anna!"
@@ -179,7 +179,7 @@ Mit `break` kann die Schleife vorzeitig verlassen werden. Für Wiederholungen oh
 ## Übungen
 
 1. Binde ein `<script>` ein und gib mit `console.log` eine Begrüßung aus. Öffne die Konsole (`F12`) und finde die Ausgabe.
-2. Lege Variablen für deinen Namen und dein Alter an. Gib mit einem Template Literal den Satz „Ich heiße … und bin … Jahre alt." aus.
+2. Lege Variablen für deinen Namen und dein Alter an. Gib den Satz „Ich heiße … und bin … Jahre alt." mit einem Template Literal (Backticks und `${...}`) aus.
 3. Nimm zwei Zahlen-Variablen und gib Summe, Differenz, Produkt und den Rest der Division (`%`) aus.
 4. Frage mit `if`/`else` etwas ab – ist eine Zahl gerade? ist das Alter ≥ 18? – und gib passenden Text aus.
 5. Gib mit einer `for`-Schleife die Zahlen von 1 bis 20 aus. Für Vielfache von 3 gib stattdessen „fizz" aus, für Vielfache von 5 „buzz", für beides „fizzbuzz".
