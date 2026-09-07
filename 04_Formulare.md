@@ -5,64 +5,99 @@ tags:
 ---
 # Einführung Formulare mit HTML
 
-Um Benutzereingaben auf Webseiten zu verarbeiten, werden Formulare mit HTML erstellt, die anschließend vom Server verarbeitet werden (z.B. mit PHP). In diesem Abschnitt wird eine Einführung für das Erstellen vpn Fomrularen mit HTML gegeben.
+Formulare dienen dazu, Eingaben der Benutzerin oder des Benutzers entgegenzunehmen – Text, Auswahlfelder, Ankreuzboxen usw. In diesem Kapitel geht es darum, ein Formular mit HTML aufzubauen und mit CSS zu gestalten. Was mit den eingegebenen Daten geschieht, behandeln wir später mit JavaScript.
 
 ## Basisaufbau
 
-Formulare sind eigene Elemente in HTML und werden dementsprechend durch Tags erzeugt und können wie andere Elemente mit CSS formatiert werden.
-Ein Formular wird durch das `<form>` tag eingeleitet und am Ende mit `</form>` geschlossen. Das `<form>` tag benötigt 2 Attribute, ohne die die Verarbeitung des Formulars nicht funktioniert.
+Ein Formular ist ein eigenes HTML-Element. Es beginnt mit `<form>` und endet mit `</form>`; dazwischen stehen die Formularfelder. Zwischen den Tags dürfen auch normale Texte und andere HTML-Tags (Überschriften, Absätze usw.) stehen. Ein Formular kann wie jedes andere Element mit CSS formatiert werden.
+
 ```html
-<form action="ziel.php" method="post"><!-- Formularfelder --></form>
+<form id="kontakt">
+  <!-- Formularfelder -->
+</form>
 ```
-* **action** Mit `action` wird die Zieldatei angegeben, an die die Daten des Formulars gesendet und dort weiterverarbeitet werden.
-* **method** Mit `method` wird angegeben, wie die Daten an die Zieldatei übergeben werden sollen. Dabei gibt es die Werte `get` und `post`.
-  * **get** Mit `get` werden die übergebenen Werte sichtbar an die URL angehängt. Allerdings ist die Länge auf ca. 2000 Zeichen begrenzt.
-  Beispiel: `http://www.google.de/search?q=formulare&tbs=qdr:y` nach dem `?` Stehen die übergebenen Werte durch ein `&` getrennt.
-  * **post** Mit „post“ werden die Werte nicht in der URL angezeigt und es gibt kein Limit für die länge der übergebenen Werte. Diese Methode sollte für Formulare beforzugt werden.
+
+Das Attribut `id` gibt dem Formular einen eindeutigen Namen. Darüber wird es später von JavaScript angesprochen.
 
 ## Eingabefelder
 
-Für die meisten Felder des Formulars wird das `<input>` Tag verwendet. Die Art des Felder wird durch das Attribute `type` festgelegt. Es gibt viele Werte für `type`, hier werden nur die essentiellen aufgelistet.
-* `type="submit"` Abschick-Button (Ohne diesen Butten funktionert nichts)
-* `type="text"` Texteingabe in einer Zeile
-* `type="select"` Liste mit vordefinierten Werten, die Auswahl erfolgt über ein Dropdownmenü.
-* `type="radio"` Ein Wert kann aus einer Liste von Möglichekiten ausgewählt werden.
-* `type="checkbox"` Eine Box zum ankreuzen.
+Die meisten Felder werden mit dem `<input>`-Tag erzeugt. Die Art des Feldes legt das Attribut `type` fest:
+
+| `type` | Feld |
+| --- | --- |
+| `text` | einzeilige Texteingabe |
+| `email` | E-Mail-Adresse (der Browser prüft grob das Format) |
+| `password` | Texteingabe, die verdeckt dargestellt wird |
+| `number` | Zahleneingabe |
+| `date` | Datumsauswahl |
+| `radio` | Auswahl *einer* Möglichkeit aus einer Gruppe |
+| `checkbox` | einzelne Box zum Ankreuzen |
+| `submit` | Button, der das Formular absendet |
+
+Für mehrzeilige Eingaben (z.B. eine Nachricht) nimmt man kein `<input>`, sondern `<textarea></textarea>`. Eine Liste mit vordefinierten Werten (Dropdown) wird mit `<select>` und darin `<option>`-Tags gebaut.
 
 [Mehr zu Formularfeldern @ selfhtml](https://wiki.selfhtml.org/wiki/HTML/Formulare/input)
 
-Um das Feld später zu verarbeiten, bekommt es das Attribut `name` mit einem eindeutigen, aber selbsgewähltem Wert.
+### Beschriftung mit `<label>`
 
-> Merke: Radiobuttons gehören zu einer Auswahlgruppe, wenn das `name` Attribut den gleichen Wert hat. Alle anderen Felder erhalten jeweils einen Wert der nur einmal vorkommen darf.
+Jedes Feld sollte eine Beschriftung bekommen. Das `<label>`-Tag wird über das Attribut `for` mit der `id` des Feldes verbunden. Ein Klick auf die Beschriftung setzt dann den Cursor ins Feld.
 
-Der Inhalt wird mit dem Attribut `value` übergeben. Dabei kann der Wert von `value` beliebig gewählt werden.
+```html
+<label for="name">Name</label>
+<input type="text" id="name" name="name">
+```
 
-> Merke: Textfelder haben keine `value` Attribut, da hier die Benutzereingabe übergeben wird.
+### Wichtige Attribute
 
-Inherhalb des `<form>` Tags können Texte und beliebige andere HTML Tags verwendet werden.
+| Attribut | Bedeutung |
+| --- | --- |
+| `id` | eindeutiger Name des Feldes; verbindet das `<label>` und wird später von JavaScript zum Auslesen genutzt |
+| `name` | benennt das Feld innerhalb des Formulars; Radio-Buttons einer Gruppe teilen sich denselben `name` |
+| `value` | der Wert, der zählt, wenn das Feld ausgewählt ist (bei `radio`, `checkbox`, `option`) |
+| `placeholder` | grauer Hinweistext im leeren Feld |
+| `required` | das Formular lässt sich nur absenden, wenn das Feld ausgefüllt ist |
+| `checked` / `selected` | Feld bzw. Option ist von Anfang an ausgewählt |
+
+> **Merke:** Radio-Buttons gehören zur selben Auswahlgruppe, wenn ihr `name`-Attribut den gleichen Wert hat. Alle übrigen Felder bekommen einen `name`, der nur einmal vorkommt.
+
+> **Merke:** Bei Textfeldern lässt man `value` meist weg – dort zählt, was der Benutzer eintippt.
 
 ## Beispiel
 
 ```html
-<form action="ziel.php" method="post">
-  <!-- Textfelder haben kein value Attribut, da der Inhalt des Feldes übergeben wird.-->
-  <input type="text" name="text1" />
-  <input type="text" name="text2" />
-  <br />
-  <!-- gleiches name Attribute für eine Gruppe von Radio-buttons -->
-  <input type="radio" name="radio-buttons" value="first" checked="checked">First
-  <input type="radio" name="radio-buttons" value="second">Second
-  <br />
-  <!-- Check-boxen benötigen hingegen unterschiedliche name Attribute -->
-  <input type="checkbox" name="alien" value="Alien" checked="checked">Alien
-  <input type="checkbox" name="air" value="Luftpost" >Luftpost
-  <br />
-  <select name="liste">
-    <option value="o1" selected="selected">Option 1</option>
-    <option value="o2">Option 2</option>
-    <option value="o3">Option 3</option>
-  </select>
-  <input type="submit" value="Abschicken!" />
+<form id="kontakt">
+  <p>
+    <label for="name">Name</label><br>
+    <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required>
+  </p>
+  <p>
+    <label for="email">E-Mail</label><br>
+    <input type="email" id="email" name="email" required>
+  </p>
+  <p>
+    <label for="nachricht">Nachricht</label><br>
+    <textarea id="nachricht" name="nachricht" rows="4"></textarea>
+  </p>
+  <p>
+    Anrede:
+    <label><input type="radio" name="anrede" value="frau" checked> Frau</label>
+    <label><input type="radio" name="anrede" value="herr"> Herr</label>
+  </p>
+  <p>
+    <label><input type="checkbox" name="newsletter" value="ja"> Newsletter abonnieren</label>
+  </p>
+  <p>
+    <label for="land">Land</label>
+    <select id="land" name="land">
+      <option value="de" selected>Deutschland</option>
+      <option value="at">Österreich</option>
+      <option value="ch">Schweiz</option>
+    </select>
+  </p>
+  <button type="submit">Absenden</button>
 </form>
 ```
->Merke: Alle `name` Attribute müssen sich unterscheiden, nur Radio-Buttons die zu einer Gruppe gehören erhalten das gleiche `name`-Attribut.
+
+> **Merke:** `<button type="submit">` und `<input type="submit">` tun dasselbe. `<button>` kann zusätzlich HTML als Beschriftung enthalten.
+
+In einem späteren Kapitel lesen wir die eingegebenen Werte mit JavaScript aus und verarbeiten sie.
