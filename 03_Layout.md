@@ -69,4 +69,4 @@ Layout mit CSS kann frustrierend sein. Ein sehr nützliches Werkzeug ist der **I
 1. Lass ein Bild von einem längeren Textabschnitt umfließen (`float`). Gib ihm mit `margin` genug Abstand zum Text.
 2. Sorge dafür, dass die nächste Überschrift nicht neben dem Bild, sondern darunter beginnt (`clear`).
 3. Gib deiner Seite ein bildschirmfüllendes Hintergrundbild. Wähle ein Bild – oder passe Textfarbe und Kontrast an –, sodass der Text lesbar bleibt.
-4. **Frei:** Probiere für dein Projekt beide Möglichkeiten aus und entscheide dich für eine. Notiere in einem Satz, warum.
+4. **Frei:** Entscheide für deine Projektseite: Passt ein bildschirmfüllendes Hintergrundbild zu deinem Thema, oder lenkt es zu sehr vom Inhalt ab? Setze es ein – oder bewusst nicht – und begründe deine Entscheidung in einem Satz.

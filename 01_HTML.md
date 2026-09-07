@@ -246,7 +246,7 @@ Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangabe](h
 
 ## Übungen
 
-1. Baue die Startseite deines Projekts: eine `<h1>`, zwei bis drei Absätze über dein Thema und ein Bild mit aussagekräftigem `alt`-Text.
+1. Baue die Startseite deines Projekts: eine `<h1>` mit dem Titel deiner Seite, zwei bis drei Absätze über dein Thema und ein Bild mit aussagekräftigem `alt`-Text.
 2. Gliedere die Seite mit semantischen Elementen: `<header>` mit dem Titel, `<main>` mit dem Inhalt, `<footer>` mit deinem Namen.
 3. Füge eine Liste ein – z.B. „Fakten über …" oder „meine Top 3". Entscheide, ob sie geordnet (`<ol>`) oder ungeordnet (`<ul>`) sein soll.
 4. Erstelle eine kleine Tabelle mit Kopfzeile: ein Steckbrief, ein Vergleich oder ein Zeitplan.
