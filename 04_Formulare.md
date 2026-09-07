@@ -102,4 +102,4 @@ Jedes Feld sollte eine Beschriftung bekommen. Das `<label>`-Tag wird über das A
 
 > **Merke:** `<button type="submit">` und `<input type="submit">` tun dasselbe. `<button>` kann zusätzlich HTML als Beschriftung enthalten.
 
-In einem späteren Kapitel lesen wir die eingegebenen Werte mit JavaScript aus und verarbeiten sie.
+Wie man die eingegebenen Werte mit JavaScript ausliest, steht in [Events und EventListener](06_EventListener.md#daten-aus-einem-formular-auslesen).

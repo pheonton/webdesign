@@ -41,7 +41,7 @@ console.log("Hello World!");   // erscheint in der Konsole
 alert("Hello World!");         // erscheint als Popup
 ```
 
-Wie JavaScript den *sichtbaren* Inhalt der Seite ändert, kommt in einem späteren Kapitel.
+Wie JavaScript den *sichtbaren* Inhalt der Seite ändert und auf Klicks reagiert, steht in [Events und EventListener](06_EventListener.md).
 
 > **Merke:** Jede Anweisung wird mit einem Semikolon `;` abgeschlossen. Kommentare stehen hinter `//` oder zwischen `/*` und `*/`.
 
