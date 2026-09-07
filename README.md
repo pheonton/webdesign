@@ -3,8 +3,7 @@
 Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 
 ## Grundlegende Anleitungen
-- [Programme verwenden](A_Programme.md#programme-verwenden)
-- [Arbeiten mit Quellcode](B_Formatierung.md#arbeiten-mit-quellcode)
+- [Programme, Dateien und Code](A_Programme.md)
 - [Webseiten veröffentlichen](C_Webspace.md#webspace-einrichten)
 - [Einführung Netzwerk](D_Netzwerk.md)
 - [QuickPHP einrichten](E_QuickPHP.md)
