@@ -19,6 +19,8 @@ Ein Formular ist ein eigenes HTML-Element. Es beginnt mit `<form>` und endet mit
 
 Das Attribut `id` gibt dem Formular einen eindeutigen Namen. Darüber wird es später von JavaScript angesprochen.
 
+> **Merke:** Klassisch schickt ein Formular seine Daten an einen Webserver. Dafür gibt es die Attribute `action` (Zieladresse) und `method`: `get` hängt die Werte sichtbar an die URL an (`…/suche?begriff=formulare`), `post` sendet sie unsichtbar. Da wir die Eingaben mit JavaScript im Browser auslesen, brauchen wir beide Attribute hier nicht.
+
 ## Eingabefelder
 
 Die meisten Felder werden mit dem `<input>`-Tag erzeugt. Die Art des Feldes legt das Attribut `type` fest:
