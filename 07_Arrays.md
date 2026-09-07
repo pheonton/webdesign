@@ -1,141 +1,156 @@
 ---
 tags:
  - study
- - php
+ - javascript
 ---
 # Einführung Arrays
 
-## Arrays erzeugen
+Bis jetzt wurde in einer Variablen genau ein Wert gespeichert. Ein **Array** ist eine geordnete Liste von Werten in einer einzigen Variablen. Jeder Wert hat einen **Index**, der bei `0` beginnt. Ein Array kann beliebige Werte enthalten – Zahlen, Strings, auch andere Arrays. Seine Größe kann sich jederzeit ändern.
 
-Bis jetzt wurde in einer Variablen nur genau ein Wert gespeichert, z.B. ein Zahl oder ein Text. Um mehrere Werte in einer Variablen zu speichern werden Arrays verwendet. Die Werte in einem Array werden durch einen Key (Index) eindeutig identifiziert.
-```php
-$feld1 = array ('key1' => 'value1', 'key2' => 'value2' );
-```
-für eine bessere Übersicht wird auch folgende Syntax verwendet:
-```php
-$feld1 = array(
-	'key1' => 'value1',
-	'key2' => 'value2',
-);
-```
-Beispiel
-```php
-$person = array(
-	'augenfarbe' => 'braun',
-	'haarfarbe' => 'grün'
-);
-```
-Werden die Keys nicht mit explizit angegeben, werden numerische Keys von 0 aufsteigend für jeden Wert erzeugt.
-```php
-$feld2 = array ('value_a', 'value_b' );
-```
-Hier hat `value1` hat den Key `0` und `value2` den Key `1`.
+## Array erstellen und Zugriff
 
-Beispiel
-```php
-$donut = array('schokostreusel', 'zuckerguss pink', 'zuckerguss weiß', 'sprinkles bunt');
+```js
+const farben = ["rot", "grün", "blau"];
+
+console.log(farben[0]);      // "rot"
+console.log(farben[2]);      // "blau"
+console.log(farben.length);  // 3   (Anzahl der Elemente)
+
+farben[1] = "gelb";          // Element ändern  ->  ["rot", "gelb", "blau"]
+
+const leer = [];             // leeres Array
 ```
 
-Auch die Definition eines leeren Array ist möglich:
-```php
-$feld3 = array();
-```
-> **Merke:** ein bekanntes Array is `$_POST`, hier sind aller Formulardaten mit ihren `name` Attributen als Key gespeichert
+> **Merke:** `const` verhindert nur, dass der Variablen eine *neue* Liste zugewiesen wird. Der Inhalt der Liste (Elemente hinzufügen, ändern, entfernen) kann sich trotzdem ändern.
 
-### Auf Werte zugreifen
-Auf die Werte wird zugegriffen, indem an das Array der Key in eckigen Klammern angefügt wird:
-```php
-print $feld1['key1']; #ergibt value1
-print $feld2[0]; #ergibt value_a
-```
-### Werte hinzufügen
+> **Merke:** Sollen die Werte einen *Namen* statt einer Nummer haben (`augenfarbe: "braun"`), verwendet man ein **Objekt** `{ }` statt eines Arrays. Objekte sind ein eigenes Thema.
 
-Auf ähnliche Weise können auch Werte in einem Array gesetzt werden:
-```php
-$feld1['key3'] = 'value3';
-```
-Hier wird im array `feld1` ein Werte `value3` mit dem Key `key3` hinzugefügt.
+## Elemente hinzufügen & entfernen
 
-> **Achtung:** ein ist im Array schon ein Wert mit dem Key `key3` vorhanden, wird er so überschrieben.
+### push() / pop() – am Ende
 
-Soll in einem Array mit nummerischen Keys ein Wert hinzugefügt werden, kann auf die Angabe eines Keys verzichtet werden, die eckigen Klammern bleiben dann leer, der Key wird automatisch gesetzt
-```php
-$feld2[] = 'value3';
+```js
+const zahlen = [1, 2, 3];
+zahlen.push(4);                 // [1, 2, 3, 4]
+const letztes = zahlen.pop();   // letztes = 4, zahlen = [1, 2, 3]
 ```
-### Wert (und Key) löschen
-Ein Element in einem Array wird folgendermaßen gelöscht:
-```php
-unset($feld1['key1']);
-```
-Hier wird der Wert mit dem Key `key1` und der Key selbst gelöscht, d.h. das Array hat nun einen Eintrag weniger.
 
-## foreach
-Um alle Werte in einem Array programmatisch zu verarbeiten, kann die Schleife `foreach` verwendet werden. Wie der Name vermuten lässt, werden dabei alle Einträge eines Arrays nacheinander abgearbeitet. (Bei einer `for`-Schleife müsste die Anzahl der Einträge bekannt sein.) [foreach](http://php.net/manual/de/control-structures.foreach.php)
-Die folgende Syntax gibt alle Werte aus dem Array `$field1` aus:
-```php
-foreach ($feld1 as $value) {
-	print $value;
+### unshift() / shift() – am Anfang
+
+```js
+zahlen.unshift(0);              // [0, 1, 2, 3]
+const erstes = zahlen.shift();  // erstes = 0, zahlen = [1, 2, 3]
+```
+
+### splice() – an beliebiger Stelle einfügen oder löschen
+
+`array.splice(start, anzahl, ...neueElemente)`
+
+* **start** – Index, ab dem geändert wird
+* **anzahl** – wie viele Elemente ab `start` gelöscht werden (`0` = nichts löschen)
+* **neueElemente** – was ab `start` eingefügt wird (optional)
+
+```js
+const buchstaben = ["a", "b", "c", "d"];
+
+buchstaben.splice(1, 2);            // löschen  ->  ["a", "d"]
+buchstaben.splice(1, 0, "X", "Y");  // einfügen ->  ["a", "X", "Y", "d"]
+buchstaben.splice(1, 2, "NEU");     // ersetzen ->  ["a", "NEU", "d"]
+```
+
+## Über Arrays iterieren
+
+```js
+const städte = ["Berlin", "Wien", "Zürich"];
+
+// klassische for-Schleife – man hat den Index i
+for (let i = 0; i < städte.length; i++) {
+  console.log(i, städte[i]);
 }
-```
-`foreach` erhält dabei als Argument das Array und die Angabe, wie jeder Wert des Arrays innerhalb der `foreach`-Schleife heißen soll, in diesem Fall `$value`. Falls der Key auch verwendet werden soll, lautet die Angabe folgendermaßen:
-```php
-foreach ($feld1 as $key => $f) {
-	print $key . ', ' . $value . ',<br />';#Hier wurde der String etwas erweitert.
+
+// for...of – man bekommt direkt den Wert (empfohlen)
+for (const stadt of städte) {
+  console.log(stadt);
 }
+
+// forEach – Wert und Index
+städte.forEach((stadt, index) => {
+  console.log(`${index}: ${stadt}`);
+});
 ```
 
-## Mehrstufige Arrays
-Arrays können auch Arrays enthalten. Anstatt einem String oder einer Zahl kann ein Wert auch wieder ein Array sein.
-```php
-$feld = array(
-	'item1' => array(
- 		'key1' => 'value1',
- 		'key2' => 'value2',
- 	),
- 	'item2' => array(
- 		'key1' => 'value3',
- 		'key2' => 'value4',
- 	),
-);
-```
-Beispiel
-```php
-$donut = array(
-	0 		=> 'schokostreusel',
-	'sprinkles' 	=> array('bunt', 'blau'),
-	'zuckerguss' 	=> array('weiß', 'blau', 'pink'),
-);
-```
+### Kurzschreibweise für Funktionen: `=>`
 
-Beim ansprechen der Werte (ausgeben, einfügen und löschen), müssen alle übergeordneten Keys in absteigender Reihenfolge bis zum gewünschten Wert in eckigegen Klammern angegeben werden.
+`stadt => console.log(stadt)` ist eine kurze Schreibweise für eine Funktion: links vom `=>` steht der Parameter, rechts davon, was die Funktion tut. Diese Schreibweise wird bei `forEach`, `map`, `filter` usw. verwendet.
 
-```php
-print $feld['item1'][ 'key1']; #ergibt value1
-print $feld['item2'][ 'key2']; #ergibt value4
+## Array mit Zufallszahlen füllen
 
-$feld['item2'][ 'key1'] = 'value5'; #überschreibt value3 mit value5
-```
-Beispiel
-```php
-print $feld[0] 			#ergibt schokostreusel
-print $feld['sprinkles'][1] 	#ergibt blau
-```
+`Math.random()` liefert eine Zufallszahl zwischen 0 und 1, `Math.floor()` rundet ab.
 
-Um alle Werte des merhstufigen Arrays auszugeben wird die foreach - Schleife verwendet:
-```php
-foreach ($feld as $element) { # In $element ist jeweils das untergeornete Array gespeichert
-	print $element['key1'] . "<br />";
-	print $element['key2'] . "<br />";
+```js
+const zahlen = [];
+for (let i = 0; i < 10; i++) {
+  zahlen.push(Math.floor(Math.random() * 10) + 1);  // Zahl von 1 bis 10
 }
 ```
 
-fearch kann auch zweimal verwendet werden, die Keys werden dann nciht benötigt:
-```php
-foreach ($feld as $element) { # itteriert durch das erste Array der obersten Ebene
-	foreach ($element as $value) { # Iterriert durch die Arrays der nächsten Ebene
-		print $value;
-	}
-}
+## Wichtige Array-Methoden
+
+| Methode | Beschreibung |
+| --- | --- |
+| `map()` | neues Array, in dem jedes Element umgeformt wurde |
+| `filter()` | neues Array nur mit Elementen, die eine Bedingung erfüllen |
+| `find()` | das erste Element, das eine Bedingung erfüllt |
+| `includes()` | `true` / `false` – ist ein Wert enthalten? |
+| `join()` | fügt alle Elemente zu einem String zusammen |
+| `sort()` | sortiert das Array (verändert das Original) |
+| `reduce()` | fasst das Array zu einem einzigen Wert zusammen |
+
+```js
+const nummern = [1, 2, 3, 4, 5, 6];
+
+const doppelt  = nummern.map(n => n * 2);          // [2, 4, 6, 8, 10, 12]
+const gerade   = nummern.filter(n => n % 2 === 0); // [2, 4, 6]
+const gefunden = nummern.find(n => n > 3);         // 4
+nummern.includes(3);                               // true
+nummern.join(", ");                                // "1, 2, 3, 4, 5, 6"
+
+const summe = nummern.reduce((summe, n) => summe + n, 0);  // 21
 ```
 
+## sort() im Detail
 
+Ohne Vergleichsfunktion wandelt `sort()` alle Elemente in Strings um und vergleicht deren Zeichencodes – bei Zahlen führt das zu falschen Ergebnissen.
+
+```js
+["Zara", "Anna", "Mike"].sort();   // ["Anna", "Mike", "Zara"]   ✓
+[10, 9, 2, 100].sort();            // [10, 100, 2, 9]            ✗
+```
+
+Mit einer **Vergleichsfunktion** `(a, b)` legt man die Reihenfolge fest:
+
+* Rückgabewert < 0 → `a` kommt vor `b`
+* Rückgabewert > 0 → `b` kommt vor `a`
+* Rückgabewert = 0 → Reihenfolge bleibt
+
+```js
+[10, 9, 2, 100].sort((a, b) => a - b);   // aufsteigend:  [2, 9, 10, 100]
+[10, 9, 2, 100].sort((a, b) => b - a);   // absteigend:   [100, 10, 9, 2]
+
+["Banane", "Kiwi", "Apfel"].sort((a, b) => a.length - b.length);
+// nach Länge:  ["Kiwi", "Apfel", "Banane"]
+```
+
+## Übungen
+
+1. Erstelle ein Array `früchte` mit 3 Einträgen. Füge `"Mango"` am Ende hinzu.
+2. Erstelle ein Array `zahlen` mit 7 zufälligen Zahlen von 1 bis 50.
+3. Ersetze das zweite Element in `früchte` mit `"Ananas"` (`splice()`).
+4. Gib alle Zahlen > 10 aus `zahlen` zurück – einmal mit einer Schleife, einmal mit `filter()`.
+5. Berechne die Summe (und das Produkt) aller Elemente in `zahlen` mit einer Schleife.
+6. Sortiere `früchte` alphabetisch – einmal mit einer Schleife, einmal mit `sort()`.
+7. Berechne die Ableitung eines Polynoms (Koeffizienten-Array) mit `forEach()`.
+   *Hintergrund:* Ein Polynom `f(x) = aₙxⁿ + … + a₁x + a₀` wird als Array gespeichert, Index `i` entspricht dem Grad `i`. Ableitungsregel: Koeffizient × Grad, dann Grad − 1. Beispiel: `[5, 0, -2, 3]` (also `3x³ − 2x² + 5`) → `[0, -4, 9]` (also `9x² − 4x`). Verwende zuerst ein festes, dann ein zufällig erzeugtes Polynom.
+8. Löse Übung 7 so, dass das Polynom vom Benutzer eingegeben werden kann.
+
+[Weiterführend: MDN Web Docs – Array](https://developer.mozilla.org/de/docs/Web/JavaScript/Reference/Global_Objects/Array)
