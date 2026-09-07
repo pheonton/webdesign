@@ -175,3 +175,12 @@ for (let i = 1; i <= 10; i++) {
 Mit `break` kann die Schleife vorzeitig verlassen werden. Für Wiederholungen ohne festen Zähler gibt es die `while`-Schleife: `while (Bedingung) { ... }`.
 
 > **Merke:** Die Bedingung muss irgendwann `false` werden, sonst läuft die Schleife endlos und der Browser reagiert nicht mehr.
+
+## Übungen
+
+1. Binde ein `<script>` ein und gib mit `console.log` eine Begrüßung aus. Öffne die Konsole (`F12`) und finde die Ausgabe.
+2. Lege Variablen für deinen Namen und dein Alter an. Gib mit einem Template Literal den Satz „Ich heiße … und bin … Jahre alt." aus.
+3. Nimm zwei Zahlen-Variablen und gib Summe, Differenz, Produkt und den Rest der Division (`%`) aus.
+4. Frage mit `if`/`else` etwas ab – ist eine Zahl gerade? ist das Alter ≥ 18? – und gib passenden Text aus.
+5. Gib mit einer `for`-Schleife die Zahlen von 1 bis 20 aus. Für Vielfache von 3 gib stattdessen „fizz" aus, für Vielfache von 5 „buzz", für beides „fizzbuzz".
+6. **Frei:** Denk dir eine kleine Rechnung oder Entscheidung zu deinem Thema aus – ein Punktestand, ein Preis mit Rabatt, eine grobe Schätzung „Tage bis …".

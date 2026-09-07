@@ -243,3 +243,13 @@ Bild mit Bildunterschrift:
 | In neuem Tab öffnen | `<a href="…" target="_blank" rel="noopener">` |
 
 Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relativ zur verknüpfenden Datei. Für Dateien im Internet wird die vollständige Webadresse (URL) angegeben – es handelt sich dann um eine **absolute** Verknüpfung.
+
+## Übungen
+
+1. Baue die Startseite deines Projekts: eine `<h1>`, zwei bis drei Absätze über dein Thema und ein Bild mit aussagekräftigem `alt`-Text.
+2. Gliedere die Seite mit semantischen Elementen: `<header>` mit dem Titel, `<main>` mit dem Inhalt, `<footer>` mit deinem Namen.
+3. Füge eine Liste ein – z.B. „Fakten über …" oder „meine Top 3". Entscheide, ob sie geordnet (`<ol>`) oder ungeordnet (`<ul>`) sein soll.
+4. Erstelle eine kleine Tabelle mit Kopfzeile: ein Steckbrief, ein Vergleich oder ein Zeitplan.
+5. Setze einen Link auf eine passende externe Seite (in einem neuen Tab) und packe dein Bild in ein `<figure>` mit `<figcaption>`.
+6. Prüfe die Seite mit dem [W3C-Validator](https://validator.w3.org/) und behebe die gemeldeten Fehler.
+7. **Kür:** Lege eine zweite Seite `steckbrief.html` an und verlinke beide Seiten gegenseitig.

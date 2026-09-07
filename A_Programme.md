@@ -84,3 +84,11 @@ Achte auf sauber **eingerückten Code**. [Block-Elemente](01_HTML.md#block--und-
 ```
 
 > **Merke:** Visual Studio Code richtet den ganzen Code automatisch aus mit *Rechtsklick → Dokument formatieren* (`Umschalt + Alt + F`).
+
+## Übungen
+
+1. Lege einen Projektordner `meine-seite` an, darin die Unterordner `css` und `images` sowie die Dateien `index.html` und `css/style.css`. Öffne `index.html` gleichzeitig in Visual Studio Code und im Browser.
+2. Suche ein frei verwendbares Bild (z.B. auf [unsplash.com](https://unsplash.com) oder [pixabay.com](https://pixabay.com)), lade es herunter und verschiebe es aus dem *Downloads*-Ordner in deinen `images`-Ordner. Gib ihm einen sinnvollen Namen (Kleinbuchstaben, keine Umlaute).
+3. Schreibe den Basisaufbau eines HTML-Dokuments in `index.html`, speichere (`Strg + S`) und lade den Browser neu (`F5`). Ändere den `<title>` und beobachte den Browser-Tab.
+4. Zeichne den Ordnerbaum deines Projekts auf Papier. Schreibe neben jede Datei, mit welchem relativen Pfad `index.html` sie erreicht – und mit welchem Pfad `css/style.css` das Bild erreicht.
+5. **Dein Projekt:** Überlege dir ein Thema für eine kleine Website – ein Hobby, ein Lieblingsort, ein Tier, ein Spiel, eine Band. Diese Seite baust du in den folgenden Kapiteln Schritt für Schritt weiter aus.
