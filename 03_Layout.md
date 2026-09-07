@@ -6,106 +6,62 @@ tags:
 ---
 # Layout mit CSS
 
+In diesem Kapitel geht es **nicht** darum, ganze Seitenlayouts zu bauen – das ist ein umfangreiches Thema für sich. Die Bereiche einer Seite (Kopf, Navigation, Inhalt, Fuß) werden mit den semantischen Elementen aus [Kapitel 1](01_HTML.md#seitenstruktur-semantische-elemente) angelegt und mit CSS angeordnet.
 
-Ohne Formatierung sind alle HTML Elemente linksbündig untereinander angeordnet. Um Bereiche neu anzuordnen, z.B. nebeneinander anzuzeigen, werden im HTML Code die semantischen Struktur-Elemente (`<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>` …) bzw. `<div>` als allgemeiner Container verwendet (siehe [Seitenstruktur](01_HTML.md#seitenstruktur-semantische-elemente)).
+Hier behandeln wir nur zwei häufige, einfache Aufgaben:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h8AUf0lE91M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+1. ein Bild vom Text umfließen lassen
+2. ein Bild als bildschirmfüllenden Hintergrund verwenden
 
-## display
+> **Merke:** Ob ein Element in einer eigenen Zeile steht (Block, z.B. `<p>`) oder im Textfluss (Inline, z.B. `<strong>`), lässt sich mit der CSS-Eigenschaft `display` ändern (`block`, `inline`, `inline-block`). Für die beiden Aufgaben hier wird das aber nicht gebraucht.
 
-* Block-Elemente (`<h1>`, `<p>` usw.) beginnen und enden mit einem Zeilenumbruch und haben Werte für Breite (standartmäßig 100%) und Höhe.
-* Inline-Elemente (`<strong>`, `<em>` usw.) werden in einer Reihe mit Text oder anderen Elementen dargestellt und haben keine Werte für Höhe und Breite.
-* Inline-Block-Elemente (`<img>`) werden in einer Reihe mit anderen Elementen angezeigt und haben Werte für Breite und Höhe.
+Das folgende Video geht über dieses Kapitel hinaus und zeigt weitere Layout-Techniken:
 
-Die standart Eigenschaft eines Elementes läßt sich mit der CSS Funktion `display:` anpassen. Die möglichen Werte für die Eigenschaft `display:` sind `inline`, `inline-block` und `block`.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h8AUf0lE91M" title="Layout mit CSS" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-## float
+## Bild im Text umfließen lassen
 
-Um Elemente von Text oder anderen Elementen "umfließen" zu lassen. Z.B. ein Bild in einem Text oder um mehrere div-Blöcke nebeneinander anzuzeigen, ist die Eigenschaft `float` mit den Werten `left` und `right` (für die Position des Elements) geeignet. Die Eigenschaft muss im nachfolgenden Element mit der Eigenschaft `clear: both` beendet werden, sonst verschieben sich alle nachfoglenden Elemente.
+Standardmäßig beansprucht ein Bild eine eigene Zeile. Mit `float: left` (oder `float: right`) rückt das Bild an den Rand, und der folgende Text fließt daneben weiter. `margin` schafft Abstand zwischen Bild und Text.
 
-> Merke: Damit ein Parent-Element seinen floatenden Inhalt umschließt (nicht standardmäßig), ist es sinnvoll diesem die Eigenschaft `overflow: hidden` zu geben.
-
-## position
-
-Noch radikaler kann die Position eines Elementes mit der Eigenschaft `postion` verändert werden. dabei werden zwei Werte unterschieden:
-* `relative` positioniert das Element relative zu seiner ursprünglichen Position, wo es ohne die Eigenschaft `postion: relative` angezeigt worden wäre.
-* `absolute` positioniert das Element relative zum ersten übergeorndeten relativ positionierten Element. Gibt es kein relativ positioniertes Ancestor-Element, dann absolut zur linken oberen Ecke der Seite.
-um ein positioniertes Elment zu verschieben, können die folgenden Eigenschaften gesetzt werden: `top`, `bottom`, `left`, `right` jeweils mit positiven oder negativen Prozent- oder Pixelangaben.
-
-Durch die Positionierung können Elemente auch übereinander gelegt werden. Um zu entscheiden, welches Element in welcher Ebene liegt wird die Eigenschaft `z-index` verwendet. Positive Zahlenwerte heben das Element an, negative senken es ab. Der standart Wert für alle Elemente ist 0.
-
-## weitere Eigenschaften
-
-Die Eigenschaften `padding` und `margin` und `width` und `height` für Block-Elemente können auch eingesetzt werden. Mit der Eigenschaft `overflow: hidden` können Inhalte die ihr Parent-Element überragen ausgeblendet werden.
-
-## Beispiele
-
-Ein Bild linksbündig im Text:
+```html
+<p>
+  <img src="images/tier.jpg" alt="Ein grasender Esel" class="im-text">
+  Der restliche Text des Absatzes fließt neben dem Bild weiter und umschließt
+  es, bis er unter dem Bild wieder die volle Breite einnimmt.
+</p>
 ```
-img {
+
+```css
+img.im-text {
   float: left;
-  padding: 0 2px 2px 0;
-  width: 300px;
+  width: 250px;
   height: auto;
-}
-```
-`clear: both`; muss ins nachfolgende Element, um float zu beenden.
-`overflow: hidden`; muss ins Parent-Element, um den Inhalt zu umschließen.
-
-Listenelemente in einer Reihe:
-```
-li {
-  display: inline-block;
+  margin: 0 1em 0.5em 0;   /* Abstand: rechts und unten */
 }
 ```
 
-Ein Element in der Mitte mit fester Breite von 600px:
-```
-div {
-  width: 600px;
-  margin: auto;
-}
-```
+> **Merke:** Soll ein Element *unter* dem Bild beginnen und nicht daneben, bekommt es die Eigenschaft `clear: both`.
 
-Ein Element das *immer* am unteren Rand der Seite angezeigt wird.
-```
-footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  background-color: darkslategray;
-  color: darksalmon;
-  text-align: center;
-}
-```
+## Bild als Hintergrund
 
-## Hintergrund Bild
+Ein Bild kann die ganze Seite hinterlegen. Der Hintergrund wird meist dem `<body>` gegeben:
 
-Ein besonders auffällige Formatierung ist ein Bild, dass den ganzen Bildschirm ausfüllt. Dafür kann der folgende CSS-Code verwendet werden. Dabei sollte ein genügend hochauflösendes Bild verwendet werden, damit es nicht pixelig dargestellt wird, aber nicht zu groß, so dass es schnell geladen wird.
+```css
+body {
+  margin: 0;            /* den Standardabstand des Browsers entfernen */
+  min-height: 100vh;    /* mindestens so hoch wie das Browserfenster (vh = 1% der Fensterhöhe) */
 
-> **Merke:** Wenn man versucht die Höhe eines div Elementes auf 100% der Fenstergrößezu setzten (`height: 100%`), funktioneirt das nicht ohne weiteres. Die Prozentangabe ist eine relative Angabe die von der Höhe des Parent-Elementes abhängt. Das Problem ist, dass jedes Element die Standarthöhenangabe `auto` hat, auch `<body>` und `<html>`, diese müssen also immer explizit auf 100% gesetzt werden.
-
-> **Merke:** Die meisten Tags haben im Browser schon standard Formatierungen (z.B. Abstände bei Überschrift `<h1>` usw.). Diese können aber durch setzten der entsprechenden Eigenschaft im CSS Code überschrieben werden.
-
-```
-html, body {
-  hight: 100%; /* Siehe der obige Merksatz */
-  margin: 0; /* Den standard Abstand wird entfern */
-}
-
-div.background {
-  background-image: url("../img/img_background.jpg"); /* Der relative Link zur Datei */
-
-  height: 100%;   /* Wichtig! */
-  
+  background-image: url("../images/hintergrund.jpg");
+  background-size: cover;       /* Bild füllt die Fläche; Seitenverhältnis bleibt erhalten */
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; /* Maximal vergrößertes Bild ohne das Seitenverhältnis zu verändern */
 }
 ```
-> **Achtung:** `background-img` benötigt eine Pfadangabe zum Bild **relativ** zur CSS-Datei. D.h. wenn dei CSS-Datei im Ordner `css` liegt, kommt man mit `../` in den übergeordneten Ordner, um von da zur Bilddatei zu gelangen.
+
+> **Achtung:** Der Pfad bei `background-image` ist **relativ zur CSS-Datei**. Liegt die CSS-Datei im Ordner `css`, führt `../` eine Ebene höher, um von dort zur Bilddatei zu gelangen.
+
+> **Merke:** Ein ausreichend hochauflösendes Bild wählen, damit es nicht pixelig wirkt – aber nicht zu groß, damit die Seite schnell lädt.
 
 ## Hilfe bei Problemen
 
-Layout mit CSS kann auserordentlich frustrierend sein. Ein essentielles Tool um sich schnellen Überblick zur Problemlösung zu verschaffen, ist die Möglichkeit von Firefox, sich mit einem Rechtsklick auf ein Element und der Funktion **Inspect Element** margins (lila) und paddings (gelb) anzeigen zulassen. Ausserdem werden die angewendeten CSS Eigenschaften, sowie viele andere nützliche (und weniger nützliche) Funktionen, angezeigt.
+Layout mit CSS kann frustrierend sein. Ein sehr nützliches Werkzeug ist der **Inspektor** von Firefox: Rechtsklick auf ein Element → *Element untersuchen*. Er zeigt die Abstände (`margin` lila, `padding` gelb) sowie alle angewendeten CSS-Eigenschaften an.

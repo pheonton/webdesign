@@ -241,7 +241,7 @@ Diese Zeile muss am Anfang der CSS-Datei stehen. Verwendet wird die Schrift dann
 
 Bilder können mit den Eigenschaften `width` und `height` angepasst werden. Eine der beiden Eigenschaften sollte den Wert `auto` bekommen, da sonst das Seitenverhältnis verändert wird.
 
-Beim Verwenden mehrerer Bilder untereinander zeigt der Browser einen *kleinen Abstand* zwischen ihnen. Als schnelle Abhilfe kann man dem Parent-Element `font-size: 0;` geben. Sauberer lässt sich das mit Flexbox lösen – siehe [Layout mit CSS](03_Layout.md).
+Beim Verwenden mehrerer Bilder untereinander zeigt der Browser einen *kleinen Abstand* zwischen ihnen. Als Abhilfe kann man dem Parent-Element `font-size: 0;` geben.
 
 Beispiel
 
