@@ -1,77 +1,69 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: 'de' }}">
   <head>
     <meta charset="UTF-8">
-{% seo %}
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#157878">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    {% seo %}
+    <meta name="theme-color" content="#0a7ea4">
     <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
   </head>
   <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+    <a class="skip-link" href="#content">Zum Inhalt springen</a>
 
-    <header class="page-header" role="banner">
-      <nav>
-        {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}/blob/master/{{ page.name }}">View this page on Github</a>
-        {% endif %}
-      </nav>
-      
-      {% if site.show_downloads %}
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+    {% assign base = site.github.repository_name %}
+
+    <header class="site-header">
+      <a class="site-title" href="/{{ base }}/">{{ site.title | default: base }}</a>
+      {% if site.github.is_project_page %}
+      <a class="header-link" href="{{ site.github.repository_url }}">GitHub&nbsp;↗</a>
       {% endif %}
-      </div>
     </header>
 
-    <main id="content" class="main-content" role="main">
-      <nav class="nav-secondary">
-        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=1 h_max=3 %}
-        <div class="tags">
-          {% for tag in page.tags %}
-            <span class="tag">{{ tag }}</span>
-          {% endfor %}
-        </div>
-      </nav>
-      <nav class="nav-site">
-        <ul>
-          <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
-        </ul>
-        <ul>
-          {% for page in site.pages %}
-            {% for tag in page.tags %}
-            {% if tag == 'study' %}
-              <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
-            {% endif %}
-          {% endfor %}
-          {% endfor %}
-        </ul>
-      </nav>
+    <div class="layout">
+      <aside class="sidebar">
+        <nav class="chapter-nav" aria-label="Kapitel">
+          <a href="/{{ base }}/" class="nav-home"{% if page.url == '/' %} aria-current="page"{% endif %}>Übersicht</a>
 
-      {{ content }}
-      
-      <footer class="site-footer">
-        <nav class="nav-site">
-          <ul>
-            <li><a href="/{{ site.github.repository_name }}">⌂ Home</a></li>
-          </ul>
-          <ul>
-            {% for page in site.pages %}
-              {% if page.title %}
-                <li><a href="/{{ site.github.repository_name }}{{ page.url }}">{{ page.title }}</a></li>
-              {% endif %}
-            {% endfor %}
-          </ul>
+          <p class="nav-group">Grundlagen</p>
+          <a href="/{{ base }}/A_Programme.html"{% if page.url == '/A_Programme.html' %} aria-current="page"{% endif %}><span class="num">·</span> Programme, Dateien &amp; Code</a>
+
+          <p class="nav-group">Web-Design</p>
+          <a href="/{{ base }}/01_HTML.html"{% if page.url == '/01_HTML.html' %} aria-current="page"{% endif %}><span class="num">1</span> Einführung HTML</a>
+          <a href="/{{ base }}/02_CSS.html"{% if page.url == '/02_CSS.html' %} aria-current="page"{% endif %}><span class="num">2</span> Einführung CSS</a>
+          <a href="/{{ base }}/03_Layout.html"{% if page.url == '/03_Layout.html' %} aria-current="page"{% endif %}><span class="num">3</span> Layout mit CSS</a>
+          <a href="/{{ base }}/04_Formulare.html"{% if page.url == '/04_Formulare.html' %} aria-current="page"{% endif %}><span class="num">4</span> Einführung Formulare</a>
+
+          <p class="nav-group">Web-Entwicklung</p>
+          <a href="/{{ base }}/05_JavaScript.html"{% if page.url == '/05_JavaScript.html' %} aria-current="page"{% endif %}><span class="num">5</span> Einführung JavaScript</a>
+          <a href="/{{ base }}/06_EventListener.html"{% if page.url == '/06_EventListener.html' %} aria-current="page"{% endif %}><span class="num">6</span> Events &amp; EventListener</a>
+          <a href="/{{ base }}/07_Arrays.html"{% if page.url == '/07_Arrays.html' %} aria-current="page"{% endif %}><span class="num">7</span> Einführung Arrays</a>
+          <a href="/{{ base }}/09_Funktionen.html"{% if page.url == '/09_Funktionen.html' %} aria-current="page"{% endif %}><span class="num">8</span> Einführung Funktionen</a>
         </nav>
-        {% if site.github.is_project_page %}
-          <span class="site-footer-owner">
-            <a href="/{{ site.github.repository_name }}">⌂ Home</a><br />
-            <a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</span>
+
+        {% capture page_toc %}{% include toc.html html=content sanitize=true h_min=2 h_max=3 %}{% endcapture %}
+        {% if page_toc contains '<li' %}
+        <nav class="page-toc" aria-label="Auf dieser Seite">
+          <p class="nav-group">Auf dieser Seite</p>
+          {{ page_toc }}
+        </nav>
         {% endif %}
-        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
-      </footer>
-    </main>
+      </aside>
+
+      <main id="content" class="content">
+        {{ content }}
+
+        {% if page.tags %}
+        <p class="tags">
+          {% for tag in page.tags %}<span class="tag">{{ tag }}</span>{% endfor %}
+        </p>
+        {% endif %}
+      </main>
+    </div>
+
+    <footer class="site-footer">
+      <a href="/{{ base }}/">Übersicht</a>
+      {% if site.github.is_project_page %} · <a href="{{ site.github.repository_url }}">{{ site.github.owner_name }}/{{ base }}</a>{% endif %}
+      · erstellt mit GitHub&nbsp;Pages
+    </footer>
   </body>
 </html>
