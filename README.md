@@ -18,6 +18,4 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 5. [Einführung JavaScript](05_JavaScript.md)
 6. [Events und EventListener](06_EventListener.md)
 7. [Einführung Arrays](07_Arrays.md)
-7. [Übergabe von Variablen](07_Query-String.md)
-7. [Einführung simpleXML](08_simpleXML.md)
-7. [Einführung Funktionen](09_Funktionen.md)
+8. [Einführung Funktionen](09_Funktionen.md)
