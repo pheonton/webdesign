@@ -23,7 +23,7 @@ const leer = [];             // leeres Array
 
 > **Merke:** `const` verhindert nur, dass der Variablen eine *neue* Liste zugewiesen wird. Der Inhalt der Liste (Elemente hinzufügen, ändern, entfernen) kann sich trotzdem ändern.
 
-> **Merke:** Sollen die Werte einen *Namen* statt einer Nummer haben (`augenfarbe: "braun"`), verwendet man ein **Objekt** `{ }` statt eines Arrays. Objekte sind ein eigenes Thema.
+> **Merke:** Sollen die Werte einen *Namen* statt einer Nummer haben (`augenfarbe: "braun"`), verwendet man ein **Objekt** `{ }` statt eines Arrays – siehe [Einführung Objekte](09_Objekte.md).
 
 ## Elemente hinzufügen & entfernen
 

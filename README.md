@@ -15,4 +15,5 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 5. [Einführung JavaScript](05_JavaScript.md)
 6. [Events und EventListener](06_EventListener.md)
 7. [Einführung Arrays](07_Arrays.md)
-8. [Einführung Funktionen](09_Funktionen.md)
+8. [Einführung Funktionen](08_Funktionen.md)
+9. [Einführung Objekte](09_Objekte.md)
