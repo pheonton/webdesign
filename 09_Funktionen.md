@@ -93,3 +93,13 @@ Pfeilfunktionen werden vor allem dort verwendet, wo eine Funktion als **Argument
 ```js
 [1, 2, 3].forEach(n => console.log(n));
 ```
+
+## Übungen
+
+1. Schreibe eine Funktion `begruesse(name)`, die „Hallo, …!" ausgibt, und rufe sie mit drei verschiedenen Namen auf.
+2. Schreibe eine Funktion `flaeche(breite, hoehe)`, die den Flächeninhalt eines Rechtecks mit `return` zurückgibt. Teste sie mit `console.log`.
+3. Gib einem Parameter einen Standardwert (z.B. `hoehe = breite`, damit ohne zweites Argument ein Quadrat berechnet wird).
+4. Schreibe eine Funktion `istGerade(zahl)`, die `true` oder `false` zurückgibt, und benutze sie in einer `if`-Abfrage.
+5. Schreibe `istGerade` noch einmal als Pfeilfunktion.
+6. Schreibe eine Funktion `summe(zahlen)`, die ein Array bekommt und die Summe der Elemente zurückgibt.
+7. **Frei:** Nimm eines deiner Skripte aus den vorherigen Kapiteln und lagere wiederkehrende Abläufe in Funktionen mit sprechenden Namen aus.

@@ -273,3 +273,13 @@ Beispiel
 
 <h2 id="title">Title</h2>
 ```
+
+## Übungen
+
+1. Binde `css/style.css` in deine Seite ein. Lege für den `<body>` Schriftart, Textfarbe und Hintergrundfarbe fest.
+2. Gib deinen Überschriften eine eigene Farbe. Formatiere Links so, dass sie normal nicht unterstrichen sind, beim Überfahren (`:hover`) aber schon.
+3. Vergib einer wichtigen Textstelle eine `class` und hebe sie mit CSS hervor (Rahmen, Hintergrund, Farbe …).
+4. Gib der Seite mit `padding` und `margin` mehr Luft. Setze `box-sizing: border-box` für alle Elemente.
+5. Stelle dir mit einem Farbwähler eine Palette aus drei Farben zusammen und setze sie ein – mindestens eine davon halbtransparent (`rgba`).
+6. Binde eine Schriftart von [Google Fonts](https://fonts.google.com/) ein und weise sie zu.
+7. **Frei:** Gib deiner Seite einen eigenen Look. Schreibe als Kommentar oben in die CSS-Datei, welche Stimmung du erzeugen wolltest.

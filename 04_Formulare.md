@@ -103,3 +103,11 @@ Jedes Feld sollte eine Beschriftung bekommen. Das `<label>`-Tag wird über das A
 > **Merke:** `<button type="submit">` und `<input type="submit">` tun dasselbe. `<button>` kann zusätzlich HTML als Beschriftung enthalten.
 
 Wie man die eingegebenen Werte mit JavaScript ausliest, steht in [Events und EventListener](06_EventListener.md#daten-aus-einem-formular-auslesen).
+
+## Übungen
+
+1. Baue ein Kontaktformular für deine Seite: Name, E-Mail und Nachricht (`<textarea>`) mit je einem `<label>`, dazu ein Absende-Button.
+2. Ergänze eine Radio-Button-Gruppe (z.B. „Wie hast du die Seite gefunden?") und eine Checkbox.
+3. Füge ein Dropdown (`<select>`) mit mindestens drei Optionen hinzu.
+4. Markiere sinnvolle Felder als `required` und gib Textfeldern einen `placeholder`. Teste, was beim Absenden ohne Eingabe passiert.
+5. **Frei:** Denk dir ein Formular aus, das zu deinem Thema passt – eine Anmeldung, eine Bestellung, eine Umfrage, ein Quiz – und baue es.

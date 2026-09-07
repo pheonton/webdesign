@@ -63,3 +63,10 @@ body {
 ## Hilfe bei Problemen
 
 Layout mit CSS kann frustrierend sein. Ein sehr nützliches Werkzeug ist der **Inspektor** von Firefox: Rechtsklick auf ein Element → *Element untersuchen*. Er zeigt die Abstände (`margin` lila, `padding` gelb) sowie alle angewendeten CSS-Eigenschaften an.
+
+## Übungen
+
+1. Lass ein Bild von einem längeren Textabschnitt umfließen (`float`). Gib ihm mit `margin` genug Abstand zum Text.
+2. Sorge dafür, dass die nächste Überschrift nicht neben dem Bild, sondern darunter beginnt (`clear`).
+3. Gib deiner Seite ein bildschirmfüllendes Hintergrundbild. Wähle ein Bild – oder passe Textfarbe und Kontrast an –, sodass der Text lesbar bleibt.
+4. **Frei:** Probiere für dein Projekt beide Möglichkeiten aus und entscheide dich für eine. Notiere in einem Satz, warum.

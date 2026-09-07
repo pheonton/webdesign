@@ -98,3 +98,11 @@ Normalerweise schickt der Browser beim `submit` die Daten an einen Server und l�
 `document.getElementById('name').value` liefert den Text, der aktuell im Feld steht. `.value` funktioniert für `<input>`, `<textarea>` und `<select>`.
 
 > **Merke:** Ob eine Checkbox oder ein Radio-Button angekreuzt ist, steht nicht in `.value`, sondern in `.checked` (`true` / `false`).
+
+## Übungen
+
+1. Füge deiner Seite einen Button hinzu, der beim Klick einen Text in einem leeren `<div>` anzeigt.
+2. Erweitere es: bei jedem weiteren Klick ändert sich etwas – der Text, eine Farbe oder ein Bild.
+3. Werte dein Kontaktformular aus Kapitel 4 aus: beim `submit` (mit `event.preventDefault()`) die Eingaben auslesen und als Zusammenfassung unter dem Formular anzeigen.
+4. Reagiere auf ein anderes Event: beim `input` in einem Textfeld die Anzahl der Zeichen anzeigen, oder beim `mouseover` über einem Bild eine Bildunterschrift einblenden.
+5. **Frei:** Baue ein kleines Feature für deine Seite – einen „Zufalls-Tipp"-Button, einen Farbwechsler, einen Klick-Zähler oder ein Mini-Quiz mit einer Frage.
