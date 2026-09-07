@@ -243,18 +243,3 @@ Bild mit Bildunterschrift:
 | In neuem Tab öffnen | `<a href="…" target="_blank" rel="noopener">` |
 
 Dateien im Arbeitsordner (z.B. Bilder) werden mit einer [relativen Pfadangabe](https://wiki.selfhtml.org/wiki/HTML/Tutorials/Links/Referenzieren_in_HTML#Mit_relativen_Pfadangaben_relativ_zum_Basis-URI_referenzieren) verknüpft, d.h. relativ zur verknüpfenden Datei. Für Dateien im Internet wird die vollständige Webadresse (URL) angegeben – es handelt sich dann um eine **absolute** Verknüpfung.
-
-## Veraltet – nicht mehr verwenden
-
-Einige ältere Tags und Attribute dienen nur der *Darstellung*. Dafür ist heute ausschließlich CSS zuständig.
-
-| Veraltet | Stattdessen |
-| --- | --- |
-| `<b>`, `<i>` | meist `<strong>`, `<em>` (sonst CSS) |
-| `<u>`, `<center>`, `<font>` | CSS (`text-decoration`, `text-align`, `font-*`) |
-| `<br>` zum Erzeugen von Abständen | CSS (`margin`, `padding`) |
-| Attribute wie `align`, `bgcolor`, `border` an Inhalts-Tags | CSS |
-
-## Tags für die Formatierung mit CSS
-
-Wenn kein semantisches Element (siehe [Seitenstruktur](#seitenstruktur-semantische-elemente)) passt, werden die beiden allgemeinen Container `<div>` (Block) und `<span>` (Inline) aus dem Abschnitt [Block- und Inline-Elemente](#block--und-inline-elemente) verwendet. Sie haben keine eigene Bedeutung und dienen nur dazu, Inhalte für die Formatierung mit CSS zu gruppieren – `<div>` für das **Layout**, `<span>` für **Text**.
