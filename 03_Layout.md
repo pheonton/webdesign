@@ -15,13 +15,11 @@ Hier behandeln wir nur zwei häufige, einfache Aufgaben:
 
 > **Merke:** Ob ein Element in einer eigenen Zeile steht (Block, z.B. `<p>`) oder im Textfluss (Inline, z.B. `<strong>`), lässt sich mit der CSS-Eigenschaft `display` ändern (`block`, `inline`, `inline-block`). Für die beiden Aufgaben hier wird das aber nicht gebraucht.
 
-Das folgende Video geht über dieses Kapitel hinaus und zeigt weitere Layout-Techniken:
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/h8AUf0lE91M" title="Layout mit CSS" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## Bild im Text umfließen lassen
 
 Standardmäßig beansprucht ein Bild eine eigene Zeile. Mit `float: left` (oder `float: right`) rückt das Bild an den Rand, und der folgende Text fließt daneben weiter. `margin` schafft Abstand zwischen Bild und Text.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/h8AUf0lE91M" title="Bild im Text positionieren" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ```html
 <p>
