@@ -67,6 +67,20 @@ Hier ist `href` das Attribut mit dem Wert `https://example.org`.
 
 > **Merke:** Der schließende Schrägstrich bei inhaltslosen Elementen (`<br />`, `<img … />`) stammt aus älteren HTML-Versionen und ist in HTML5 nicht mehr nötig. Wir schreiben `<br>` und `<img …>`.
 
+### Block- und Inline-Elemente
+
+Elemente verhalten sich standardmäßig auf eine von zwei Arten:
+
+* **Block-Elemente** beginnen auf einer neuen Zeile und nehmen die volle verfügbare Breite ein – z.B. `<p>`, `<h1>`, `<ul>` und die Struktur-Elemente aus dem nächsten Abschnitt.
+* **Inline-Elemente** stehen innerhalb einer Textzeile und sind nur so breit wie ihr Inhalt – z.B. `<a>`, `<strong>`, `<em>`.
+
+Für Fälle, in denen kein passendes Element existiert, gibt es zwei **allgemeine Container ohne eigene Bedeutung**. Sie dienen dazu, Inhalte zu gruppieren, um sie mit CSS zu formatieren:
+
+| Element | Typ | Zweck |
+| --- | --- | --- |
+| `<div></div>` | Block | Gruppiert größere Bereiche (v.a. für das Layout) |
+| `<span></span>` | Inline | Gruppiert Teile innerhalb einer Textzeile |
+
 ## Textstrukturierung
 
 | Element | Erläuterung |
@@ -83,16 +97,22 @@ Hier ist `href` das Attribut mit dem Wert `https://example.org`.
 | `<code></code>` | Quellcode oder Befehle |
 
 ```html
-<h1>Lorem ipsum</h1>
-<p><strong>Lorem ipsum</strong> dolor sit amet, <em>consectetur</em> adipiscing elit.
-Nulla vel metus porta, cursus libero in, varius metus.<br>
-<del>Cras id risus magna.</del> Praesent dui libero, hendrerit a consectetur id.</p>
+<h1>Das Fahrrad</h1>
+<p>Das Fahrrad ist eines der <strong>effizientesten Fortbewegungsmittel</strong>
+der Welt. Erfunden wurde es <em>1817</em> von Karl Drais – damals noch
+<del>ohne Pedale</del>: Man stieß sich mit den Füßen vom Boden ab.<br>
+Heute gibt es unzählige Bauformen, vom Rennrad bis zum Lastenrad.</p>
 <hr>
+<h2>Warum Radfahren gesund ist</h2>
+<p>Regelmäßiges Radfahren stärkt Herz und Kreislauf, schont die Gelenke und
+verbessert die Ausdauer. Schon eine halbe Stunde pro Tag zeigt Wirkung.</p>
 <blockquote>
-  Jeder sollte in der Lage sein, Informationen im Web zu veröffentlichen.
+  Wer mit dem Rad zur Schule fährt, spart Geld, vermeidet Staus und tut
+  nebenbei etwas für die Umwelt.
 </blockquote>
-<p>Im Fließtext steht ein kurzes Zitat in <q>Anführungszeichen</q>.
-Ein Absatz beginnt mit dem Tag <code>&lt;p&gt;</code>.</p>
+<p>Dieses kurze Zitat im Fließtext steht in <q>Anführungszeichen</q>, die der
+Browser automatisch setzt. Ein Absatz beginnt mit dem Tag
+<code>&lt;p&gt;</code> und endet mit <code>&lt;/p&gt;</code>.</p>
 ```
 
 > **Merke:** HTML-Code wird verwendet, um den Inhalt zu strukturieren und einzelnen Textabschnitten Bedeutung zuzuweisen, wie z.B. Überschriften, Paragraphen, Listen usw. HTML wird *nicht* zur Formatierung verwendet, dafür wird CSS eingesetzt.
@@ -237,9 +257,4 @@ Einige ältere Tags und Attribute dienen nur der *Darstellung*. Dafür ist heute
 
 ## Tags für die Formatierung mit CSS
 
-Wenn kein semantisches Element (siehe [Seitenstruktur](#seitenstruktur-semantische-elemente)) passt, gibt es zwei allgemeine Elemente ohne eigene Bedeutung. Sie dienen als „Container", um Inhalte für die Formatierung mit CSS zu gruppieren.
-
-| Element | Erläuterung |
-| --- | --- |
-| `<div></div>` | **Block-Element**, gruppiert größere Bereiche (insbesondere für das **Layout**) |
-| `<span></span>` | **Inline-Element**, gruppiert Teile innerhalb einer Textzeile (insbesondere für **Text**) |
+Wenn kein semantisches Element (siehe [Seitenstruktur](#seitenstruktur-semantische-elemente)) passt, werden die beiden allgemeinen Container `<div>` (Block) und `<span>` (Inline) aus dem Abschnitt [Block- und Inline-Elemente](#block--und-inline-elemente) verwendet. Sie haben keine eigene Bedeutung und dienen nur dazu, Inhalte für die Formatierung mit CSS zu gruppieren – `<div>` für das **Layout**, `<span>` für **Text**.
