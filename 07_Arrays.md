@@ -5,7 +5,7 @@ tags:
 ---
 # Einführung Arrays
 
-Bis jetzt wurde in einer Variablen genau ein Wert gespeichert. Ein **Array** ist eine geordnete Liste von Werten in einer einzigen Variablen. Jeder Wert hat einen **Index**, der bei `0` beginnt. Ein Array kann beliebige Werte enthalten – Zahlen, Strings, auch andere Arrays. Seine Größe kann sich jederzeit ändern.
+Bis jetzt wurde in einer Variablen genau ein Wert gespeichert. Ein **Array** ist eine geordnete Liste von Werten in einer einzigen Variablen. Jeder Wert hat einen **Index**, der bei `0` beginnt. Ein Array kann beliebige Werte enthalten – Zahlen, Strings, auch andere Arrays (`const matrix = [[1, 2], [3, 4]]`, Zugriff dann mit `matrix[0][1]`). Seine Größe kann sich jederzeit ändern.
 
 ## Array erstellen und Zugriff
 
