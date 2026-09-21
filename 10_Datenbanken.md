@@ -2,7 +2,12 @@
 tags:
  - study
  - datenbanken
+published: false
 ---
+<!-- Zurückgestellt auf das kommende Schuljahr: aus dem aktuellen Stoffplan genommen,
+     Kapitel bleibt als Entwurf im Repo erhalten. Zum Reaktivieren: "published: false"
+     entfernen und in README.md + _layouts/default.html wieder verlinken. -->
+
 # Einführung Datenbanken
 
 In [Kapitel 9](09_Objekte.md) habt ihr Objekte benutzt, um ein einzelnes Ding zu beschreiben – einen `Hund`, ein `buch`. Das reicht, solange man wenige Dinge braucht und sie nur so lange existieren müssen, wie die Seite geöffnet ist. Sobald man aber **viele** ähnliche Dinge **dauerhaft** speichern will – tausend Bücher, alle Schüler einer Schule, jede Bestellung eines Shops –, stößt man an Grenzen: Variablen sind weg, sobald die Seite neu geladen wird, und ohne feste Struktur wird es schnell unübersichtlich.

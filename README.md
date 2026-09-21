@@ -17,6 +17,3 @@ Diese Seiten enthalten grundlegende Information zum Erstellen von Webseiten.
 7. [Einführung Arrays](07_Arrays.md)
 8. [Einführung Funktionen](08_Funktionen.md)
 9. [Einführung Objekte](09_Objekte.md)
-
-## Datenbanken
-10. [Einführung Datenbanken](10_Datenbanken.md)
