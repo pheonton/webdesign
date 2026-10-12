@@ -242,6 +242,14 @@ p {
   padding: 0 1.5rem 1rem;
 }
 
+.fuss p {
+  margin: 0 0 0.2rem;
+}
+
+.fuss a {
+  color: #555;
+}
+
 /* Kleinere Bildschirme */
 
 @media (max-width: 1000px) {
