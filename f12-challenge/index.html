@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Der Pixel-Kurier – F12-Challenge</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="challenge.css">
+</head>
+<body>
+
+  <header class="kopf">
+    <div class="kopf-zeile">
+      <h1 class="logo">Der Pixel-Kurier</h1>
+      <p id="datum" class="datum">Montag, 1. April 1999</p>
+    </div>
+    <nav class="navigation">
+      <a href="#top-story">Start</a>
+      <a href="#schulfest">Schule</a>
+      <a id="nav-sport" href="#kultur">Sport</a>
+      <a href="#wissen">Wissen</a>
+      <a href="#kultur">Kultur</a>
+    </nav>
+  </header>
+
+  <p id="eilmeldung" class="eilmeldung">+++ Eilmeldung: Ab sofort gibt es freitags Pizza in der Mensa +++</p>
+
+  <main class="zeitung">
+
+    <article id="top-story" class="top-story">
+      <img id="leitbild" src="bilder/katze.svg" alt="Ein Fahrrad auf dem neuen Radweg">
+      <p class="rubrik">Aufmacher</p>
+      <h2>Neuer Radweg zur Schule ist endlich fertig</h2>
+      <p>Nach zwei Jahren Bauzeit wurde der Radweg zwischen Bahnhof und Schulzentrum eröffnet. Schon am ersten Tag kamen über 200 Schülerinnen und Schüler mit dem Rad – so viele wie noch nie.</p>
+    </article>
+
+    <article id="sport" class="meldung">
+      <p class="rubrik">Sport</p>
+      <h2>Volleyball-AG holt den Kreismeistertitel</h2>
+      <p>Ohne einen einzigen verlorenen Satz setzte sich das Team im Finale durch. Die Trainerin: „Die Mannschaft hat das ganze Jahr hart trainiert."</p>
+    </article>
+
+    <article id="wissen" class="meldung">
+      <p class="rubrik">Wissen</p>
+      <h2 id="robotik-titel">Schüler gewinnen Robotik-Wettberwerb</h2>
+      <p>Mit einem selbst programmierten Sortier-Roboter überzeugte die Informatik-AG die Jury. Er trennt Müll nach Farben – in unter zwei Sekunden.</p>
+    </article>
+
+    <article id="kultur" class="meldung">
+      <p class="rubrik">Kultur</p>
+      <img id="konzert-bild" src="bilder/konzert.svg" alt="IMG_2034.jpg">
+      <h2>Schulband spielt im Jugendhaus</h2>
+      <p>Am Freitag um 19 Uhr treten „Die Semikolons" auf. Der Eintritt ist frei.</p>
+    </article>
+
+    <article id="schulfest" class="meldung">
+      <p class="rubrik">Schule</p>
+      <h2>Schulfest wird auf Juni verschoben</h2>
+      <p>Wegen der Bauarbeiten auf dem Schulhof findet das Fest nicht im Mai statt. Der neue Termin ist der 20. Juni.</p>
+    </article>
+
+    <aside class="seitenleiste">
+      <h2>Meistgelesen</h2>
+      <ol id="meistgelesen">
+        <li>Mensa: Pizza-Freitag ab sofort</li>
+        <li>Handy in der Pause – was ist erlaubt?</li>
+        <li>Neue Spinde im Erdgeschoss</li>
+        <li>Lehrerband probt für den Abschlussball</li>
+        <li>Fundbüro: Wem gehört die blaue Trinkflasche?</li>
+      </ol>
+
+      <div id="gewinnspiel" class="gewinnspiel">
+        <h3>Gewinnspiel</h3>
+        <p>Glückwunsch, du hast das versteckte Gewinnspiel gefunden! Das Lösungswort lautet: <strong>QUELLTEXT</strong></p>
+      </div>
+    </aside>
+
+    <section id="wetter" class="wetter">
+      <h2>Wetter</h2>
+      <p class="temperatur">14 °C</p>
+      <p>Wolkig, am Nachmittag einzelne Schauer.</p>
+    </section>
+
+    <div id="werbung" class="werbung">
+      <p>Werbung</p>
+      <p>Jetzt 1000 Follower gratis!!! Nur heute! KLICK HIER!!!</p>
+    </div>
+
+  </main>
+
+  <footer class="fuss">
+    <p>© Der Pixel-Kurier – eine erfundene Zeitung für die F12-Challenge</p>
+  </footer>
+
+  <section id="challenge" class="challenge">
+    <h2>F12-Challenge</h2>
+    <p>Öffne die Entwicklerwerkzeuge mit <kbd>F12</kbd> (oder Rechtsklick → <em>Untersuchen</em>) und löse die Aufgaben direkt im Browser. Mit dem Button <strong>Prüfen</strong> unten rechts siehst du, welche Aufgaben du schon geschafft hast.</p>
+    <p class="warnung">Achtung: Beim Neuladen der Seite gehen alle deine Änderungen verloren!</p>
+    <p id="ergebnis" class="ergebnis"></p>
+    <ol id="aufgaben" class="aufgaben"></ol>
+  </section>
+
+  <button id="pruefen" class="pruefen-knopf" type="button">Prüfen</button>
+
+  <script src="pruefen.js"></script>
+</body>
+</html>

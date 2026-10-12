@@ -1,0 +1,128 @@
+.challenge {
+  margin-top: 1rem;
+  padding: 2rem 1.5rem 5rem;
+  background: #1f2933;
+  color: #e9eef2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.challenge > * {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.challenge h2 {
+  font-size: 1.6rem;
+  margin-bottom: 0.6rem;
+}
+
+.challenge code,
+.challenge kbd {
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 0.88em;
+  background: #323f4b;
+  border: 1px solid #4b5a68;
+  border-radius: 4px;
+  padding: 0.05em 0.35em;
+}
+
+.warnung {
+  color: #ffc56d;
+}
+
+.ergebnis {
+  font-weight: bold;
+  font-size: 1.05rem;
+}
+
+.ergebnis.alle {
+  color: #6fe0a6;
+}
+
+.aufgaben {
+  list-style: none;
+  padding: 0;
+  margin-top: 1.2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 0.8rem;
+}
+
+.aufgabe {
+  position: relative;
+  padding: 0.9rem 1rem 0.8rem 3.2rem;
+  background: #29363f;
+  border: 2px solid #3e4c59;
+  border-radius: 10px;
+}
+
+.aufgabe h3 {
+  margin: 0 0 0.3rem;
+  font-size: 1rem;
+}
+
+.aufgabe p {
+  margin: 0 0 0.4rem;
+}
+
+.aufgabe .nummer {
+  position: absolute;
+  left: 0.9rem;
+  top: 0.9rem;
+  width: 1.7rem;
+  height: 1.7rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #3e4c59;
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+.aufgabe .status {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #9aa5b1;
+}
+
+.aufgabe.geloest {
+  border-color: #3fb27f;
+  background: #1f3a30;
+}
+
+.aufgabe.geloest .nummer {
+  background: #3fb27f;
+  color: #0e2219;
+}
+
+.aufgabe.geloest .status {
+  color: #6fe0a6;
+}
+
+.pruefen-knopf {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  z-index: 10;
+  padding: 0.75rem 1.2rem;
+  border: none;
+  border-radius: 999px;
+  background: #0a7ea4;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
+.pruefen-knopf:hover {
+  background: #075e7a;
+}
