@@ -36,10 +36,10 @@ const aufgaben = [
   },
   {
     titel: 'Falsches Bild',
-    text: 'Im Aufmacher geht es um einen Radweg, das Bild zeigt aber eine Katze. Das richtige Bild heißt <code>fahrrad.svg</code> und liegt im selben Ordner wie die Katze. Ändere das Attribut <code>src</code>.',
+    text: 'Im Aufmacher geht es um einen Radweg, das Bild zeigt aber eine Katze. Das richtige Bild heißt <code>fahrrad.jpg</code> und liegt im selben Ordner wie die Katze. Ändere das Attribut <code>src</code>.',
     geloest() {
       const bild = document.getElementById('leitbild');
-      return bild.getAttribute('src').endsWith('fahrrad.svg') && bild.complete && bild.naturalWidth > 0;
+      return bild.getAttribute('src').endsWith('fahrrad.jpg') && bild.complete && bild.naturalWidth > 0;
     }
   },
   {
