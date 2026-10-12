@@ -283,3 +283,4 @@ Beispiel
 5. Stelle dir mit einem Farbwähler eine Palette aus drei Farben zusammen und setze sie ein – mindestens eine davon halbtransparent (`rgba`).
 6. Binde eine Schriftart von [Google Fonts](https://fonts.google.com/) ein und weise sie zu.
 7. **Frei:** Gib deiner Seite einen eigenen Look. Schreibe als Kommentar oben in die CSS-Datei, welche Stimmung du erzeugen wolltest.
+8. **F12-Challenge:** Öffne die [F12-Challenge](f12-challenge/) und löse die 12 Aufgaben: Du änderst HTML und CSS einer Zeitungsseite direkt im Browser mit den Entwicklerwerkzeugen (`F12`). Mit dem Button „Prüfen" siehst du, wie viele du schon geschafft hast.
